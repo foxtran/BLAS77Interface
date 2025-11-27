@@ -1,0 +1,9 @@
+#ifdef ACCELERATE_NEW_LAPACK
+#  ifdef ACCELERATE_LAPACK_ILP64
+#    define CNAME(bindname) bind(C, name="bindname$NEWLAPACK$ILP64")
+#  else
+#    define CNAME(bindname) bind(C, name="bindname$NEWLAPACK")
+#  endif
+#else
+#  define CNAME(bindname)
+#endif
