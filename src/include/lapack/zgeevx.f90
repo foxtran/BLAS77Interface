@@ -1,0 +1,25 @@
+subroutine zgeevx(balanc,jobvl,jobvr,sense,n,a,lda,w,vl,ldvl,vr,ldvr,ilo,ihi,scale,abnrm,rconde,rcondv,work,lwork,rwork,info) CNAME(zgeevx)
+import
+character(len=1)::balanc
+character(len=1)::jobvl
+character(len=1)::jobvr
+character(len=1)::sense
+integer(blas77_int)::n
+integer(blas77_int)::lda
+complex(blas77_f64)::a(lda,*)
+complex(blas77_f64)::w(*)
+integer(blas77_int)::ldvl
+complex(blas77_f64)::vl(ldvl,*)
+integer(blas77_int)::ldvr
+complex(blas77_f64)::vr(ldvr,*)
+integer(blas77_int)::ilo
+integer(blas77_int)::ihi
+real(blas77_f64)::scale(*)
+real(blas77_f64)::abnrm
+real(blas77_f64)::rconde(*)
+real(blas77_f64)::rcondv(*)
+complex(blas77_f64)::work(*)
+integer(blas77_int)::lwork
+real(blas77_f64)::rwork(*)
+integer(blas77_int)::info
+end

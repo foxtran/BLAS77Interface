@@ -1,0 +1,25 @@
+subroutine cgesvdq(joba,jobp,jobr,jobu,jobv,m,n,a,lda,s,u,ldu,v,ldv,numrank,iwork,liwork,cwork,lcwork,rwork,lrwork,info) CNAME(cgesvdq)
+import
+character(len=1)::joba
+character(len=1)::jobp
+character(len=1)::jobr
+character(len=1)::jobu
+character(len=1)::jobv
+integer(blas77_int)::m
+integer(blas77_int)::n
+integer(blas77_int)::lda
+complex(blas77_f32)::a(lda,*)
+real(blas77_f32)::s(*)
+integer(blas77_int)::ldu
+complex(blas77_f32)::u(ldu,*)
+integer(blas77_int)::ldv
+complex(blas77_f32)::v(ldv,*)
+integer(blas77_int)::numrank
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::liwork
+complex(blas77_f32)::cwork(*)
+integer(blas77_int)::lcwork
+real(blas77_f32)::rwork(*)
+integer(blas77_int)::lrwork
+integer(blas77_int)::info
+end

@@ -1,0 +1,19 @@
+subroutine zptrfs(uplo,n,nrhs,d,e,df,ef,b,ldb,x,ldx,ferr,berr,work,rwork,info) CNAME(zptrfs)
+import
+character(len=1)::uplo
+integer(blas77_int)::n
+integer(blas77_int)::nrhs
+real(blas77_f64)::d(*)
+complex(blas77_f64)::e(*)
+real(blas77_f64)::df(*)
+complex(blas77_f64)::ef(*)
+integer(blas77_int)::ldb
+complex(blas77_f64)::b(ldb,*)
+integer(blas77_int)::ldx
+complex(blas77_f64)::x(ldx,*)
+real(blas77_f64)::ferr(*)
+real(blas77_f64)::berr(*)
+complex(blas77_f64)::work(*)
+real(blas77_f64)::rwork(*)
+integer(blas77_int)::info
+end

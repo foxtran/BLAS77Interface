@@ -1,0 +1,24 @@
+subroutine sstemr(jobz,range,n,d,e,vl,vu,il,iu,m,w,z,ldz,nzc,isuppz,tryrac,work,lwork,iwork,liwork,info) CNAME(sstemr)
+import
+character(len=1)::jobz
+character(len=1)::range
+integer(blas77_int)::n
+real(blas77_f32)::d(*)
+real(blas77_f32)::e(*)
+real(blas77_f32)::vl
+real(blas77_f32)::vu
+integer(blas77_int)::il
+integer(blas77_int)::iu
+integer(blas77_int)::m
+real(blas77_f32)::w(*)
+integer(blas77_int)::ldz
+real(blas77_f32)::z(ldz,*)
+integer(blas77_int)::nzc
+integer(blas77_int)::isuppz(*)
+logical::tryrac
+real(blas77_f32)::work(*)
+integer(blas77_int)::lwork
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::liwork
+integer(blas77_int)::info
+end

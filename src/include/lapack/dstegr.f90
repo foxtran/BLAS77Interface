@@ -1,0 +1,23 @@
+subroutine dstegr(jobz,range,n,d,e,vl,vu,il,iu,abstol,m,w,z,ldz,isuppz,work,lwork,iwork,liwork,info) CNAME(dstegr)
+import
+character(len=1)::jobz
+character(len=1)::range
+integer(blas77_int)::n
+real(blas77_f64)::d(*)
+real(blas77_f64)::e(*)
+real(blas77_f64)::vl
+real(blas77_f64)::vu
+integer(blas77_int)::il
+integer(blas77_int)::iu
+real(blas77_f64)::abstol
+integer(blas77_int)::m
+real(blas77_f64)::w(*)
+integer(blas77_int)::ldz
+real(blas77_f64)::z(ldz,*)
+integer(blas77_int)::isuppz(*)
+real(blas77_f64)::work(*)
+integer(blas77_int)::lwork
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::liwork
+integer(blas77_int)::info
+end

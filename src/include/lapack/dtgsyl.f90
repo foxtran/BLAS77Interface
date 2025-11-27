@@ -1,0 +1,25 @@
+subroutine dtgsyl(trans,ijob,m,n,a,lda,b,ldb,c,ldc,d,ldd,e,lde,f,ldf,scale,dif,work,lwork,iwork,info) CNAME(dtgsyl)
+import
+character(len=1)::trans
+integer(blas77_int)::ijob
+integer(blas77_int)::m
+integer(blas77_int)::n
+integer(blas77_int)::lda
+real(blas77_f64)::a(lda,*)
+integer(blas77_int)::ldb
+real(blas77_f64)::b(ldb,*)
+integer(blas77_int)::ldc
+real(blas77_f64)::c(ldc,*)
+integer(blas77_int)::ldd
+real(blas77_f64)::d(ldd,*)
+integer(blas77_int)::lde
+real(blas77_f64)::e(lde,*)
+integer(blas77_int)::ldf
+real(blas77_f64)::f(ldf,*)
+real(blas77_f64)::scale
+real(blas77_f64)::dif
+real(blas77_f64)::work(*)
+integer(blas77_int)::lwork
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

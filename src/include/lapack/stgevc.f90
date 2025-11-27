@@ -1,0 +1,19 @@
+subroutine stgevc(side,howmny,select,n,s,lds,p,ldp,vl,ldvl,vr,ldvr,mm,m,work,info) CNAME(stgevc)
+import
+character(len=1)::side
+character(len=1)::howmny
+logical::select(*)
+integer(blas77_int)::n
+integer(blas77_int)::lds
+real(blas77_f32)::s(lds,*)
+integer(blas77_int)::ldp
+real(blas77_f32)::p(ldp,*)
+integer(blas77_int)::ldvl
+real(blas77_f32)::vl(ldvl,*)
+integer(blas77_int)::ldvr
+real(blas77_f32)::vr(ldvr,*)
+integer(blas77_int)::mm
+integer(blas77_int)::m
+real(blas77_f32)::work(*)
+integer(blas77_int)::info
+end

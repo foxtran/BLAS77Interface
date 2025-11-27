@@ -1,0 +1,22 @@
+subroutine dgbrfs(trans,n,kl,ku,nrhs,ab,ldab,afb,ldafb,ipiv,b,ldb,x,ldx,ferr,berr,work,iwork,info) CNAME(dgbrfs)
+import
+character(len=1)::trans
+integer(blas77_int)::n
+integer(blas77_int)::kl
+integer(blas77_int)::ku
+integer(blas77_int)::nrhs
+integer(blas77_int)::ldab
+real(blas77_f64)::ab(ldab,*)
+integer(blas77_int)::ldafb
+real(blas77_f64)::afb(ldafb,*)
+integer(blas77_int)::ipiv(*)
+integer(blas77_int)::ldb
+real(blas77_f64)::b(ldb,*)
+integer(blas77_int)::ldx
+real(blas77_f64)::x(ldx,*)
+real(blas77_f64)::ferr(*)
+real(blas77_f64)::berr(*)
+real(blas77_f64)::work(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

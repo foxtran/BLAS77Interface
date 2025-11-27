@@ -1,0 +1,27 @@
+subroutine dggsvp(jobu,jobv,jobq,m,p,n,a,lda,b,ldb,tola,tolb,k,l,u,ldu,v,ldv,q,ldq,iwork,tau,work,info) CNAME(dggsvp)
+import
+character(len=1)::jobu
+character(len=1)::jobv
+character(len=1)::jobq
+integer(blas77_int)::m
+integer(blas77_int)::p
+integer(blas77_int)::n
+integer(blas77_int)::lda
+real(blas77_f64)::a(lda,*)
+integer(blas77_int)::ldb
+real(blas77_f64)::b(ldb,*)
+real(blas77_f64)::tola
+real(blas77_f64)::tolb
+integer(blas77_int)::k
+integer(blas77_int)::l
+integer(blas77_int)::ldu
+real(blas77_f64)::u(ldu,*)
+integer(blas77_int)::ldv
+real(blas77_f64)::v(ldv,*)
+integer(blas77_int)::ldq
+real(blas77_f64)::q(ldq,*)
+integer(blas77_int)::iwork(*)
+real(blas77_f64)::tau(*)
+real(blas77_f64)::work(*)
+integer(blas77_int)::info
+end

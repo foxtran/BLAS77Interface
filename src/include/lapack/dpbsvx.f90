@@ -1,0 +1,24 @@
+subroutine dpbsvx(fact,uplo,n,kd,nrhs,ab,ldab,afb,ldafb,equed,s,b,ldb,x,ldx,rcond,ferr,berr,work,iwork,info) CNAME(dpbsvx)
+import
+character(len=1)::fact
+character(len=1)::uplo
+integer(blas77_int)::n
+integer(blas77_int)::kd
+integer(blas77_int)::nrhs
+integer(blas77_int)::ldab
+real(blas77_f64)::ab(ldab,*)
+integer(blas77_int)::ldafb
+real(blas77_f64)::afb(ldafb,*)
+character(len=1)::equed
+real(blas77_f64)::s(*)
+integer(blas77_int)::ldb
+real(blas77_f64)::b(ldb,*)
+integer(blas77_int)::ldx
+real(blas77_f64)::x(ldx,*)
+real(blas77_f64)::rcond
+real(blas77_f64)::ferr(*)
+real(blas77_f64)::berr(*)
+real(blas77_f64)::work(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

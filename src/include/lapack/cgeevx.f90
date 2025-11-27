@@ -1,0 +1,25 @@
+subroutine cgeevx(balanc,jobvl,jobvr,sense,n,a,lda,w,vl,ldvl,vr,ldvr,ilo,ihi,scale,abnrm,rconde,rcondv,work,lwork,rwork,info) CNAME(cgeevx)
+import
+character(len=1)::balanc
+character(len=1)::jobvl
+character(len=1)::jobvr
+character(len=1)::sense
+integer(blas77_int)::n
+integer(blas77_int)::lda
+complex(blas77_f32)::a(lda,*)
+complex(blas77_f32)::w(*)
+integer(blas77_int)::ldvl
+complex(blas77_f32)::vl(ldvl,*)
+integer(blas77_int)::ldvr
+complex(blas77_f32)::vr(ldvr,*)
+integer(blas77_int)::ilo
+integer(blas77_int)::ihi
+real(blas77_f32)::scale(*)
+real(blas77_f32)::abnrm
+real(blas77_f32)::rconde(*)
+real(blas77_f32)::rcondv(*)
+complex(blas77_f32)::work(*)
+integer(blas77_int)::lwork
+real(blas77_f32)::rwork(*)
+integer(blas77_int)::info
+end

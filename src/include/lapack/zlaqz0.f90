@@ -1,0 +1,24 @@
+recursive subroutine zlaqz0(wants,wantq,wantz,n,ilo,ihi,a,lda,b,ldb,alpha,beta,q,ldq,z,ldz,work,lwork,rwork,rec,info) CNAME(zlaqz0)
+import
+character(len=1),intent(in)::wants
+character(len=1),intent(in)::wantq
+character(len=1),intent(in)::wantz
+integer(blas77_int),intent(in)::n
+integer(blas77_int),intent(in)::ilo
+integer(blas77_int),intent(in)::ihi
+integer(blas77_int),intent(in)::lda
+complex(blas77_f64),intent(inout)::a(lda,*)
+integer(blas77_int),intent(in)::ldb
+complex(blas77_f64),intent(inout)::b(ldb,*)
+complex(blas77_f64),intent(inout)::alpha(*)
+complex(blas77_f64),intent(inout)::beta(*)
+integer(blas77_int),intent(in)::ldq
+complex(blas77_f64),intent(inout)::q(ldq,*)
+integer(blas77_int),intent(in)::ldz
+complex(blas77_f64),intent(inout)::z(ldz,*)
+complex(blas77_f64),intent(inout)::work(*)
+integer(blas77_int),intent(in)::lwork
+real(blas77_f64),intent(out)::rwork(*)
+integer(blas77_int),intent(in)::rec
+integer(blas77_int),intent(out)::info
+end

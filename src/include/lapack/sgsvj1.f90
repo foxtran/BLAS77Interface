@@ -1,0 +1,21 @@
+subroutine sgsvj1(jobv,m,n,n1,a,lda,d,sva,mv,v,ldv,eps,sfmin,tol,nsweep,work,lwork,info) CNAME(sgsvj1)
+import
+character(len=1)::jobv
+integer(blas77_int)::m
+integer(blas77_int)::n
+integer(blas77_int)::n1
+integer(blas77_int)::lda
+real(blas77_f32)::a(lda,*)
+real(blas77_f32)::d(n)
+real(blas77_f32)::sva(n)
+integer(blas77_int)::mv
+integer(blas77_int)::ldv
+real(blas77_f32)::v(ldv,*)
+real(blas77_f32)::eps
+real(blas77_f32)::sfmin
+real(blas77_f32)::tol
+integer(blas77_int)::nsweep
+integer(blas77_int)::lwork
+real(blas77_f32)::work(lwork)
+integer(blas77_int)::info
+end

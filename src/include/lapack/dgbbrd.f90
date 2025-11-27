@@ -1,0 +1,21 @@
+subroutine dgbbrd(vect,m,n,ncc,kl,ku,ab,ldab,d,e,q,ldq,pt,ldpt,c,ldc,work,info) CNAME(dgbbrd)
+import
+character(len=1)::vect
+integer(blas77_int)::m
+integer(blas77_int)::n
+integer(blas77_int)::ncc
+integer(blas77_int)::kl
+integer(blas77_int)::ku
+integer(blas77_int)::ldab
+real(blas77_f64)::ab(ldab,*)
+real(blas77_f64)::d(*)
+real(blas77_f64)::e(*)
+integer(blas77_int)::ldq
+real(blas77_f64)::q(ldq,*)
+integer(blas77_int)::ldpt
+real(blas77_f64)::pt(ldpt,*)
+integer(blas77_int)::ldc
+real(blas77_f64)::c(ldc,*)
+real(blas77_f64)::work(*)
+integer(blas77_int)::info
+end

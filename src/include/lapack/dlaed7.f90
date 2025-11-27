@@ -1,0 +1,25 @@
+subroutine dlaed7(icompq,n,qsiz,tlvls,curlvl,curpbm,d,q,ldq,indxq,rho,cutpnt,qstore,qptr,prmptr,perm,givptr,givcol,givnum,work,iwork,info) CNAME(dlaed7)
+import
+integer(blas77_int)::icompq
+integer(blas77_int)::n
+integer(blas77_int)::qsiz
+integer(blas77_int)::tlvls
+integer(blas77_int)::curlvl
+integer(blas77_int)::curpbm
+real(blas77_f64)::d(*)
+integer(blas77_int)::ldq
+real(blas77_f64)::q(ldq,*)
+integer(blas77_int)::indxq(*)
+real(blas77_f64)::rho
+integer(blas77_int)::cutpnt
+real(blas77_f64)::qstore(*)
+integer(blas77_int)::qptr(*)
+integer(blas77_int)::prmptr(*)
+integer(blas77_int)::perm(*)
+integer(blas77_int)::givptr(*)
+integer(blas77_int)::givcol(2,*)
+real(blas77_f64)::givnum(2,*)
+real(blas77_f64)::work(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

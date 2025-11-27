@@ -1,0 +1,16 @@
+subroutine sgelss(m,n,nrhs,a,lda,b,ldb,s,rcond,rank,work,lwork,info) CNAME(sgelss)
+import
+integer(blas77_int)::m
+integer(blas77_int)::n
+integer(blas77_int)::nrhs
+integer(blas77_int)::lda
+real(blas77_f32)::a(lda,*)
+integer(blas77_int)::ldb
+real(blas77_f32)::b(ldb,*)
+real(blas77_f32)::s(*)
+real(blas77_f32)::rcond
+integer(blas77_int)::rank
+real(blas77_f32)::work(*)
+integer(blas77_int)::lwork
+integer(blas77_int)::info
+end

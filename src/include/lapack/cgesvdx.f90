@@ -1,0 +1,25 @@
+subroutine cgesvdx(jobu,jobvt,range,m,n,a,lda,vl,vu,il,iu,ns,s,u,ldu,vt,ldvt,work,lwork,rwork,iwork,info) CNAME(cgesvdx)
+import
+character(len=1)::jobu
+character(len=1)::jobvt
+character(len=1)::range
+integer(blas77_int)::m
+integer(blas77_int)::n
+integer(blas77_int)::lda
+complex(blas77_f32)::a(lda,*)
+real(blas77_f32)::vl
+real(blas77_f32)::vu
+integer(blas77_int)::il
+integer(blas77_int)::iu
+integer(blas77_int)::ns
+real(blas77_f32)::s(*)
+integer(blas77_int)::ldu
+complex(blas77_f32)::u(ldu,*)
+integer(blas77_int)::ldvt
+complex(blas77_f32)::vt(ldvt,*)
+complex(blas77_f32)::work(*)
+integer(blas77_int)::lwork
+real(blas77_f32)::rwork(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

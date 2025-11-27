@@ -1,0 +1,24 @@
+subroutine sgges3(jobvsl,jobvsr,sort,selctg,n,a,lda,b,ldb,sdim,alphar,alphai,beta,vsl,ldvsl,vsr,ldvsr,work,lwork,bwork,info) CNAME(sgges3)
+import
+character(len=1)::jobvsl
+character(len=1)::jobvsr
+character(len=1)::sort
+procedure(logical)::selctg
+integer(blas77_int)::n
+integer(blas77_int)::lda
+real(blas77_f32)::a(lda,*)
+integer(blas77_int)::ldb
+real(blas77_f32)::b(ldb,*)
+integer(blas77_int)::sdim
+real(blas77_f32)::alphar(*)
+real(blas77_f32)::alphai(*)
+real(blas77_f32)::beta(*)
+integer(blas77_int)::ldvsl
+real(blas77_f32)::vsl(ldvsl,*)
+integer(blas77_int)::ldvsr
+real(blas77_f32)::vsr(ldvsr,*)
+real(blas77_f32)::work(*)
+integer(blas77_int)::lwork
+logical::bwork(*)
+integer(blas77_int)::info
+end

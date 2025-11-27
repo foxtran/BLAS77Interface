@@ -1,0 +1,23 @@
+subroutine dtgsna(job,howmny,select,n,a,lda,b,ldb,vl,ldvl,vr,ldvr,s,dif,mm,m,work,lwork,iwork,info) CNAME(dtgsna)
+import
+character(len=1)::job
+character(len=1)::howmny
+logical::select(*)
+integer(blas77_int)::n
+integer(blas77_int)::lda
+real(blas77_f64)::a(lda,*)
+integer(blas77_int)::ldb
+real(blas77_f64)::b(ldb,*)
+integer(blas77_int)::ldvl
+real(blas77_f64)::vl(ldvl,*)
+integer(blas77_int)::ldvr
+real(blas77_f64)::vr(ldvr,*)
+real(blas77_f64)::s(*)
+real(blas77_f64)::dif(*)
+integer(blas77_int)::mm
+integer(blas77_int)::m
+real(blas77_f64)::work(*)
+integer(blas77_int)::lwork
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

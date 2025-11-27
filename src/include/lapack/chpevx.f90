@@ -1,0 +1,22 @@
+subroutine chpevx(jobz,range,uplo,n,ap,vl,vu,il,iu,abstol,m,w,z,ldz,work,rwork,iwork,ifail,info) CNAME(chpevx)
+import
+character(len=1)::jobz
+character(len=1)::range
+character(len=1)::uplo
+integer(blas77_int)::n
+complex(blas77_f32)::ap(*)
+real(blas77_f32)::vl
+real(blas77_f32)::vu
+integer(blas77_int)::il
+integer(blas77_int)::iu
+real(blas77_f32)::abstol
+integer(blas77_int)::m
+real(blas77_f32)::w(*)
+integer(blas77_int)::ldz
+complex(blas77_f32)::z(ldz,*)
+complex(blas77_f32)::work(*)
+real(blas77_f32)::rwork(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::ifail(*)
+integer(blas77_int)::info
+end

@@ -1,0 +1,21 @@
+subroutine dtrsen(job,compq,select,n,t,ldt,q,ldq,wr,wi,m,s,sep,work,lwork,iwork,liwork,info) CNAME(dtrsen)
+import
+character(len=1)::job
+character(len=1)::compq
+logical::select(*)
+integer(blas77_int)::n
+integer(blas77_int)::ldt
+real(blas77_f64)::t(ldt,*)
+integer(blas77_int)::ldq
+real(blas77_f64)::q(ldq,*)
+real(blas77_f64)::wr(*)
+real(blas77_f64)::wi(*)
+integer(blas77_int)::m
+real(blas77_f64)::s
+real(blas77_f64)::sep
+real(blas77_f64)::work(*)
+integer(blas77_int)::lwork
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::liwork
+integer(blas77_int)::info
+end

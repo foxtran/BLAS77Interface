@@ -1,0 +1,20 @@
+subroutine ztpmqrt(side,trans,m,n,k,l,nb,v,ldv,t,ldt,a,lda,b,ldb,work,info) CNAME(ztpmqrt)
+import
+character(len=1)::side
+character(len=1)::trans
+integer(blas77_int)::m
+integer(blas77_int)::n
+integer(blas77_int)::k
+integer(blas77_int)::l
+integer(blas77_int)::nb
+integer(blas77_int)::ldv
+complex(blas77_f64)::v(ldv,*)
+integer(blas77_int)::ldt
+complex(blas77_f64)::t(ldt,*)
+integer(blas77_int)::lda
+complex(blas77_f64)::a(lda,*)
+integer(blas77_int)::ldb
+complex(blas77_f64)::b(ldb,*)
+complex(blas77_f64)::work(*)
+integer(blas77_int)::info
+end

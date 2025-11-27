@@ -1,0 +1,23 @@
+subroutine zhgeqz(job,compq,compz,n,ilo,ihi,h,ldh,t,ldt,alpha,beta,q,ldq,z,ldz,work,lwork,rwork,info) CNAME(zhgeqz)
+import
+character(len=1)::job
+character(len=1)::compq
+character(len=1)::compz
+integer(blas77_int)::n
+integer(blas77_int)::ilo
+integer(blas77_int)::ihi
+integer(blas77_int)::ldh
+complex(blas77_f64)::h(ldh,*)
+integer(blas77_int)::ldt
+complex(blas77_f64)::t(ldt,*)
+complex(blas77_f64)::alpha(*)
+complex(blas77_f64)::beta(*)
+integer(blas77_int)::ldq
+complex(blas77_f64)::q(ldq,*)
+integer(blas77_int)::ldz
+complex(blas77_f64)::z(ldz,*)
+complex(blas77_f64)::work(*)
+integer(blas77_int)::lwork
+real(blas77_f64)::rwork(*)
+integer(blas77_int)::info
+end

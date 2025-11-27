@@ -1,0 +1,25 @@
+subroutine claed7(n,cutpnt,qsiz,tlvls,curlvl,curpbm,d,q,ldq,rho,indxq,qstore,qptr,prmptr,perm,givptr,givcol,givnum,work,rwork,iwork,info) CNAME(claed7)
+import
+integer(blas77_int)::n
+integer(blas77_int)::cutpnt
+integer(blas77_int)::qsiz
+integer(blas77_int)::tlvls
+integer(blas77_int)::curlvl
+integer(blas77_int)::curpbm
+real(blas77_f32)::d(*)
+integer(blas77_int)::ldq
+complex(blas77_f32)::q(ldq,*)
+real(blas77_f32)::rho
+integer(blas77_int)::indxq(*)
+real(blas77_f32)::qstore(*)
+integer(blas77_int)::qptr(*)
+integer(blas77_int)::prmptr(*)
+integer(blas77_int)::perm(*)
+integer(blas77_int)::givptr(*)
+integer(blas77_int)::givcol(2,*)
+real(blas77_f32)::givnum(2,*)
+complex(blas77_f32)::work(*)
+real(blas77_f32)::rwork(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

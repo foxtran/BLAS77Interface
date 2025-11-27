@@ -1,0 +1,25 @@
+subroutine zgesvdq(joba,jobp,jobr,jobu,jobv,m,n,a,lda,s,u,ldu,v,ldv,numrank,iwork,liwork,cwork,lcwork,rwork,lrwork,info) CNAME(zgesvdq)
+import
+character(len=1)::joba
+character(len=1)::jobp
+character(len=1)::jobr
+character(len=1)::jobu
+character(len=1)::jobv
+integer(blas77_int)::m
+integer(blas77_int)::n
+integer(blas77_int)::lda
+complex(blas77_f64)::a(lda,*)
+real(blas77_f64)::s(*)
+integer(blas77_int)::ldu
+complex(blas77_f64)::u(ldu,*)
+integer(blas77_int)::ldv
+complex(blas77_f64)::v(ldv,*)
+integer(blas77_int)::numrank
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::liwork
+complex(blas77_f64)::cwork(*)
+integer(blas77_int)::lcwork
+real(blas77_f64)::rwork(*)
+integer(blas77_int)::lrwork
+integer(blas77_int)::info
+end

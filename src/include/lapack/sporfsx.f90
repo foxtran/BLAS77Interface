@@ -1,0 +1,26 @@
+subroutine sporfsx(uplo,equed,n,nrhs,a,lda,af,ldaf,s,b,ldb,x,ldx,rcond,berr,n_err_bnds,err_bnds_norm,err_bnds_comp,nparams,params,work,iwork,info) CNAME(sporfsx)
+import
+character(len=1)::uplo
+character(len=1)::equed
+integer(blas77_int)::n
+integer(blas77_int)::nrhs
+integer(blas77_int)::lda
+real(blas77_f32)::a(lda,*)
+integer(blas77_int)::ldaf
+real(blas77_f32)::af(ldaf,*)
+real(blas77_f32)::s(*)
+integer(blas77_int)::ldb
+real(blas77_f32)::b(ldb,*)
+integer(blas77_int)::ldx
+real(blas77_f32)::x(ldx,*)
+real(blas77_f32)::rcond
+real(blas77_f32)::berr(*)
+integer(blas77_int)::n_err_bnds
+real(blas77_f32)::err_bnds_norm(nrhs,*)
+real(blas77_f32)::err_bnds_comp(nrhs,*)
+integer(blas77_int)::nparams
+real(blas77_f32)::params(*)
+real(blas77_f32)::work(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

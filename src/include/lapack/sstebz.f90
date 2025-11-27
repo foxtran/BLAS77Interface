@@ -1,0 +1,21 @@
+subroutine sstebz(range,order,n,vl,vu,il,iu,abstol,d,e,m,nsplit,w,iblock,isplit,work,iwork,info) CNAME(sstebz)
+import
+character(len=1)::range
+character(len=1)::order
+integer(blas77_int)::n
+real(blas77_f32)::vl
+real(blas77_f32)::vu
+integer(blas77_int)::il
+integer(blas77_int)::iu
+real(blas77_f32)::abstol
+real(blas77_f32)::d(*)
+real(blas77_f32)::e(*)
+integer(blas77_int)::m
+integer(blas77_int)::nsplit
+real(blas77_f32)::w(*)
+integer(blas77_int)::iblock(*)
+integer(blas77_int)::isplit(*)
+real(blas77_f32)::work(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

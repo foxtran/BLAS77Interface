@@ -1,0 +1,24 @@
+subroutine zlaed8(k,n,qsiz,q,ldq,d,rho,cutpnt,z,dlambda,q2,ldq2,w,indxp,indx,indxq,perm,givptr,givcol,givnum,info) CNAME(zlaed8)
+import
+integer(blas77_int)::k
+integer(blas77_int)::n
+integer(blas77_int)::qsiz
+integer(blas77_int)::ldq
+complex(blas77_f64)::q(ldq,*)
+real(blas77_f64)::d(*)
+real(blas77_f64)::rho
+integer(blas77_int)::cutpnt
+real(blas77_f64)::z(*)
+real(blas77_f64)::dlambda(*)
+integer(blas77_int)::ldq2
+complex(blas77_f64)::q2(ldq2,*)
+real(blas77_f64)::w(*)
+integer(blas77_int)::indxp(*)
+integer(blas77_int)::indx(*)
+integer(blas77_int)::indxq(*)
+integer(blas77_int)::perm(*)
+integer(blas77_int)::givptr
+integer(blas77_int)::givcol(2,*)
+real(blas77_f64)::givnum(2,*)
+integer(blas77_int)::info
+end

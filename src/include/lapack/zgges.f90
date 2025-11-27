@@ -1,0 +1,24 @@
+subroutine zgges(jobvsl,jobvsr,sort,selctg,n,a,lda,b,ldb,sdim,alpha,beta,vsl,ldvsl,vsr,ldvsr,work,lwork,rwork,bwork,info) CNAME(zgges)
+import
+character(len=1)::jobvsl
+character(len=1)::jobvsr
+character(len=1)::sort
+procedure(logical)::selctg
+integer(blas77_int)::n
+integer(blas77_int)::lda
+complex(blas77_f64)::a(lda,*)
+integer(blas77_int)::ldb
+complex(blas77_f64)::b(ldb,*)
+integer(blas77_int)::sdim
+complex(blas77_f64)::alpha(*)
+complex(blas77_f64)::beta(*)
+integer(blas77_int)::ldvsl
+complex(blas77_f64)::vsl(ldvsl,*)
+integer(blas77_int)::ldvsr
+complex(blas77_f64)::vsr(ldvsr,*)
+complex(blas77_f64)::work(*)
+integer(blas77_int)::lwork
+real(blas77_f64)::rwork(*)
+logical::bwork(*)
+integer(blas77_int)::info
+end

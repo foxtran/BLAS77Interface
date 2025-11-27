@@ -1,0 +1,26 @@
+subroutine ssbevx_2stage(jobz,range,uplo,n,kd,ab,ldab,q,ldq,vl,vu,il,iu,abstol,m,w,z,ldz,work,lwork,iwork,ifail,info) CNAME(ssbevx_2stage)
+import
+character(len=1)::jobz
+character(len=1)::range
+character(len=1)::uplo
+integer(blas77_int)::n
+integer(blas77_int)::kd
+integer(blas77_int)::ldab
+real(blas77_f32)::ab(ldab,*)
+integer(blas77_int)::ldq
+real(blas77_f32)::q(ldq,*)
+real(blas77_f32)::vl
+real(blas77_f32)::vu
+integer(blas77_int)::il
+integer(blas77_int)::iu
+real(blas77_f32)::abstol
+integer(blas77_int)::m
+real(blas77_f32)::w(*)
+integer(blas77_int)::ldz
+real(blas77_f32)::z(ldz,*)
+real(blas77_f32)::work(*)
+integer(blas77_int)::lwork
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::ifail(*)
+integer(blas77_int)::info
+end

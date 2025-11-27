@@ -1,0 +1,13 @@
+subroutine dlasyf_aa(uplo,j1,m,nb,a,lda,ipiv,h,ldh,work) CNAME(dlasyf_aa)
+import
+character(len=1)::uplo
+integer(blas77_int)::j1
+integer(blas77_int)::m
+integer(blas77_int)::nb
+integer(blas77_int)::lda
+real(blas77_f64)::a(lda,*)
+integer(blas77_int)::ipiv(*)
+integer(blas77_int)::ldh
+real(blas77_f64)::h(ldh,*)
+real(blas77_f64)::work(*)
+end

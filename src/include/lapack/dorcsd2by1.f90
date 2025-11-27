@@ -1,0 +1,24 @@
+subroutine dorcsd2by1(jobu1,jobu2,jobv1t,m,p,q,x11,ldx11,x21,ldx21,theta,u1,ldu1,u2,ldu2,v1t,ldv1t,work,lwork,iwork,info) CNAME(dorcsd2by1)
+import
+character(len=1)::jobu1
+character(len=1)::jobu2
+character(len=1)::jobv1t
+integer(blas77_int)::m
+integer(blas77_int)::p
+integer(blas77_int)::q
+integer(blas77_int)::ldx11
+real(blas77_f64)::x11(ldx11,*)
+integer(blas77_int)::ldx21
+real(blas77_f64)::x21(ldx21,*)
+real(blas77_f64)::theta(*)
+integer(blas77_int)::ldu1
+real(blas77_f64)::u1(ldu1,*)
+integer(blas77_int)::ldu2
+real(blas77_f64)::u2(ldu2,*)
+integer(blas77_int)::ldv1t
+real(blas77_f64)::v1t(ldv1t,*)
+real(blas77_f64)::work(*)
+integer(blas77_int)::lwork
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

@@ -1,0 +1,23 @@
+subroutine ssyevx(jobz,range,uplo,n,a,lda,vl,vu,il,iu,abstol,m,w,z,ldz,work,lwork,iwork,ifail,info) CNAME(ssyevx)
+import
+character(len=1)::jobz
+character(len=1)::range
+character(len=1)::uplo
+integer(blas77_int)::n
+integer(blas77_int)::lda
+real(blas77_f32)::a(lda,*)
+real(blas77_f32)::vl
+real(blas77_f32)::vu
+integer(blas77_int)::il
+integer(blas77_int)::iu
+real(blas77_f32)::abstol
+integer(blas77_int)::m
+real(blas77_f32)::w(*)
+integer(blas77_int)::ldz
+real(blas77_f32)::z(ldz,*)
+real(blas77_f32)::work(*)
+integer(blas77_int)::lwork
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::ifail(*)
+integer(blas77_int)::info
+end

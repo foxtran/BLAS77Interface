@@ -1,0 +1,15 @@
+subroutine dgetsqrhrt(m,n,mb1,nb1,nb2,a,lda,t,ldt,work,lwork,info) CNAME(dgetsqrhrt)
+import
+integer(blas77_int)::m
+integer(blas77_int)::n
+integer(blas77_int)::mb1
+integer(blas77_int)::nb1
+integer(blas77_int)::nb2
+integer(blas77_int)::lda
+real(blas77_f64)::a(lda,*)
+integer(blas77_int)::ldt
+real(blas77_f64)::t(ldt,*)
+real(blas77_f64)::work(*)
+integer(blas77_int)::lwork
+integer(blas77_int)::info
+end

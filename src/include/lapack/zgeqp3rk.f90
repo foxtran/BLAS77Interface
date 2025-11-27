@@ -1,0 +1,21 @@
+subroutine zgeqp3rk(m,n,nrhs,kmax,abstol,reltol,a,lda,k,maxc2nrmk,relmaxc2nrmk,jpiv,tau,work,lwork,rwork,iwork,info) CNAME(zgeqp3rk)
+import
+integer(blas77_int)::m
+integer(blas77_int)::n
+integer(blas77_int)::nrhs
+integer(blas77_int)::kmax
+real(blas77_f64)::abstol
+real(blas77_f64)::reltol
+integer(blas77_int)::lda
+complex(blas77_f64)::a(lda,*)
+integer(blas77_int)::k
+real(blas77_f64)::maxc2nrmk
+real(blas77_f64)::relmaxc2nrmk
+integer(blas77_int)::jpiv(*)
+complex(blas77_f64)::tau(*)
+complex(blas77_f64)::work(*)
+integer(blas77_int)::lwork
+real(blas77_f64)::rwork(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

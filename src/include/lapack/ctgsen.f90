@@ -1,0 +1,27 @@
+subroutine ctgsen(ijob,wantq,wantz,select,n,a,lda,b,ldb,alpha,beta,q,ldq,z,ldz,m,pl,pr,dif,work,lwork,iwork,liwork,info) CNAME(ctgsen)
+import
+integer(blas77_int)::ijob
+logical::wantq
+logical::wantz
+logical::select(*)
+integer(blas77_int)::n
+integer(blas77_int)::lda
+complex(blas77_f32)::a(lda,*)
+integer(blas77_int)::ldb
+complex(blas77_f32)::b(ldb,*)
+complex(blas77_f32)::alpha(*)
+complex(blas77_f32)::beta(*)
+integer(blas77_int)::ldq
+complex(blas77_f32)::q(ldq,*)
+integer(blas77_int)::ldz
+complex(blas77_f32)::z(ldz,*)
+integer(blas77_int)::m
+real(blas77_f32)::pl
+real(blas77_f32)::pr
+real(blas77_f32)::dif(*)
+complex(blas77_f32)::work(*)
+integer(blas77_int)::lwork
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::liwork
+integer(blas77_int)::info
+end

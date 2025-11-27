@@ -1,0 +1,23 @@
+subroutine dspgvx(itype,jobz,range,uplo,n,ap,bp,vl,vu,il,iu,abstol,m,w,z,ldz,work,iwork,ifail,info) CNAME(dspgvx)
+import
+integer(blas77_int)::itype
+character(len=1)::jobz
+character(len=1)::range
+character(len=1)::uplo
+integer(blas77_int)::n
+real(blas77_f64)::ap(*)
+real(blas77_f64)::bp(*)
+real(blas77_f64)::vl
+real(blas77_f64)::vu
+integer(blas77_int)::il
+integer(blas77_int)::iu
+real(blas77_f64)::abstol
+integer(blas77_int)::m
+real(blas77_f64)::w(*)
+integer(blas77_int)::ldz
+real(blas77_f64)::z(ldz,*)
+real(blas77_f64)::work(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::ifail(*)
+integer(blas77_int)::info
+end

@@ -1,0 +1,23 @@
+subroutine zgtrfs(trans,n,nrhs,dl,d,du,dlf,df,duf,du2,ipiv,b,ldb,x,ldx,ferr,berr,work,rwork,info) CNAME(zgtrfs)
+import
+character(len=1)::trans
+integer(blas77_int)::n
+integer(blas77_int)::nrhs
+complex(blas77_f64)::dl(*)
+complex(blas77_f64)::d(*)
+complex(blas77_f64)::du(*)
+complex(blas77_f64)::dlf(*)
+complex(blas77_f64)::df(*)
+complex(blas77_f64)::duf(*)
+complex(blas77_f64)::du2(*)
+integer(blas77_int)::ipiv(*)
+integer(blas77_int)::ldb
+complex(blas77_f64)::b(ldb,*)
+integer(blas77_int)::ldx
+complex(blas77_f64)::x(ldx,*)
+real(blas77_f64)::ferr(*)
+real(blas77_f64)::berr(*)
+complex(blas77_f64)::work(*)
+real(blas77_f64)::rwork(*)
+integer(blas77_int)::info
+end

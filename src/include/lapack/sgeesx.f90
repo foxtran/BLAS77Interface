@@ -1,0 +1,23 @@
+subroutine sgeesx(jobvs,sort,select,sense,n,a,lda,sdim,wr,wi,vs,ldvs,rconde,rcondv,work,lwork,iwork,liwork,bwork,info) CNAME(sgeesx)
+import
+character(len=1)::jobvs
+character(len=1)::sort
+procedure(logical)::select
+character(len=1)::sense
+integer(blas77_int)::n
+integer(blas77_int)::lda
+real(blas77_f32)::a(lda,*)
+integer(blas77_int)::sdim
+real(blas77_f32)::wr(*)
+real(blas77_f32)::wi(*)
+integer(blas77_int)::ldvs
+real(blas77_f32)::vs(ldvs,*)
+real(blas77_f32)::rconde
+real(blas77_f32)::rcondv
+real(blas77_f32)::work(*)
+integer(blas77_int)::lwork
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::liwork
+logical::bwork(*)
+integer(blas77_int)::info
+end

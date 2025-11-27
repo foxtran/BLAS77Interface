@@ -1,0 +1,23 @@
+subroutine dsysvx(fact,uplo,n,nrhs,a,lda,af,ldaf,ipiv,b,ldb,x,ldx,rcond,ferr,berr,work,lwork,iwork,info) CNAME(dsysvx)
+import
+character(len=1)::fact
+character(len=1)::uplo
+integer(blas77_int)::n
+integer(blas77_int)::nrhs
+integer(blas77_int)::lda
+real(blas77_f64)::a(lda,*)
+integer(blas77_int)::ldaf
+real(blas77_f64)::af(ldaf,*)
+integer(blas77_int)::ipiv(*)
+integer(blas77_int)::ldb
+real(blas77_f64)::b(ldb,*)
+integer(blas77_int)::ldx
+real(blas77_f64)::x(ldx,*)
+real(blas77_f64)::rcond
+real(blas77_f64)::ferr(*)
+real(blas77_f64)::berr(*)
+real(blas77_f64)::work(*)
+integer(blas77_int)::lwork
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

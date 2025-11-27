@@ -1,0 +1,20 @@
+subroutine cggev(jobvl,jobvr,n,a,lda,b,ldb,alpha,beta,vl,ldvl,vr,ldvr,work,lwork,rwork,info) CNAME(cggev)
+import
+character(len=1)::jobvl
+character(len=1)::jobvr
+integer(blas77_int)::n
+integer(blas77_int)::lda
+complex(blas77_f32)::a(lda,*)
+integer(blas77_int)::ldb
+complex(blas77_f32)::b(ldb,*)
+complex(blas77_f32)::alpha(*)
+complex(blas77_f32)::beta(*)
+integer(blas77_int)::ldvl
+complex(blas77_f32)::vl(ldvl,*)
+integer(blas77_int)::ldvr
+complex(blas77_f32)::vr(ldvr,*)
+complex(blas77_f32)::work(*)
+integer(blas77_int)::lwork
+real(blas77_f32)::rwork(*)
+integer(blas77_int)::info
+end

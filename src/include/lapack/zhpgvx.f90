@@ -1,0 +1,24 @@
+subroutine zhpgvx(itype,jobz,range,uplo,n,ap,bp,vl,vu,il,iu,abstol,m,w,z,ldz,work,rwork,iwork,ifail,info) CNAME(zhpgvx)
+import
+integer(blas77_int)::itype
+character(len=1)::jobz
+character(len=1)::range
+character(len=1)::uplo
+integer(blas77_int)::n
+complex(blas77_f64)::ap(*)
+complex(blas77_f64)::bp(*)
+real(blas77_f64)::vl
+real(blas77_f64)::vu
+integer(blas77_int)::il
+integer(blas77_int)::iu
+real(blas77_f64)::abstol
+integer(blas77_int)::m
+real(blas77_f64)::w(*)
+integer(blas77_int)::ldz
+complex(blas77_f64)::z(ldz,*)
+complex(blas77_f64)::work(*)
+real(blas77_f64)::rwork(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::ifail(*)
+integer(blas77_int)::info
+end

@@ -1,0 +1,16 @@
+function zla_gercond_c(trans,n,a,lda,af,ldaf,ipiv,c,capply,info,work,rwork) CNAME(zla_gercond_c)
+import
+character(len=1)::trans
+integer(blas77_int)::n
+integer(blas77_int)::lda
+complex(blas77_f64)::a(lda,*)
+integer(blas77_int)::ldaf
+complex(blas77_f64)::af(ldaf,*)
+integer(blas77_int)::ipiv(*)
+real(blas77_f64)::c(*)
+logical::capply
+integer(blas77_int)::info
+complex(blas77_f64)::work(*)
+real(blas77_f64)::rwork(*)
+real(blas77_f64)::zla_gercond_c
+end

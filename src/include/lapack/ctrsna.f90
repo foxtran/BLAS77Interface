@@ -1,0 +1,21 @@
+subroutine ctrsna(job,howmny,select,n,t,ldt,vl,ldvl,vr,ldvr,s,sep,mm,m,work,ldwork,rwork,info) CNAME(ctrsna)
+import
+character(len=1)::job
+character(len=1)::howmny
+logical::select(*)
+integer(blas77_int)::n
+integer(blas77_int)::ldt
+complex(blas77_f32)::t(ldt,*)
+integer(blas77_int)::ldvl
+complex(blas77_f32)::vl(ldvl,*)
+integer(blas77_int)::ldvr
+complex(blas77_f32)::vr(ldvr,*)
+real(blas77_f32)::s(*)
+real(blas77_f32)::sep(*)
+integer(blas77_int)::mm
+integer(blas77_int)::m
+integer(blas77_int)::ldwork
+complex(blas77_f32)::work(ldwork,*)
+real(blas77_f32)::rwork(*)
+integer(blas77_int)::info
+end

@@ -1,0 +1,25 @@
+subroutine cgtsvx(fact,trans,n,nrhs,dl,d,du,dlf,df,duf,du2,ipiv,b,ldb,x,ldx,rcond,ferr,berr,work,rwork,info) CNAME(cgtsvx)
+import
+character(len=1)::fact
+character(len=1)::trans
+integer(blas77_int)::n
+integer(blas77_int)::nrhs
+complex(blas77_f32)::dl(*)
+complex(blas77_f32)::d(*)
+complex(blas77_f32)::du(*)
+complex(blas77_f32)::dlf(*)
+complex(blas77_f32)::df(*)
+complex(blas77_f32)::duf(*)
+complex(blas77_f32)::du2(*)
+integer(blas77_int)::ipiv(*)
+integer(blas77_int)::ldb
+complex(blas77_f32)::b(ldb,*)
+integer(blas77_int)::ldx
+complex(blas77_f32)::x(ldx,*)
+real(blas77_f32)::rcond
+real(blas77_f32)::ferr(*)
+real(blas77_f32)::berr(*)
+complex(blas77_f32)::work(*)
+real(blas77_f32)::rwork(*)
+integer(blas77_int)::info
+end

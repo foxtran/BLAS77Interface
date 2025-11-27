@@ -1,0 +1,22 @@
+subroutine zgbbrd(vect,m,n,ncc,kl,ku,ab,ldab,d,e,q,ldq,pt,ldpt,c,ldc,work,rwork,info) CNAME(zgbbrd)
+import
+character(len=1)::vect
+integer(blas77_int)::m
+integer(blas77_int)::n
+integer(blas77_int)::ncc
+integer(blas77_int)::kl
+integer(blas77_int)::ku
+integer(blas77_int)::ldab
+complex(blas77_f64)::ab(ldab,*)
+real(blas77_f64)::d(*)
+real(blas77_f64)::e(*)
+integer(blas77_int)::ldq
+complex(blas77_f64)::q(ldq,*)
+integer(blas77_int)::ldpt
+complex(blas77_f64)::pt(ldpt,*)
+integer(blas77_int)::ldc
+complex(blas77_f64)::c(ldc,*)
+complex(blas77_f64)::work(*)
+real(blas77_f64)::rwork(*)
+integer(blas77_int)::info
+end

@@ -1,0 +1,20 @@
+subroutine cgegs(jobvsl,jobvsr,n,a,lda,b,ldb,alpha,beta,vsl,ldvsl,vsr,ldvsr,work,lwork,rwork,info) CNAME(cgegs)
+import
+character(len=1)::jobvsl
+character(len=1)::jobvsr
+integer(blas77_int)::n
+integer(blas77_int)::lda
+complex(blas77_f32)::a(lda,*)
+integer(blas77_int)::ldb
+complex(blas77_f32)::b(ldb,*)
+complex(blas77_f32)::alpha(*)
+complex(blas77_f32)::beta(*)
+integer(blas77_int)::ldvsl
+complex(blas77_f32)::vsl(ldvsl,*)
+integer(blas77_int)::ldvsr
+complex(blas77_f32)::vsr(ldvsr,*)
+complex(blas77_f32)::work(*)
+integer(blas77_int)::lwork
+real(blas77_f32)::rwork(*)
+integer(blas77_int)::info
+end

@@ -1,0 +1,19 @@
+subroutine zgesvj(joba,jobu,jobv,m,n,a,lda,sva,mv,v,ldv,cwork,lwork,rwork,lrwork,info) CNAME(zgesvj)
+import
+character(len=1)::joba
+character(len=1)::jobu
+character(len=1)::jobv
+integer(blas77_int)::m
+integer(blas77_int)::n
+integer(blas77_int)::lda
+complex(blas77_f64)::a(lda,*)
+real(blas77_f64)::sva(n)
+integer(blas77_int)::mv
+integer(blas77_int)::ldv
+complex(blas77_f64)::v(ldv,*)
+integer(blas77_int)::lwork
+complex(blas77_f64)::cwork(lwork)
+integer(blas77_int)::lrwork
+real(blas77_f64)::rwork(lrwork)
+integer(blas77_int)::info
+end

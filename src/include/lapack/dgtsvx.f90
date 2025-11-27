@@ -1,0 +1,25 @@
+subroutine dgtsvx(fact,trans,n,nrhs,dl,d,du,dlf,df,duf,du2,ipiv,b,ldb,x,ldx,rcond,ferr,berr,work,iwork,info) CNAME(dgtsvx)
+import
+character(len=1)::fact
+character(len=1)::trans
+integer(blas77_int)::n
+integer(blas77_int)::nrhs
+real(blas77_f64)::dl(*)
+real(blas77_f64)::d(*)
+real(blas77_f64)::du(*)
+real(blas77_f64)::dlf(*)
+real(blas77_f64)::df(*)
+real(blas77_f64)::duf(*)
+real(blas77_f64)::du2(*)
+integer(blas77_int)::ipiv(*)
+integer(blas77_int)::ldb
+real(blas77_f64)::b(ldb,*)
+integer(blas77_int)::ldx
+real(blas77_f64)::x(ldx,*)
+real(blas77_f64)::rcond
+real(blas77_f64)::ferr(*)
+real(blas77_f64)::berr(*)
+real(blas77_f64)::work(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

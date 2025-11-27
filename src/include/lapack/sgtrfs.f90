@@ -1,0 +1,23 @@
+subroutine sgtrfs(trans,n,nrhs,dl,d,du,dlf,df,duf,du2,ipiv,b,ldb,x,ldx,ferr,berr,work,iwork,info) CNAME(sgtrfs)
+import
+character(len=1)::trans
+integer(blas77_int)::n
+integer(blas77_int)::nrhs
+real(blas77_f32)::dl(*)
+real(blas77_f32)::d(*)
+real(blas77_f32)::du(*)
+real(blas77_f32)::dlf(*)
+real(blas77_f32)::df(*)
+real(blas77_f32)::duf(*)
+real(blas77_f32)::du2(*)
+integer(blas77_int)::ipiv(*)
+integer(blas77_int)::ldb
+real(blas77_f32)::b(ldb,*)
+integer(blas77_int)::ldx
+real(blas77_f32)::x(ldx,*)
+real(blas77_f32)::ferr(*)
+real(blas77_f32)::berr(*)
+real(blas77_f32)::work(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

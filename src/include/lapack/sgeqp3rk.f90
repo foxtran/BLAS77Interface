@@ -1,0 +1,20 @@
+subroutine sgeqp3rk(m,n,nrhs,kmax,abstol,reltol,a,lda,k,maxc2nrmk,relmaxc2nrmk,jpiv,tau,work,lwork,iwork,info) CNAME(sgeqp3rk)
+import
+integer(blas77_int)::m
+integer(blas77_int)::n
+integer(blas77_int)::nrhs
+integer(blas77_int)::kmax
+real(blas77_f32)::abstol
+real(blas77_f32)::reltol
+integer(blas77_int)::lda
+real(blas77_f32)::a(lda,*)
+integer(blas77_int)::k
+real(blas77_f32)::maxc2nrmk
+real(blas77_f32)::relmaxc2nrmk
+integer(blas77_int)::jpiv(*)
+real(blas77_f32)::tau(*)
+real(blas77_f32)::work(*)
+integer(blas77_int)::lwork
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

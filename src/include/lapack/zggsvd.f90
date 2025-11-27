@@ -1,0 +1,27 @@
+subroutine zggsvd(jobu,jobv,jobq,m,n,p,k,l,a,lda,b,ldb,alpha,beta,u,ldu,v,ldv,q,ldq,work,rwork,iwork,info) CNAME(zggsvd)
+import
+character(len=1)::jobu
+character(len=1)::jobv
+character(len=1)::jobq
+integer(blas77_int)::m
+integer(blas77_int)::n
+integer(blas77_int)::p
+integer(blas77_int)::k
+integer(blas77_int)::l
+integer(blas77_int)::lda
+complex(blas77_f64)::a(lda,*)
+integer(blas77_int)::ldb
+complex(blas77_f64)::b(ldb,*)
+real(blas77_f64)::alpha(*)
+real(blas77_f64)::beta(*)
+integer(blas77_int)::ldu
+complex(blas77_f64)::u(ldu,*)
+integer(blas77_int)::ldv
+complex(blas77_f64)::v(ldv,*)
+integer(blas77_int)::ldq
+complex(blas77_f64)::q(ldq,*)
+complex(blas77_f64)::work(*)
+real(blas77_f64)::rwork(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

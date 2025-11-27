@@ -1,0 +1,21 @@
+subroutine dstebz(range,order,n,vl,vu,il,iu,abstol,d,e,m,nsplit,w,iblock,isplit,work,iwork,info) CNAME(dstebz)
+import
+character(len=1)::range
+character(len=1)::order
+integer(blas77_int)::n
+real(blas77_f64)::vl
+real(blas77_f64)::vu
+integer(blas77_int)::il
+integer(blas77_int)::iu
+real(blas77_f64)::abstol
+real(blas77_f64)::d(*)
+real(blas77_f64)::e(*)
+integer(blas77_int)::m
+integer(blas77_int)::nsplit
+real(blas77_f64)::w(*)
+integer(blas77_int)::iblock(*)
+integer(blas77_int)::isplit(*)
+real(blas77_f64)::work(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

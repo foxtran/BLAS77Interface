@@ -1,0 +1,21 @@
+subroutine strsen(job,compq,select,n,t,ldt,q,ldq,wr,wi,m,s,sep,work,lwork,iwork,liwork,info) CNAME(strsen)
+import
+character(len=1)::job
+character(len=1)::compq
+logical::select(*)
+integer(blas77_int)::n
+integer(blas77_int)::ldt
+real(blas77_f32)::t(ldt,*)
+integer(blas77_int)::ldq
+real(blas77_f32)::q(ldq,*)
+real(blas77_f32)::wr(*)
+real(blas77_f32)::wi(*)
+integer(blas77_int)::m
+real(blas77_f32)::s
+real(blas77_f32)::sep
+real(blas77_f32)::work(*)
+integer(blas77_int)::lwork
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::liwork
+integer(blas77_int)::info
+end

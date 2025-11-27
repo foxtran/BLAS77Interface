@@ -1,0 +1,20 @@
+subroutine dbdsvdx(uplo,jobz,range,n,d,e,vl,vu,il,iu,ns,s,z,ldz,work,iwork,info) CNAME(dbdsvdx)
+import
+character(len=1)::uplo
+character(len=1)::jobz
+character(len=1)::range
+integer(blas77_int)::n
+real(blas77_f64)::d(*)
+real(blas77_f64)::e(*)
+real(blas77_f64)::vl
+real(blas77_f64)::vu
+integer(blas77_int)::il
+integer(blas77_int)::iu
+integer(blas77_int)::ns
+real(blas77_f64)::s(*)
+integer(blas77_int)::ldz
+real(blas77_f64)::z(ldz,*)
+real(blas77_f64)::work(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

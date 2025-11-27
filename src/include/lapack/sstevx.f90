@@ -1,0 +1,21 @@
+subroutine sstevx(jobz,range,n,d,e,vl,vu,il,iu,abstol,m,w,z,ldz,work,iwork,ifail,info) CNAME(sstevx)
+import
+character(len=1)::jobz
+character(len=1)::range
+integer(blas77_int)::n
+real(blas77_f32)::d(*)
+real(blas77_f32)::e(*)
+real(blas77_f32)::vl
+real(blas77_f32)::vu
+integer(blas77_int)::il
+integer(blas77_int)::iu
+real(blas77_f32)::abstol
+integer(blas77_int)::m
+real(blas77_f32)::w(*)
+integer(blas77_int)::ldz
+real(blas77_f32)::z(ldz,*)
+real(blas77_f32)::work(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::ifail(*)
+integer(blas77_int)::info
+end

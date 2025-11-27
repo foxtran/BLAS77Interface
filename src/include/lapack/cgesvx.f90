@@ -1,0 +1,25 @@
+subroutine cgesvx(fact,trans,n,nrhs,a,lda,af,ldaf,ipiv,equed,r,c,b,ldb,x,ldx,rcond,ferr,berr,work,rwork,info) CNAME(cgesvx)
+import
+character(len=1)::fact
+character(len=1)::trans
+integer(blas77_int)::n
+integer(blas77_int)::nrhs
+integer(blas77_int)::lda
+complex(blas77_f32)::a(lda,*)
+integer(blas77_int)::ldaf
+complex(blas77_f32)::af(ldaf,*)
+integer(blas77_int)::ipiv(*)
+character(len=1)::equed
+real(blas77_f32)::r(*)
+real(blas77_f32)::c(*)
+integer(blas77_int)::ldb
+complex(blas77_f32)::b(ldb,*)
+integer(blas77_int)::ldx
+complex(blas77_f32)::x(ldx,*)
+real(blas77_f32)::rcond
+real(blas77_f32)::ferr(*)
+real(blas77_f32)::berr(*)
+complex(blas77_f32)::work(*)
+real(blas77_f32)::rwork(*)
+integer(blas77_int)::info
+end

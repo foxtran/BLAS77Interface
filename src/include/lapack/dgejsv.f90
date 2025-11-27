@@ -1,0 +1,22 @@
+subroutine dgejsv(joba,jobu,jobv,jobr,jobt,jobp,m,n,a,lda,sva,u,ldu,v,ldv,work,lwork,iwork,info) CNAME(dgejsv)
+import
+character(len=1)::joba
+character(len=1)::jobu
+character(len=1)::jobv
+character(len=1)::jobr
+character(len=1)::jobt
+character(len=1)::jobp
+integer(blas77_int)::m
+integer(blas77_int)::n
+integer(blas77_int)::lda
+real(blas77_f64)::a(lda,*)
+real(blas77_f64)::sva(n)
+integer(blas77_int)::ldu
+real(blas77_f64)::u(ldu,*)
+integer(blas77_int)::ldv
+real(blas77_f64)::v(ldv,*)
+integer(blas77_int)::lwork
+real(blas77_f64)::work(lwork)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

@@ -1,0 +1,25 @@
+subroutine zlaed7(n,cutpnt,qsiz,tlvls,curlvl,curpbm,d,q,ldq,rho,indxq,qstore,qptr,prmptr,perm,givptr,givcol,givnum,work,rwork,iwork,info) CNAME(zlaed7)
+import
+integer(blas77_int)::n
+integer(blas77_int)::cutpnt
+integer(blas77_int)::qsiz
+integer(blas77_int)::tlvls
+integer(blas77_int)::curlvl
+integer(blas77_int)::curpbm
+real(blas77_f64)::d(*)
+integer(blas77_int)::ldq
+complex(blas77_f64)::q(ldq,*)
+real(blas77_f64)::rho
+integer(blas77_int)::indxq(*)
+real(blas77_f64)::qstore(*)
+integer(blas77_int)::qptr(*)
+integer(blas77_int)::prmptr(*)
+integer(blas77_int)::perm(*)
+integer(blas77_int)::givptr(*)
+integer(blas77_int)::givcol(2,*)
+real(blas77_f64)::givnum(2,*)
+complex(blas77_f64)::work(*)
+real(blas77_f64)::rwork(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

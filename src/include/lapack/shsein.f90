@@ -1,0 +1,22 @@
+subroutine shsein(side,eigsrc,initv,select,n,h,ldh,wr,wi,vl,ldvl,vr,ldvr,mm,m,work,ifaill,ifailr,info) CNAME(shsein)
+import
+character(len=1)::side
+character(len=1)::eigsrc
+character(len=1)::initv
+logical::select(*)
+integer(blas77_int)::n
+integer(blas77_int)::ldh
+real(blas77_f32)::h(ldh,*)
+real(blas77_f32)::wr(*)
+real(blas77_f32)::wi(*)
+integer(blas77_int)::ldvl
+real(blas77_f32)::vl(ldvl,*)
+integer(blas77_int)::ldvr
+real(blas77_f32)::vr(ldvr,*)
+integer(blas77_int)::mm
+integer(blas77_int)::m
+real(blas77_f32)::work(*)
+integer(blas77_int)::ifaill(*)
+integer(blas77_int)::ifailr(*)
+integer(blas77_int)::info
+end

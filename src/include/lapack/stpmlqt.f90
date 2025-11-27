@@ -1,0 +1,20 @@
+subroutine stpmlqt(side,trans,m,n,k,l,mb,v,ldv,t,ldt,a,lda,b,ldb,work,info) CNAME(stpmlqt)
+import
+character(len=1)::side
+character(len=1)::trans
+integer(blas77_int)::m
+integer(blas77_int)::n
+integer(blas77_int)::k
+integer(blas77_int)::l
+integer(blas77_int)::mb
+integer(blas77_int)::ldv
+real(blas77_f32)::v(ldv,*)
+integer(blas77_int)::ldt
+real(blas77_f32)::t(ldt,*)
+integer(blas77_int)::lda
+real(blas77_f32)::a(lda,*)
+integer(blas77_int)::ldb
+real(blas77_f32)::b(ldb,*)
+real(blas77_f32)::work(*)
+integer(blas77_int)::info
+end
