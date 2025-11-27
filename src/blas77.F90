@@ -9,8 +9,13 @@ module blas77
 #   include "include/blas/caxpby.f90"
 #   include "include/blas/caxpy.f90"
 #   include "include/blas/ccopy.f90"
+#ifdef ACCELERATE_NEW_LAPACK
+#   include "workaround/blas/Apple_cdotc.f90"
+#   include "workaround/blas/Apple_cdotu.f90"
+#else
 #   include "include/blas/cdotc.f90"
 #   include "include/blas/cdotu.f90"
+#endif
 #   include "include/blas/cgbmv.f90"
 #   include "include/blas/cgemm.f90"
 #   include "include/blas/cgemmtr.f90"
@@ -139,8 +144,13 @@ module blas77
 #   include "include/blas/zaxpby.f90"
 #   include "include/blas/zaxpy.f90"
 #   include "include/blas/zcopy.f90"
+#ifdef ACCELERATE_NEW_LAPACK
+#   include "workaround/blas/Apple_zdotc.f90"
+#   include "workaround/blas/Apple_zdotu.f90"
+#else
 #   include "include/blas/zdotc.f90"
 #   include "include/blas/zdotu.f90"
+#endif
 #   include "include/blas/zdrot.f90"
 #   include "include/blas/zdscal.f90"
 #   include "include/blas/zgbmv.f90"
