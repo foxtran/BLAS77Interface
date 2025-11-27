@@ -1,3 +1,7 @@
+#if BLAS77_BLA_SIZEOF_INTEGER == 8
+#define ACCELERATE_LAPACK_ILP64 1
+#endif
+
 #ifdef ACCELERATE_NEW_LAPACK
 #  ifdef ACCELERATE_LAPACK_ILP64
 #    define CNAME(bindname) bind(C, name="bindname$NEWLAPACK$ILP64")
