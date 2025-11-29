@@ -1,12 +1,15 @@
 # BLAS77Interface
 
-provides modern Fortran 90 modules and wrappers for BLAS and LAPACK routines.
+Modern Fortran 90 modules and wrappers for BLAS and LAPACK routines.
 
 The goal is to expose all BLAS/LAPACK interfaces through type-safe Fortran modules, enabling:
-- Safer and more convenient usage of BLAS/LAPACK.
+- Safer usage of BLAS/LAPACK.
 - Optional masking or renaming of BLAS/LAPACK symbols.
 
-The library offers one combined module, `blas77lapack77`, containing all routines, as well as separate `blas77` and `lapack77` modules for BLAS-only and LAPACK-only interfaces.
+Available modules:
+- `blas77lapack77`: combined BLAS and LAPACK interfaces.
+- `blas77`: BLAS-only interfaces.
+- `lapack77`: LAPACK-only interfaces.
 
 
 # Usage
@@ -27,28 +30,28 @@ Then link it to your Fortran target:
 target_link_libraries(<TARGET> PUBLIC BLAS77Interface)
 ```
 
-Set these variables before calling `FetchContent_MakeAvailable()`:
-- `BLAS77Interface_ENABLE_LAPACK` enables LAPACK interfaces (default: ON)
-- `BLAS77Interface_BLA_SIZEOF_INTEGER` changes default BLAS integer size in bytes (default: 4)
+Configuration options (should be set before calling `FetchContent_MakeAvailable()`):
+- `BLAS77Interface_ENABLE_LAPACK` — enable LAPACK interfaces (default: `ON`).
+- `BLAS77Interface_BLA_SIZEOF_INTEGER` — BLAS integer size in bytes (`4` or `8`, default: `4`).
+- `BLAS77Interface_LINKER_TEST` — force a link-time error if BLAS/LAPACK symbols are used without the modules (default: `OFF`).
 
-The variables should be set before fetching.
+`BLAS77Interface` links against chosen BLAS and, when enabled, LAPACK. Examples are available under `example/`.
 
 
 # Source code generation
 
-BLAS77Interface uses
 The BLAS77Interface generator uses the latest commit of [Reference LAPACK](https://github.com/Reference-LAPACK/lapack) to extract routine signatures and generate Fortran modules.
 
-Generation consists from several stages:
-1. Extracting API of non-auxiliary functions of BLAS and LAPACK.
-2. Using API, generate corresponding blas77 and lapack77 modules.
-3. Using API, generate corresponding ubblas and ublapack wrappers.
+Generation steps:
+1. Extract APIs for non-auxiliary BLAS and LAPACK routines.
+2. Generate `blas77` and `lapack77` modules from the APIs.
+3. Generate dummy BLAS/LAPACK routines (`BLAS77_blas.F90`, `BLAS77_lapack.F90`) used when `BLAS77Interface_LINKER_TEST` is enabled.
 4. Apply patches for special cases.
 
 
 # Known issues
 
-1. LAPACK auxiliary routines are missing
-2. LAPACK routines with EXTERNAL procedures are omitted
-4. Only CMake build is available
-5. Limited set of compilers is supported
+1. LAPACK auxiliary routines are missing.
+2. LAPACK routines with `EXTERNAL` procedures are omitted.
+3. Only the CMake build is provided.
+4. Only a limited set of Fortran compilers is supported.
