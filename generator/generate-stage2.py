@@ -102,6 +102,7 @@ def process_routine(fname: Path, src_dir: Path, library_name: str) -> (str, str)
         f.write(include)
 
     if "procedure" in include:
+        print (f"Not generated: {sname}")
         return ("", "")
 
     return (f'#   include "{out_fname}"', wrapper)
