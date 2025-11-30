@@ -1,0 +1,19 @@
+subroutine dlasy2(ltranl,ltranr,isgn,n1,n2,tl,ldtl,tr,ldtr,b,ldb,scale,x,ldx,xnorm,info) CNAME(dlasy2)
+import
+logical(blas77_int)::ltranl
+logical(blas77_int)::ltranr
+integer(blas77_int)::isgn
+integer(blas77_int)::n1
+integer(blas77_int)::n2
+integer(blas77_int)::ldtl
+real(blas77_f64)::tl(ldtl,*)
+integer(blas77_int)::ldtr
+real(blas77_f64)::tr(ldtr,*)
+integer(blas77_int)::ldb
+real(blas77_f64)::b(ldb,*)
+real(blas77_f64)::scale
+integer(blas77_int)::ldx
+real(blas77_f64)::x(ldx,*)
+real(blas77_f64)::xnorm
+integer(blas77_int)::info
+end

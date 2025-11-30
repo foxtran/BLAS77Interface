@@ -1,0 +1,20 @@
+subroutine stgex2(wantq,wantz,n,a,lda,b,ldb,q,ldq,z,ldz,j1,n1,n2,work,lwork,info) CNAME(stgex2)
+import
+logical(blas77_int)::wantq
+logical(blas77_int)::wantz
+integer(blas77_int)::n
+integer(blas77_int)::lda
+real(blas77_f32)::a(lda,*)
+integer(blas77_int)::ldb
+real(blas77_f32)::b(ldb,*)
+integer(blas77_int)::ldq
+real(blas77_f32)::q(ldq,*)
+integer(blas77_int)::ldz
+real(blas77_f32)::z(ldz,*)
+integer(blas77_int)::j1
+integer(blas77_int)::n1
+integer(blas77_int)::n2
+real(blas77_f32)::work(*)
+integer(blas77_int)::lwork
+integer(blas77_int)::info
+end

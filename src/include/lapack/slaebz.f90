@@ -1,0 +1,23 @@
+subroutine slaebz(ijob,nitmax,n,mmax,minp,nbmin,abstol,reltol,pivmin,d,e,e2,nval,ab,c,mout,nab,work,iwork,info) CNAME(slaebz)
+import
+integer(blas77_int)::ijob
+integer(blas77_int)::nitmax
+integer(blas77_int)::n
+integer(blas77_int)::mmax
+integer(blas77_int)::minp
+integer(blas77_int)::nbmin
+real(blas77_f32)::abstol
+real(blas77_f32)::reltol
+real(blas77_f32)::pivmin
+real(blas77_f32)::d(*)
+real(blas77_f32)::e(*)
+real(blas77_f32)::e2(*)
+integer(blas77_int)::nval(*)
+real(blas77_f32)::ab(mmax,*)
+real(blas77_f32)::c(*)
+integer(blas77_int)::mout
+integer(blas77_int)::nab(mmax,*)
+real(blas77_f32)::work(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

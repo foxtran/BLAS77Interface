@@ -1,0 +1,26 @@
+subroutine dlasd2(nl,nr,sqre,k,d,z,alpha,beta,u,ldu,vt,ldvt,dsigma,u2,ldu2,vt2,ldvt2,idxp,idx,idxc,idxq,coltyp,info) CNAME(dlasd2)
+import
+integer(blas77_int)::nl
+integer(blas77_int)::nr
+integer(blas77_int)::sqre
+integer(blas77_int)::k
+real(blas77_f64)::d(*)
+real(blas77_f64)::z(*)
+real(blas77_f64)::alpha
+real(blas77_f64)::beta
+integer(blas77_int)::ldu
+real(blas77_f64)::u(ldu,*)
+integer(blas77_int)::ldvt
+real(blas77_f64)::vt(ldvt,*)
+real(blas77_f64)::dsigma(*)
+integer(blas77_int)::ldu2
+real(blas77_f64)::u2(ldu2,*)
+integer(blas77_int)::ldvt2
+real(blas77_f64)::vt2(ldvt2,*)
+integer(blas77_int)::idxp(*)
+integer(blas77_int)::idx(*)
+integer(blas77_int)::idxc(*)
+integer(blas77_int)::idxq(*)
+integer(blas77_int)::coltyp(*)
+integer(blas77_int)::info
+end

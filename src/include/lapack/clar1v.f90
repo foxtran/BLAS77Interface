@@ -1,0 +1,24 @@
+subroutine clar1v(n,b1,bn,lambda,d,l,ld,lld,pivmin,gaptol,z,wantnc,negcnt,ztz,mingma,r,isuppz,nrminv,resid,rqcorr,work) CNAME(clar1v)
+import
+integer(blas77_int)::n
+integer(blas77_int)::b1
+integer(blas77_int)::bn
+real(blas77_f32)::lambda
+real(blas77_f32)::d(*)
+real(blas77_f32)::l(*)
+real(blas77_f32)::ld(*)
+real(blas77_f32)::lld(*)
+real(blas77_f32)::pivmin
+real(blas77_f32)::gaptol
+complex(blas77_f32)::z(*)
+logical(blas77_int)::wantnc
+integer(blas77_int)::negcnt
+real(blas77_f32)::ztz
+real(blas77_f32)::mingma
+integer(blas77_int)::r
+integer(blas77_int)::isuppz(*)
+real(blas77_f32)::nrminv
+real(blas77_f32)::resid
+real(blas77_f32)::rqcorr
+real(blas77_f32)::work(*)
+end

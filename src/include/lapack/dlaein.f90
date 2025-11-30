@@ -1,0 +1,19 @@
+subroutine dlaein(rightv,noinit,n,h,ldh,wr,wi,vr,vi,b,ldb,work,eps3,smlnum,bignum,info) CNAME(dlaein)
+import
+logical(blas77_int)::rightv
+logical(blas77_int)::noinit
+integer(blas77_int)::n
+integer(blas77_int)::ldh
+real(blas77_f64)::h(ldh,*)
+real(blas77_f64)::wr
+real(blas77_f64)::wi
+real(blas77_f64)::vr(*)
+real(blas77_f64)::vi(*)
+integer(blas77_int)::ldb
+real(blas77_f64)::b(ldb,*)
+real(blas77_f64)::work(*)
+real(blas77_f64)::eps3
+real(blas77_f64)::smlnum
+real(blas77_f64)::bignum
+integer(blas77_int)::info
+end

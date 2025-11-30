@@ -1,0 +1,27 @@
+subroutine dlasda(icompq,smlsiz,n,sqre,d,e,u,ldu,vt,k,difl,difr,z,poles,givptr,givcol,ldgcol,perm,givnum,c,s,work,iwork,info) CNAME(dlasda)
+import
+integer(blas77_int)::icompq
+integer(blas77_int)::smlsiz
+integer(blas77_int)::n
+integer(blas77_int)::sqre
+real(blas77_f64)::d(*)
+real(blas77_f64)::e(*)
+integer(blas77_int)::ldu
+real(blas77_f64)::u(ldu,*)
+real(blas77_f64)::vt(ldu,*)
+integer(blas77_int)::k(*)
+real(blas77_f64)::difl(ldu,*)
+real(blas77_f64)::difr(ldu,*)
+real(blas77_f64)::z(ldu,*)
+real(blas77_f64)::poles(ldu,*)
+integer(blas77_int)::givptr(*)
+integer(blas77_int)::ldgcol
+integer(blas77_int)::givcol(ldgcol,*)
+integer(blas77_int)::perm(ldgcol,*)
+real(blas77_f64)::givnum(ldu,*)
+real(blas77_f64)::c(*)
+real(blas77_f64)::s(*)
+real(blas77_f64)::work(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

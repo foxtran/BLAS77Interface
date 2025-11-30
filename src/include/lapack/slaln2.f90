@@ -1,0 +1,21 @@
+subroutine slaln2(ltrans,na,nw,smin,ca,a,lda,d1,d2,b,ldb,wr,wi,x,ldx,scale,xnorm,info) CNAME(slaln2)
+import
+logical(blas77_int)::ltrans
+integer(blas77_int)::na
+integer(blas77_int)::nw
+real(blas77_f32)::smin
+real(blas77_f32)::ca
+integer(blas77_int)::lda
+real(blas77_f32)::a(lda,*)
+real(blas77_f32)::d1
+real(blas77_f32)::d2
+integer(blas77_int)::ldb
+real(blas77_f32)::b(ldb,*)
+real(blas77_f32)::wr
+real(blas77_f32)::wi
+integer(blas77_int)::ldx
+real(blas77_f32)::x(ldx,*)
+real(blas77_f32)::scale
+real(blas77_f32)::xnorm
+integer(blas77_int)::info
+end

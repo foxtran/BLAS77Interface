@@ -1,0 +1,23 @@
+subroutine slaqp2rk(m,n,nrhs,ioffset,kmax,abstol,reltol,kp1,maxc2nrm,a,lda,k,maxc2nrmk,relmaxc2nrmk,jpiv,tau,vn1,vn2,work,info) CNAME(slaqp2rk)
+import
+integer(blas77_int)::m
+integer(blas77_int)::n
+integer(blas77_int)::nrhs
+integer(blas77_int)::ioffset
+integer(blas77_int)::kmax
+real(blas77_f32)::abstol
+real(blas77_f32)::reltol
+integer(blas77_int)::kp1
+real(blas77_f32)::maxc2nrm
+integer(blas77_int)::lda
+real(blas77_f32)::a(lda,*)
+integer(blas77_int)::k
+real(blas77_f32)::maxc2nrmk
+real(blas77_f32)::relmaxc2nrmk
+integer(blas77_int)::jpiv(*)
+real(blas77_f32)::tau(*)
+real(blas77_f32)::vn1(*)
+real(blas77_f32)::vn2(*)
+real(blas77_f32)::work(*)
+integer(blas77_int)::info
+end

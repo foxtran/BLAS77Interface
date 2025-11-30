@@ -1,0 +1,27 @@
+subroutine claqr5(wantt,wantz,kacc22,n,ktop,kbot,nshfts,s,h,ldh,iloz,ihiz,z,ldz,v,ldv,u,ldu,nv,wv,ldwv,nh,wh,ldwh) CNAME(claqr5)
+import
+logical(blas77_int)::wantt
+logical(blas77_int)::wantz
+integer(blas77_int)::kacc22
+integer(blas77_int)::n
+integer(blas77_int)::ktop
+integer(blas77_int)::kbot
+integer(blas77_int)::nshfts
+complex(blas77_f32)::s(*)
+integer(blas77_int)::ldh
+complex(blas77_f32)::h(ldh,*)
+integer(blas77_int)::iloz
+integer(blas77_int)::ihiz
+integer(blas77_int)::ldz
+complex(blas77_f32)::z(ldz,*)
+integer(blas77_int)::ldv
+complex(blas77_f32)::v(ldv,*)
+integer(blas77_int)::ldu
+complex(blas77_f32)::u(ldu,*)
+integer(blas77_int)::nv
+integer(blas77_int)::ldwv
+complex(blas77_f32)::wv(ldwv,*)
+integer(blas77_int)::nh
+integer(blas77_int)::ldwh
+complex(blas77_f32)::wh(ldwh,*)
+end

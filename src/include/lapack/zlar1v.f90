@@ -1,0 +1,24 @@
+subroutine zlar1v(n,b1,bn,lambda,d,l,ld,lld,pivmin,gaptol,z,wantnc,negcnt,ztz,mingma,r,isuppz,nrminv,resid,rqcorr,work) CNAME(zlar1v)
+import
+integer(blas77_int)::n
+integer(blas77_int)::b1
+integer(blas77_int)::bn
+real(blas77_f64)::lambda
+real(blas77_f64)::d(*)
+real(blas77_f64)::l(*)
+real(blas77_f64)::ld(*)
+real(blas77_f64)::lld(*)
+real(blas77_f64)::pivmin
+real(blas77_f64)::gaptol
+complex(blas77_f64)::z(*)
+logical(blas77_int)::wantnc
+integer(blas77_int)::negcnt
+real(blas77_f64)::ztz
+real(blas77_f64)::mingma
+integer(blas77_int)::r
+integer(blas77_int)::isuppz(*)
+real(blas77_f64)::nrminv
+real(blas77_f64)::resid
+real(blas77_f64)::rqcorr
+real(blas77_f64)::work(*)
+end

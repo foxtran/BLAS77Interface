@@ -1,0 +1,27 @@
+subroutine claqp3rk(m,n,nrhs,ioffset,nb,abstol,reltol,kp1,maxc2nrm,a,lda,done,kb,maxc2nrmk,relmaxc2nrmk,jpiv,tau,vn1,vn2,auxv,f,ldf,iwork,info) CNAME(claqp3rk)
+import
+integer(blas77_int)::m
+integer(blas77_int)::n
+integer(blas77_int)::nrhs
+integer(blas77_int)::ioffset
+integer(blas77_int)::nb
+real(blas77_f32)::abstol
+real(blas77_f32)::reltol
+integer(blas77_int)::kp1
+real(blas77_f32)::maxc2nrm
+integer(blas77_int)::lda
+complex(blas77_f32)::a(lda,*)
+logical(blas77_int)::done
+integer(blas77_int)::kb
+real(blas77_f32)::maxc2nrmk
+real(blas77_f32)::relmaxc2nrmk
+integer(blas77_int)::jpiv(*)
+complex(blas77_f32)::tau(*)
+real(blas77_f32)::vn1(*)
+real(blas77_f32)::vn2(*)
+complex(blas77_f32)::auxv(*)
+integer(blas77_int)::ldf
+complex(blas77_f32)::f(ldf,*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end

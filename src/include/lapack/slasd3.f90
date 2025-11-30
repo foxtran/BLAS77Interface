@@ -1,0 +1,23 @@
+subroutine slasd3(nl,nr,sqre,k,d,q,ldq,dsigma,u,ldu,u2,ldu2,vt,ldvt,vt2,ldvt2,idxc,ctot,z,info) CNAME(slasd3)
+import
+integer(blas77_int)::nl
+integer(blas77_int)::nr
+integer(blas77_int)::sqre
+integer(blas77_int)::k
+real(blas77_f32)::d(*)
+integer(blas77_int)::ldq
+real(blas77_f32)::q(ldq,*)
+real(blas77_f32)::dsigma(*)
+integer(blas77_int)::ldu
+real(blas77_f32)::u(ldu,*)
+integer(blas77_int)::ldu2
+real(blas77_f32)::u2(ldu2,*)
+integer(blas77_int)::ldvt
+real(blas77_f32)::vt(ldvt,*)
+integer(blas77_int)::ldvt2
+real(blas77_f32)::vt2(ldvt2,*)
+integer(blas77_int)::idxc(*)
+integer(blas77_int)::ctot(*)
+real(blas77_f32)::z(*)
+integer(blas77_int)::info
+end

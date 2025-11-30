@@ -1,0 +1,21 @@
+subroutine slarrf(n,d,l,ld,clstrt,clend,w,wgap,werr,spdiam,clgapl,clgapr,pivmin,sigma,dplus,lplus,work,info) CNAME(slarrf)
+import
+integer(blas77_int)::n
+real(blas77_f32)::d(*)
+real(blas77_f32)::l(*)
+real(blas77_f32)::ld(*)
+integer(blas77_int)::clstrt
+integer(blas77_int)::clend
+real(blas77_f32)::w(*)
+real(blas77_f32)::wgap(*)
+real(blas77_f32)::werr(*)
+real(blas77_f32)::spdiam
+real(blas77_f32)::clgapl
+real(blas77_f32)::clgapr
+real(blas77_f32)::pivmin
+real(blas77_f32)::sigma
+real(blas77_f32)::dplus(*)
+real(blas77_f32)::lplus(*)
+real(blas77_f32)::work(*)
+integer(blas77_int)::info
+end

@@ -1,0 +1,19 @@
+subroutine slasy2(ltranl,ltranr,isgn,n1,n2,tl,ldtl,tr,ldtr,b,ldb,scale,x,ldx,xnorm,info) CNAME(slasy2)
+import
+logical(blas77_int)::ltranl
+logical(blas77_int)::ltranr
+integer(blas77_int)::isgn
+integer(blas77_int)::n1
+integer(blas77_int)::n2
+integer(blas77_int)::ldtl
+real(blas77_f32)::tl(ldtl,*)
+integer(blas77_int)::ldtr
+real(blas77_f32)::tr(ldtr,*)
+integer(blas77_int)::ldb
+real(blas77_f32)::b(ldb,*)
+real(blas77_f32)::scale
+integer(blas77_int)::ldx
+real(blas77_f32)::x(ldx,*)
+real(blas77_f32)::xnorm
+integer(blas77_int)::info
+end

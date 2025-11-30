@@ -1,0 +1,27 @@
+subroutine slasda(icompq,smlsiz,n,sqre,d,e,u,ldu,vt,k,difl,difr,z,poles,givptr,givcol,ldgcol,perm,givnum,c,s,work,iwork,info) CNAME(slasda)
+import
+integer(blas77_int)::icompq
+integer(blas77_int)::smlsiz
+integer(blas77_int)::n
+integer(blas77_int)::sqre
+real(blas77_f32)::d(*)
+real(blas77_f32)::e(*)
+integer(blas77_int)::ldu
+real(blas77_f32)::u(ldu,*)
+real(blas77_f32)::vt(ldu,*)
+integer(blas77_int)::k(*)
+real(blas77_f32)::difl(ldu,*)
+real(blas77_f32)::difr(ldu,*)
+real(blas77_f32)::z(ldu,*)
+real(blas77_f32)::poles(ldu,*)
+integer(blas77_int)::givptr(*)
+integer(blas77_int)::ldgcol
+integer(blas77_int)::givcol(ldgcol,*)
+integer(blas77_int)::perm(ldgcol,*)
+real(blas77_f32)::givnum(ldu,*)
+real(blas77_f32)::c(*)
+real(blas77_f32)::s(*)
+real(blas77_f32)::work(*)
+integer(blas77_int)::iwork(*)
+integer(blas77_int)::info
+end
