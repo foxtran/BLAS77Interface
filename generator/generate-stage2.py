@@ -29,8 +29,11 @@ def apply_interface_transforms(text: str) -> str:
     text = text.replace("recursive ", "")
 
     lines = text.split("\n")
+    header = lines[0].strip()
+    m = re.match(r"^(subroutine|function)\s+([A-Za-z0-9_]+)\s*(\([^)]*\))", header, re.I)
+    name = m.group(2)
     lines = [
-        line.replace("::", ", intent(inout) :: ") if "intent" not in line else line
+        line.replace("::", ", intent(inout) :: ") if "intent" not in line and name not in line else line
         for line in lines
     ]
     text = "\n".join(lines)
