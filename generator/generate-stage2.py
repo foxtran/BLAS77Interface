@@ -150,6 +150,8 @@ def process_library(library_name: str, interface_dir: Path, src_dir: Path):
     module_body = []
     dummy_body = []
     for fname in sorted((interface_dir / library_name).glob("*.mod")):
+        if library_name == "lapack" and "xerbla" in str(fname):
+            continue
         include, subroutine = process_routine(fname, src_dir, library_name)
         module_body.append(include)
         dummy_body.append(subroutine)
