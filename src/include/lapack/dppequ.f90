@@ -1,10 +1,10 @@
 pure subroutine dppequ(uplo,n,ap,s,scond,amax,info) CNAME(dppequ)
 import
-character(len=1)::uplo
-integer(blas77_int)::n
-real(blas77_f64)::ap(*)
-real(blas77_f64)::s(*)
-real(blas77_f64)::scond
-real(blas77_f64)::amax
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+real(blas77_f64), intent(inout) :: ap(*)
+real(blas77_f64), intent(inout) :: s(*)
+real(blas77_f64), intent(inout) :: scond
+real(blas77_f64), intent(inout) :: amax
+integer(blas77_int), intent(inout) :: info
 end

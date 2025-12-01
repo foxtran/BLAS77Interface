@@ -1,20 +1,20 @@
 pure subroutine sgegs(jobvsl,jobvsr,n,a,lda,b,ldb,alphar,alphai,beta,vsl,ldvsl,vsr,ldvsr,work,lwork,info) CNAME(sgegs)
 import
-character(len=1)::jobvsl
-character(len=1)::jobvsr
-integer(blas77_int)::n
-integer(blas77_int)::lda
-real(blas77_f32)::a(lda,*)
-integer(blas77_int)::ldb
-real(blas77_f32)::b(ldb,*)
-real(blas77_f32)::alphar(*)
-real(blas77_f32)::alphai(*)
-real(blas77_f32)::beta(*)
-integer(blas77_int)::ldvsl
-real(blas77_f32)::vsl(ldvsl,*)
-integer(blas77_int)::ldvsr
-real(blas77_f32)::vsr(ldvsr,*)
-real(blas77_f32)::work(*)
-integer(blas77_int)::lwork
-integer(blas77_int)::info
+character(len=1), intent(inout) :: jobvsl
+character(len=1), intent(inout) :: jobvsr
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lda
+real(blas77_f32), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ldb
+real(blas77_f32), intent(inout) :: b(ldb,*)
+real(blas77_f32), intent(inout) :: alphar(*)
+real(blas77_f32), intent(inout) :: alphai(*)
+real(blas77_f32), intent(inout) :: beta(*)
+integer(blas77_int), intent(inout) :: ldvsl
+real(blas77_f32), intent(inout) :: vsl(ldvsl,*)
+integer(blas77_int), intent(inout) :: ldvsr
+real(blas77_f32), intent(inout) :: vsr(ldvsr,*)
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+integer(blas77_int), intent(inout) :: info
 end

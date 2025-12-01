@@ -1,8 +1,8 @@
 pure subroutine classq(n,x,incx,scale,sumsq) CNAME(classq)
 import
-integer(blas77_int)::n
-complex(blas77_f32)::x(*)
-integer(blas77_int)::incx
-real(blas77_f32)::scale
-real(blas77_f32)::sumsq
+integer(blas77_int), intent(inout) :: n
+complex(blas77_f32), intent(inout) :: x(*)
+integer(blas77_int), intent(inout) :: incx
+real(blas77_f32), intent(inout) :: scale
+real(blas77_f32), intent(inout) :: sumsq
 end

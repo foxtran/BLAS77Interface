@@ -1,12 +1,12 @@
 pure subroutine csycon(uplo,n,a,lda,ipiv,anorm,rcond,work,info) CNAME(csycon)
 import
-character(len=1)::uplo
-integer(blas77_int)::n
-integer(blas77_int)::lda
-complex(blas77_f32)::a(lda,*)
-integer(blas77_int)::ipiv(*)
-real(blas77_f32)::anorm
-real(blas77_f32)::rcond
-complex(blas77_f32)::work(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f32), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ipiv(*)
+real(blas77_f32), intent(inout) :: anorm
+real(blas77_f32), intent(inout) :: rcond
+complex(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: info
 end

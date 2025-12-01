@@ -1,10 +1,10 @@
 pure subroutine spptrs(uplo,n,nrhs,ap,b,ldb,info) CNAME(spptrs)
 import
-character(len=1)::uplo
-integer(blas77_int)::n
-integer(blas77_int)::nrhs
-real(blas77_f32)::ap(*)
-integer(blas77_int)::ldb
-real(blas77_f32)::b(ldb,*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: nrhs
+real(blas77_f32), intent(inout) :: ap(*)
+integer(blas77_int), intent(inout) :: ldb
+real(blas77_f32), intent(inout) :: b(ldb,*)
+integer(blas77_int), intent(inout) :: info
 end

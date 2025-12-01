@@ -1,12 +1,12 @@
 pure subroutine slagtf(n,a,lambda,b,c,tol,d,in,info) CNAME(slagtf)
 import
-integer(blas77_int)::n
-real(blas77_f32)::a(*)
-real(blas77_f32)::lambda
-real(blas77_f32)::b(*)
-real(blas77_f32)::c(*)
-real(blas77_f32)::tol
-real(blas77_f32)::d(*)
-integer(blas77_int)::in(*)
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: n
+real(blas77_f32), intent(inout) :: a(*)
+real(blas77_f32), intent(inout) :: lambda
+real(blas77_f32), intent(inout) :: b(*)
+real(blas77_f32), intent(inout) :: c(*)
+real(blas77_f32), intent(inout) :: tol
+real(blas77_f32), intent(inout) :: d(*)
+integer(blas77_int), intent(inout) :: in(*)
+integer(blas77_int), intent(inout) :: info
 end

@@ -1,12 +1,12 @@
 pure subroutine dspmv(uplo,n,alpha,ap,x,incx,beta,y,incy) CNAME(dspmv)
 import
-character(len=1)::uplo
-integer(blas77_int)::n
-real(blas77_f64)::alpha
-real(blas77_f64)::ap(*)
-real(blas77_f64)::x(*)
-integer(blas77_int)::incx
-real(blas77_f64)::beta
-real(blas77_f64)::y(*)
-integer(blas77_int)::incy
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+real(blas77_f64), intent(inout) :: alpha
+real(blas77_f64), intent(inout) :: ap(*)
+real(blas77_f64), intent(inout) :: x(*)
+integer(blas77_int), intent(inout) :: incx
+real(blas77_f64), intent(inout) :: beta
+real(blas77_f64), intent(inout) :: y(*)
+integer(blas77_int), intent(inout) :: incy
 end

@@ -1,8 +1,8 @@
 pure subroutine zlarfg(n,alpha,x,incx,tau) CNAME(zlarfg)
 import
-integer(blas77_int)::n
-complex(blas77_f64)::alpha
-complex(blas77_f64)::x(*)
-integer(blas77_int)::incx
-complex(blas77_f64)::tau
+integer(blas77_int), intent(inout) :: n
+complex(blas77_f64), intent(inout) :: alpha
+complex(blas77_f64), intent(inout) :: x(*)
+integer(blas77_int), intent(inout) :: incx
+complex(blas77_f64), intent(inout) :: tau
 end

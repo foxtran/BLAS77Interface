@@ -1,8 +1,8 @@
 pure subroutine zlassq(n,x,incx,scale,sumsq) CNAME(zlassq)
 import
-integer(blas77_int)::n
-complex(blas77_f64)::x(*)
-integer(blas77_int)::incx
-real(blas77_f64)::scale
-real(blas77_f64)::sumsq
+integer(blas77_int), intent(inout) :: n
+complex(blas77_f64), intent(inout) :: x(*)
+integer(blas77_int), intent(inout) :: incx
+real(blas77_f64), intent(inout) :: scale
+real(blas77_f64), intent(inout) :: sumsq
 end

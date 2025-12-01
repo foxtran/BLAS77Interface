@@ -1,15 +1,15 @@
 pure subroutine clagtm(trans,n,nrhs,alpha,dl,d,du,x,ldx,beta,b,ldb) CNAME(clagtm)
 import
-character(len=1)::trans
-integer(blas77_int)::n
-integer(blas77_int)::nrhs
-real(blas77_f32)::alpha
-complex(blas77_f32)::dl(*)
-complex(blas77_f32)::d(*)
-complex(blas77_f32)::du(*)
-integer(blas77_int)::ldx
-complex(blas77_f32)::x(ldx,*)
-real(blas77_f32)::beta
-integer(blas77_int)::ldb
-complex(blas77_f32)::b(ldb,*)
+character(len=1), intent(inout) :: trans
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: nrhs
+real(blas77_f32), intent(inout) :: alpha
+complex(blas77_f32), intent(inout) :: dl(*)
+complex(blas77_f32), intent(inout) :: d(*)
+complex(blas77_f32), intent(inout) :: du(*)
+integer(blas77_int), intent(inout) :: ldx
+complex(blas77_f32), intent(inout) :: x(ldx,*)
+real(blas77_f32), intent(inout) :: beta
+integer(blas77_int), intent(inout) :: ldb
+complex(blas77_f32), intent(inout) :: b(ldb,*)
 end

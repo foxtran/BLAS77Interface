@@ -1,13 +1,13 @@
 pure function dla_syrpvgrw(uplo,n,info,a,lda,af,ldaf,ipiv,work) CNAME(dla_syrpvgrw)
 import
-character(len=1)::uplo
-integer(blas77_int)::n
-integer(blas77_int)::info
-integer(blas77_int)::lda
-real(blas77_f64)::a(lda,*)
-integer(blas77_int)::ldaf
-real(blas77_f64)::af(ldaf,*)
-integer(blas77_int)::ipiv(*)
-real(blas77_f64)::work(*)
-real(blas77_f64)::dla_syrpvgrw
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: info
+integer(blas77_int), intent(inout) :: lda
+real(blas77_f64), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ldaf
+real(blas77_f64), intent(inout) :: af(ldaf,*)
+integer(blas77_int), intent(inout) :: ipiv(*)
+real(blas77_f64), intent(inout) :: work(*)
+real(blas77_f64), intent(inout) :: dla_syrpvgrw
 end

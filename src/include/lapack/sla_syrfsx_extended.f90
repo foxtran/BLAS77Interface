@@ -1,32 +1,32 @@
 pure subroutine sla_syrfsx_extended(prec_type,uplo,n,nrhs,a,lda,af,ldaf,ipiv,colequ,c,b,ldb,y,ldy,berr_out,n_norms,err_bnds_norm,err_bnds_comp,res,ayb,dy,y_tail,rcond,ithresh,rthresh,dz_ub,ignore_cwise,info) CNAME(sla_syrfsx_extended)
 import
-integer(blas77_int)::prec_type
-character(len=1)::uplo
-integer(blas77_int)::n
-integer(blas77_int)::nrhs
-integer(blas77_int)::lda
-real(blas77_f32)::a(lda,*)
-integer(blas77_int)::ldaf
-real(blas77_f32)::af(ldaf,*)
-integer(blas77_int)::ipiv(*)
-logical(blas77_int)::colequ
-real(blas77_f32)::c(*)
-integer(blas77_int)::ldb
-real(blas77_f32)::b(ldb,*)
-integer(blas77_int)::ldy
-real(blas77_f32)::y(ldy,*)
-real(blas77_f32)::berr_out(*)
-integer(blas77_int)::n_norms
-real(blas77_f32)::err_bnds_norm(nrhs,*)
-real(blas77_f32)::err_bnds_comp(nrhs,*)
-real(blas77_f32)::res(*)
-real(blas77_f32)::ayb(*)
-real(blas77_f32)::dy(*)
-real(blas77_f32)::y_tail(*)
-real(blas77_f32)::rcond
-integer(blas77_int)::ithresh
-real(blas77_f32)::rthresh
-real(blas77_f32)::dz_ub
-logical(blas77_int)::ignore_cwise
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: prec_type
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: nrhs
+integer(blas77_int), intent(inout) :: lda
+real(blas77_f32), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ldaf
+real(blas77_f32), intent(inout) :: af(ldaf,*)
+integer(blas77_int), intent(inout) :: ipiv(*)
+logical(blas77_int), intent(inout) :: colequ
+real(blas77_f32), intent(inout) :: c(*)
+integer(blas77_int), intent(inout) :: ldb
+real(blas77_f32), intent(inout) :: b(ldb,*)
+integer(blas77_int), intent(inout) :: ldy
+real(blas77_f32), intent(inout) :: y(ldy,*)
+real(blas77_f32), intent(inout) :: berr_out(*)
+integer(blas77_int), intent(inout) :: n_norms
+real(blas77_f32), intent(inout) :: err_bnds_norm(nrhs,*)
+real(blas77_f32), intent(inout) :: err_bnds_comp(nrhs,*)
+real(blas77_f32), intent(inout) :: res(*)
+real(blas77_f32), intent(inout) :: ayb(*)
+real(blas77_f32), intent(inout) :: dy(*)
+real(blas77_f32), intent(inout) :: y_tail(*)
+real(blas77_f32), intent(inout) :: rcond
+integer(blas77_int), intent(inout) :: ithresh
+real(blas77_f32), intent(inout) :: rthresh
+real(blas77_f32), intent(inout) :: dz_ub
+logical(blas77_int), intent(inout) :: ignore_cwise
+integer(blas77_int), intent(inout) :: info
 end

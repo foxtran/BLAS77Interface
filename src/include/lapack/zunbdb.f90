@@ -1,25 +1,25 @@
 pure subroutine zunbdb(trans,signs,m,p,q,x11,ldx11,x12,ldx12,x21,ldx21,x22,ldx22,theta,phi,taup1,taup2,tauq1,tauq2,work,lwork,info) CNAME(zunbdb)
 import
-character(len=1)::trans
-character(len=1)::signs
-integer(blas77_int)::m
-integer(blas77_int)::p
-integer(blas77_int)::q
-integer(blas77_int)::ldx11
-complex(blas77_f64)::x11(ldx11,*)
-integer(blas77_int)::ldx12
-complex(blas77_f64)::x12(ldx12,*)
-integer(blas77_int)::ldx21
-complex(blas77_f64)::x21(ldx21,*)
-integer(blas77_int)::ldx22
-complex(blas77_f64)::x22(ldx22,*)
-real(blas77_f64)::theta(*)
-real(blas77_f64)::phi(*)
-complex(blas77_f64)::taup1(*)
-complex(blas77_f64)::taup2(*)
-complex(blas77_f64)::tauq1(*)
-complex(blas77_f64)::tauq2(*)
-complex(blas77_f64)::work(*)
-integer(blas77_int)::lwork
-integer(blas77_int)::info
+character(len=1), intent(inout) :: trans
+character(len=1), intent(inout) :: signs
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: p
+integer(blas77_int), intent(inout) :: q
+integer(blas77_int), intent(inout) :: ldx11
+complex(blas77_f64), intent(inout) :: x11(ldx11,*)
+integer(blas77_int), intent(inout) :: ldx12
+complex(blas77_f64), intent(inout) :: x12(ldx12,*)
+integer(blas77_int), intent(inout) :: ldx21
+complex(blas77_f64), intent(inout) :: x21(ldx21,*)
+integer(blas77_int), intent(inout) :: ldx22
+complex(blas77_f64), intent(inout) :: x22(ldx22,*)
+real(blas77_f64), intent(inout) :: theta(*)
+real(blas77_f64), intent(inout) :: phi(*)
+complex(blas77_f64), intent(inout) :: taup1(*)
+complex(blas77_f64), intent(inout) :: taup2(*)
+complex(blas77_f64), intent(inout) :: tauq1(*)
+complex(blas77_f64), intent(inout) :: tauq2(*)
+complex(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+integer(blas77_int), intent(inout) :: info
 end

@@ -1,12 +1,12 @@
 pure subroutine zlatdf(ijob,n,z,ldz,rhs,rdsum,rdscal,ipiv,jpiv) CNAME(zlatdf)
 import
-integer(blas77_int)::ijob
-integer(blas77_int)::n
-integer(blas77_int)::ldz
-complex(blas77_f64)::z(ldz,*)
-complex(blas77_f64)::rhs(*)
-real(blas77_f64)::rdsum
-real(blas77_f64)::rdscal
-integer(blas77_int)::ipiv(*)
-integer(blas77_int)::jpiv(*)
+integer(blas77_int), intent(inout) :: ijob
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: ldz
+complex(blas77_f64), intent(inout) :: z(ldz,*)
+complex(blas77_f64), intent(inout) :: rhs(*)
+real(blas77_f64), intent(inout) :: rdsum
+real(blas77_f64), intent(inout) :: rdscal
+integer(blas77_int), intent(inout) :: ipiv(*)
+integer(blas77_int), intent(inout) :: jpiv(*)
 end

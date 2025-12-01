@@ -1,23 +1,23 @@
 pure subroutine shgeqz(job,compq,compz,n,ilo,ihi,h,ldh,t,ldt,alphar,alphai,beta,q,ldq,z,ldz,work,lwork,info) CNAME(shgeqz)
 import
-character(len=1)::job
-character(len=1)::compq
-character(len=1)::compz
-integer(blas77_int)::n
-integer(blas77_int)::ilo
-integer(blas77_int)::ihi
-integer(blas77_int)::ldh
-real(blas77_f32)::h(ldh,*)
-integer(blas77_int)::ldt
-real(blas77_f32)::t(ldt,*)
-real(blas77_f32)::alphar(*)
-real(blas77_f32)::alphai(*)
-real(blas77_f32)::beta(*)
-integer(blas77_int)::ldq
-real(blas77_f32)::q(ldq,*)
-integer(blas77_int)::ldz
-real(blas77_f32)::z(ldz,*)
-real(blas77_f32)::work(*)
-integer(blas77_int)::lwork
-integer(blas77_int)::info
+character(len=1), intent(inout) :: job
+character(len=1), intent(inout) :: compq
+character(len=1), intent(inout) :: compz
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: ilo
+integer(blas77_int), intent(inout) :: ihi
+integer(blas77_int), intent(inout) :: ldh
+real(blas77_f32), intent(inout) :: h(ldh,*)
+integer(blas77_int), intent(inout) :: ldt
+real(blas77_f32), intent(inout) :: t(ldt,*)
+real(blas77_f32), intent(inout) :: alphar(*)
+real(blas77_f32), intent(inout) :: alphai(*)
+real(blas77_f32), intent(inout) :: beta(*)
+integer(blas77_int), intent(inout) :: ldq
+real(blas77_f32), intent(inout) :: q(ldq,*)
+integer(blas77_int), intent(inout) :: ldz
+real(blas77_f32), intent(inout) :: z(ldz,*)
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+integer(blas77_int), intent(inout) :: info
 end

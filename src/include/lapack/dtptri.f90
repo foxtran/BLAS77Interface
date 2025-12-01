@@ -1,8 +1,8 @@
 pure subroutine dtptri(uplo,diag,n,ap,info) CNAME(dtptri)
 import
-character(len=1)::uplo
-character(len=1)::diag
-integer(blas77_int)::n
-real(blas77_f64)::ap(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+character(len=1), intent(inout) :: diag
+integer(blas77_int), intent(inout) :: n
+real(blas77_f64), intent(inout) :: ap(*)
+integer(blas77_int), intent(inout) :: info
 end

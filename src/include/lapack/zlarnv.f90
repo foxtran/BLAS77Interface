@@ -1,7 +1,7 @@
 pure subroutine zlarnv(idist,iseed,n,x) CNAME(zlarnv)
 import
-integer(blas77_int)::idist
-integer(blas77_int)::iseed(4)
-integer(blas77_int)::n
-complex(blas77_f64)::x(*)
+integer(blas77_int), intent(inout) :: idist
+integer(blas77_int), intent(inout) :: iseed(4)
+integer(blas77_int), intent(inout) :: n
+complex(blas77_f64), intent(inout) :: x(*)
 end

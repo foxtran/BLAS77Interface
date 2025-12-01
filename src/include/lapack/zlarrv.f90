@@ -1,28 +1,28 @@
 pure subroutine zlarrv(n,vl,vu,d,l,pivmin,isplit,m,dol,dou,minrgp,rtol1,rtol2,w,werr,wgap,iblock,indexw,gers,z,ldz,isuppz,work,iwork,info) CNAME(zlarrv)
 import
-integer(blas77_int)::n
-real(blas77_f64)::vl
-real(blas77_f64)::vu
-real(blas77_f64)::d(*)
-real(blas77_f64)::l(*)
-real(blas77_f64)::pivmin
-integer(blas77_int)::isplit(*)
-integer(blas77_int)::m
-integer(blas77_int)::dol
-integer(blas77_int)::dou
-real(blas77_f64)::minrgp
-real(blas77_f64)::rtol1
-real(blas77_f64)::rtol2
-real(blas77_f64)::w(*)
-real(blas77_f64)::werr(*)
-real(blas77_f64)::wgap(*)
-integer(blas77_int)::iblock(*)
-integer(blas77_int)::indexw(*)
-real(blas77_f64)::gers(*)
-integer(blas77_int)::ldz
-complex(blas77_f64)::z(ldz,*)
-integer(blas77_int)::isuppz(*)
-real(blas77_f64)::work(*)
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: n
+real(blas77_f64), intent(inout) :: vl
+real(blas77_f64), intent(inout) :: vu
+real(blas77_f64), intent(inout) :: d(*)
+real(blas77_f64), intent(inout) :: l(*)
+real(blas77_f64), intent(inout) :: pivmin
+integer(blas77_int), intent(inout) :: isplit(*)
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: dol
+integer(blas77_int), intent(inout) :: dou
+real(blas77_f64), intent(inout) :: minrgp
+real(blas77_f64), intent(inout) :: rtol1
+real(blas77_f64), intent(inout) :: rtol2
+real(blas77_f64), intent(inout) :: w(*)
+real(blas77_f64), intent(inout) :: werr(*)
+real(blas77_f64), intent(inout) :: wgap(*)
+integer(blas77_int), intent(inout) :: iblock(*)
+integer(blas77_int), intent(inout) :: indexw(*)
+real(blas77_f64), intent(inout) :: gers(*)
+integer(blas77_int), intent(inout) :: ldz
+complex(blas77_f64), intent(inout) :: z(ldz,*)
+integer(blas77_int), intent(inout) :: isuppz(*)
+real(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: info
 end

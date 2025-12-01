@@ -1,18 +1,18 @@
 pure subroutine zhb2st_kernels(uplo,wantz,ttype,st,ed,sweep,n,nb,ib,a,lda,v,tau,ldvt,work) CNAME(zhb2st_kernels)
 import
-character(len=1)::uplo
-logical(blas77_int)::wantz
-integer(blas77_int)::ttype
-integer(blas77_int)::st
-integer(blas77_int)::ed
-integer(blas77_int)::sweep
-integer(blas77_int)::n
-integer(blas77_int)::nb
-integer(blas77_int)::ib
-integer(blas77_int)::lda
-complex(blas77_f64)::a(lda,*)
-complex(blas77_f64)::v(*)
-complex(blas77_f64)::tau(*)
-integer(blas77_int)::ldvt
-complex(blas77_f64)::work(*)
+character(len=1), intent(inout) :: uplo
+logical(blas77_int), intent(inout) :: wantz
+integer(blas77_int), intent(inout) :: ttype
+integer(blas77_int), intent(inout) :: st
+integer(blas77_int), intent(inout) :: ed
+integer(blas77_int), intent(inout) :: sweep
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: nb
+integer(blas77_int), intent(inout) :: ib
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f64), intent(inout) :: a(lda,*)
+complex(blas77_f64), intent(inout) :: v(*)
+complex(blas77_f64), intent(inout) :: tau(*)
+integer(blas77_int), intent(inout) :: ldvt
+complex(blas77_f64), intent(inout) :: work(*)
 end

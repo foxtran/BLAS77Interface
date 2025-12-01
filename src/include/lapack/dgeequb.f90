@@ -1,13 +1,13 @@
 pure subroutine dgeequb(m,n,a,lda,r,c,rowcnd,colcnd,amax,info) CNAME(dgeequb)
 import
-integer(blas77_int)::m
-integer(blas77_int)::n
-integer(blas77_int)::lda
-real(blas77_f64)::a(lda,*)
-real(blas77_f64)::r(*)
-real(blas77_f64)::c(*)
-real(blas77_f64)::rowcnd
-real(blas77_f64)::colcnd
-real(blas77_f64)::amax
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lda
+real(blas77_f64), intent(inout) :: a(lda,*)
+real(blas77_f64), intent(inout) :: r(*)
+real(blas77_f64), intent(inout) :: c(*)
+real(blas77_f64), intent(inout) :: rowcnd
+real(blas77_f64), intent(inout) :: colcnd
+real(blas77_f64), intent(inout) :: amax
+integer(blas77_int), intent(inout) :: info
 end

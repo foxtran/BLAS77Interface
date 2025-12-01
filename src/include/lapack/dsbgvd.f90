@@ -1,20 +1,20 @@
 pure subroutine dsbgvd(jobz,uplo,n,ka,kb,ab,ldab,bb,ldbb,w,z,ldz,work,lwork,iwork,liwork,info) CNAME(dsbgvd)
 import
-character(len=1)::jobz
-character(len=1)::uplo
-integer(blas77_int)::n
-integer(blas77_int)::ka
-integer(blas77_int)::kb
-integer(blas77_int)::ldab
-real(blas77_f64)::ab(ldab,*)
-integer(blas77_int)::ldbb
-real(blas77_f64)::bb(ldbb,*)
-real(blas77_f64)::w(*)
-integer(blas77_int)::ldz
-real(blas77_f64)::z(ldz,*)
-real(blas77_f64)::work(*)
-integer(blas77_int)::lwork
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::liwork
-integer(blas77_int)::info
+character(len=1), intent(inout) :: jobz
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: ka
+integer(blas77_int), intent(inout) :: kb
+integer(blas77_int), intent(inout) :: ldab
+real(blas77_f64), intent(inout) :: ab(ldab,*)
+integer(blas77_int), intent(inout) :: ldbb
+real(blas77_f64), intent(inout) :: bb(ldbb,*)
+real(blas77_f64), intent(inout) :: w(*)
+integer(blas77_int), intent(inout) :: ldz
+real(blas77_f64), intent(inout) :: z(ldz,*)
+real(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: liwork
+integer(blas77_int), intent(inout) :: info
 end

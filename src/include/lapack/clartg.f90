@@ -1,8 +1,8 @@
 pure subroutine clartg(f,g,c,s,r) CNAME(clartg)
 import
-complex(blas77_f32)::f
-complex(blas77_f32)::g
-real(blas77_f32)::c
-complex(blas77_f32)::s
-complex(blas77_f32)::r
+complex(blas77_f32), intent(inout) :: f
+complex(blas77_f32), intent(inout) :: g
+real(blas77_f32), intent(inout) :: c
+complex(blas77_f32), intent(inout) :: s
+complex(blas77_f32), intent(inout) :: r
 end

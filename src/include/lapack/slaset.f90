@@ -1,10 +1,10 @@
 pure subroutine slaset(uplo,m,n,alpha,beta,a,lda) CNAME(slaset)
 import
-character(len=1)::uplo
-integer(blas77_int)::m
-integer(blas77_int)::n
-real(blas77_f32)::alpha
-real(blas77_f32)::beta
-integer(blas77_int)::lda
-real(blas77_f32)::a(lda,*)
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+real(blas77_f32), intent(inout) :: alpha
+real(blas77_f32), intent(inout) :: beta
+integer(blas77_int), intent(inout) :: lda
+real(blas77_f32), intent(inout) :: a(lda,*)
 end

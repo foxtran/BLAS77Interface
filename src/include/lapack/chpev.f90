@@ -1,13 +1,13 @@
 pure subroutine chpev(jobz,uplo,n,ap,w,z,ldz,work,rwork,info) CNAME(chpev)
 import
-character(len=1)::jobz
-character(len=1)::uplo
-integer(blas77_int)::n
-complex(blas77_f32)::ap(*)
-real(blas77_f32)::w(*)
-integer(blas77_int)::ldz
-complex(blas77_f32)::z(ldz,*)
-complex(blas77_f32)::work(*)
-real(blas77_f32)::rwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: jobz
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+complex(blas77_f32), intent(inout) :: ap(*)
+real(blas77_f32), intent(inout) :: w(*)
+integer(blas77_int), intent(inout) :: ldz
+complex(blas77_f32), intent(inout) :: z(ldz,*)
+complex(blas77_f32), intent(inout) :: work(*)
+real(blas77_f32), intent(inout) :: rwork(*)
+integer(blas77_int), intent(inout) :: info
 end

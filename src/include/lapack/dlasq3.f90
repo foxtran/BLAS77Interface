@@ -1,23 +1,23 @@
 pure subroutine dlasq3(i0,n0,z,pp,dmin,sigma,desig,qmax,nfail,iter,ndiv,ieee,ttype,dmin1,dmin2,dn,dn1,dn2,g,tau) CNAME(dlasq3)
 import
-integer(blas77_int)::i0
-integer(blas77_int)::n0
-real(blas77_f64)::z(*)
-integer(blas77_int)::pp
-real(blas77_f64)::dmin
-real(blas77_f64)::sigma
-real(blas77_f64)::desig
-real(blas77_f64)::qmax
-integer(blas77_int)::nfail
-integer(blas77_int)::iter
-integer(blas77_int)::ndiv
-logical(blas77_int)::ieee
-integer(blas77_int)::ttype
-real(blas77_f64)::dmin1
-real(blas77_f64)::dmin2
-real(blas77_f64)::dn
-real(blas77_f64)::dn1
-real(blas77_f64)::dn2
-real(blas77_f64)::g
-real(blas77_f64)::tau
+integer(blas77_int), intent(inout) :: i0
+integer(blas77_int), intent(inout) :: n0
+real(blas77_f64), intent(inout) :: z(*)
+integer(blas77_int), intent(inout) :: pp
+real(blas77_f64), intent(inout) :: dmin
+real(blas77_f64), intent(inout) :: sigma
+real(blas77_f64), intent(inout) :: desig
+real(blas77_f64), intent(inout) :: qmax
+integer(blas77_int), intent(inout) :: nfail
+integer(blas77_int), intent(inout) :: iter
+integer(blas77_int), intent(inout) :: ndiv
+logical(blas77_int), intent(inout) :: ieee
+integer(blas77_int), intent(inout) :: ttype
+real(blas77_f64), intent(inout) :: dmin1
+real(blas77_f64), intent(inout) :: dmin2
+real(blas77_f64), intent(inout) :: dn
+real(blas77_f64), intent(inout) :: dn1
+real(blas77_f64), intent(inout) :: dn2
+real(blas77_f64), intent(inout) :: g
+real(blas77_f64), intent(inout) :: tau
 end

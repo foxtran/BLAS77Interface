@@ -1,11 +1,11 @@
 pure subroutine zppcon(uplo,n,ap,anorm,rcond,work,rwork,info) CNAME(zppcon)
 import
-character(len=1)::uplo
-integer(blas77_int)::n
-complex(blas77_f64)::ap(*)
-real(blas77_f64)::anorm
-real(blas77_f64)::rcond
-complex(blas77_f64)::work(*)
-real(blas77_f64)::rwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+complex(blas77_f64), intent(inout) :: ap(*)
+real(blas77_f64), intent(inout) :: anorm
+real(blas77_f64), intent(inout) :: rcond
+complex(blas77_f64), intent(inout) :: work(*)
+real(blas77_f64), intent(inout) :: rwork(*)
+integer(blas77_int), intent(inout) :: info
 end

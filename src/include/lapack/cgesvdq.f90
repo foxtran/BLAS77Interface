@@ -1,25 +1,25 @@
 pure subroutine cgesvdq(joba,jobp,jobr,jobu,jobv,m,n,a,lda,s,u,ldu,v,ldv,numrank,iwork,liwork,cwork,lcwork,rwork,lrwork,info) CNAME(cgesvdq)
 import
-character(len=1)::joba
-character(len=1)::jobp
-character(len=1)::jobr
-character(len=1)::jobu
-character(len=1)::jobv
-integer(blas77_int)::m
-integer(blas77_int)::n
-integer(blas77_int)::lda
-complex(blas77_f32)::a(lda,*)
-real(blas77_f32)::s(*)
-integer(blas77_int)::ldu
-complex(blas77_f32)::u(ldu,*)
-integer(blas77_int)::ldv
-complex(blas77_f32)::v(ldv,*)
-integer(blas77_int)::numrank
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::liwork
-complex(blas77_f32)::cwork(*)
-integer(blas77_int)::lcwork
-real(blas77_f32)::rwork(*)
-integer(blas77_int)::lrwork
-integer(blas77_int)::info
+character(len=1), intent(inout) :: joba
+character(len=1), intent(inout) :: jobp
+character(len=1), intent(inout) :: jobr
+character(len=1), intent(inout) :: jobu
+character(len=1), intent(inout) :: jobv
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f32), intent(inout) :: a(lda,*)
+real(blas77_f32), intent(inout) :: s(*)
+integer(blas77_int), intent(inout) :: ldu
+complex(blas77_f32), intent(inout) :: u(ldu,*)
+integer(blas77_int), intent(inout) :: ldv
+complex(blas77_f32), intent(inout) :: v(ldv,*)
+integer(blas77_int), intent(inout) :: numrank
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: liwork
+complex(blas77_f32), intent(inout) :: cwork(*)
+integer(blas77_int), intent(inout) :: lcwork
+real(blas77_f32), intent(inout) :: rwork(*)
+integer(blas77_int), intent(inout) :: lrwork
+integer(blas77_int), intent(inout) :: info
 end

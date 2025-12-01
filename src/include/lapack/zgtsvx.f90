@@ -1,25 +1,25 @@
 pure subroutine zgtsvx(fact,trans,n,nrhs,dl,d,du,dlf,df,duf,du2,ipiv,b,ldb,x,ldx,rcond,ferr,berr,work,rwork,info) CNAME(zgtsvx)
 import
-character(len=1)::fact
-character(len=1)::trans
-integer(blas77_int)::n
-integer(blas77_int)::nrhs
-complex(blas77_f64)::dl(*)
-complex(blas77_f64)::d(*)
-complex(blas77_f64)::du(*)
-complex(blas77_f64)::dlf(*)
-complex(blas77_f64)::df(*)
-complex(blas77_f64)::duf(*)
-complex(blas77_f64)::du2(*)
-integer(blas77_int)::ipiv(*)
-integer(blas77_int)::ldb
-complex(blas77_f64)::b(ldb,*)
-integer(blas77_int)::ldx
-complex(blas77_f64)::x(ldx,*)
-real(blas77_f64)::rcond
-real(blas77_f64)::ferr(*)
-real(blas77_f64)::berr(*)
-complex(blas77_f64)::work(*)
-real(blas77_f64)::rwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: fact
+character(len=1), intent(inout) :: trans
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: nrhs
+complex(blas77_f64), intent(inout) :: dl(*)
+complex(blas77_f64), intent(inout) :: d(*)
+complex(blas77_f64), intent(inout) :: du(*)
+complex(blas77_f64), intent(inout) :: dlf(*)
+complex(blas77_f64), intent(inout) :: df(*)
+complex(blas77_f64), intent(inout) :: duf(*)
+complex(blas77_f64), intent(inout) :: du2(*)
+integer(blas77_int), intent(inout) :: ipiv(*)
+integer(blas77_int), intent(inout) :: ldb
+complex(blas77_f64), intent(inout) :: b(ldb,*)
+integer(blas77_int), intent(inout) :: ldx
+complex(blas77_f64), intent(inout) :: x(ldx,*)
+real(blas77_f64), intent(inout) :: rcond
+real(blas77_f64), intent(inout) :: ferr(*)
+real(blas77_f64), intent(inout) :: berr(*)
+complex(blas77_f64), intent(inout) :: work(*)
+real(blas77_f64), intent(inout) :: rwork(*)
+integer(blas77_int), intent(inout) :: info
 end

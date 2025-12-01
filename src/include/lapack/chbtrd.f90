@@ -1,15 +1,15 @@
 pure subroutine chbtrd(vect,uplo,n,kd,ab,ldab,d,e,q,ldq,work,info) CNAME(chbtrd)
 import
-character(len=1)::vect
-character(len=1)::uplo
-integer(blas77_int)::n
-integer(blas77_int)::kd
-integer(blas77_int)::ldab
-complex(blas77_f32)::ab(ldab,*)
-real(blas77_f32)::d(*)
-real(blas77_f32)::e(*)
-integer(blas77_int)::ldq
-complex(blas77_f32)::q(ldq,*)
-complex(blas77_f32)::work(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: vect
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: kd
+integer(blas77_int), intent(inout) :: ldab
+complex(blas77_f32), intent(inout) :: ab(ldab,*)
+real(blas77_f32), intent(inout) :: d(*)
+real(blas77_f32), intent(inout) :: e(*)
+integer(blas77_int), intent(inout) :: ldq
+complex(blas77_f32), intent(inout) :: q(ldq,*)
+complex(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: info
 end

@@ -1,29 +1,29 @@
 pure subroutine slalsa(icompq,smlsiz,n,nrhs,b,ldb,bx,ldbx,u,ldu,vt,k,difl,difr,z,poles,givptr,givcol,ldgcol,perm,givnum,c,s,work,iwork,info) CNAME(slalsa)
 import
-integer(blas77_int)::icompq
-integer(blas77_int)::smlsiz
-integer(blas77_int)::n
-integer(blas77_int)::nrhs
-integer(blas77_int)::ldb
-real(blas77_f32)::b(ldb,*)
-integer(blas77_int)::ldbx
-real(blas77_f32)::bx(ldbx,*)
-integer(blas77_int)::ldu
-real(blas77_f32)::u(ldu,*)
-real(blas77_f32)::vt(ldu,*)
-integer(blas77_int)::k(*)
-real(blas77_f32)::difl(ldu,*)
-real(blas77_f32)::difr(ldu,*)
-real(blas77_f32)::z(ldu,*)
-real(blas77_f32)::poles(ldu,*)
-integer(blas77_int)::givptr(*)
-integer(blas77_int)::ldgcol
-integer(blas77_int)::givcol(ldgcol,*)
-integer(blas77_int)::perm(ldgcol,*)
-real(blas77_f32)::givnum(ldu,*)
-real(blas77_f32)::c(*)
-real(blas77_f32)::s(*)
-real(blas77_f32)::work(*)
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: icompq
+integer(blas77_int), intent(inout) :: smlsiz
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: nrhs
+integer(blas77_int), intent(inout) :: ldb
+real(blas77_f32), intent(inout) :: b(ldb,*)
+integer(blas77_int), intent(inout) :: ldbx
+real(blas77_f32), intent(inout) :: bx(ldbx,*)
+integer(blas77_int), intent(inout) :: ldu
+real(blas77_f32), intent(inout) :: u(ldu,*)
+real(blas77_f32), intent(inout) :: vt(ldu,*)
+integer(blas77_int), intent(inout) :: k(*)
+real(blas77_f32), intent(inout) :: difl(ldu,*)
+real(blas77_f32), intent(inout) :: difr(ldu,*)
+real(blas77_f32), intent(inout) :: z(ldu,*)
+real(blas77_f32), intent(inout) :: poles(ldu,*)
+integer(blas77_int), intent(inout) :: givptr(*)
+integer(blas77_int), intent(inout) :: ldgcol
+integer(blas77_int), intent(inout) :: givcol(ldgcol,*)
+integer(blas77_int), intent(inout) :: perm(ldgcol,*)
+real(blas77_f32), intent(inout) :: givnum(ldu,*)
+real(blas77_f32), intent(inout) :: c(*)
+real(blas77_f32), intent(inout) :: s(*)
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: info
 end

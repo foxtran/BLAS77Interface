@@ -1,10 +1,10 @@
 pure subroutine csyr(uplo,n,alpha,x,incx,a,lda) CNAME(csyr)
 import
-character(len=1)::uplo
-integer(blas77_int)::n
-complex(blas77_f32)::alpha
-complex(blas77_f32)::x(*)
-integer(blas77_int)::incx
-integer(blas77_int)::lda
-complex(blas77_f32)::a(lda,*)
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+complex(blas77_f32), intent(inout) :: alpha
+complex(blas77_f32), intent(inout) :: x(*)
+integer(blas77_int), intent(inout) :: incx
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f32), intent(inout) :: a(lda,*)
 end

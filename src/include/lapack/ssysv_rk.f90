@@ -1,15 +1,15 @@
 pure subroutine ssysv_rk(uplo,n,nrhs,a,lda,e,ipiv,b,ldb,work,lwork,info) CNAME(ssysv_rk)
 import
-character(len=1)::uplo
-integer(blas77_int)::n
-integer(blas77_int)::nrhs
-integer(blas77_int)::lda
-real(blas77_f32)::a(lda,*)
-real(blas77_f32)::e(*)
-integer(blas77_int)::ipiv(*)
-integer(blas77_int)::ldb
-real(blas77_f32)::b(ldb,*)
-real(blas77_f32)::work(*)
-integer(blas77_int)::lwork
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: nrhs
+integer(blas77_int), intent(inout) :: lda
+real(blas77_f32), intent(inout) :: a(lda,*)
+real(blas77_f32), intent(inout) :: e(*)
+integer(blas77_int), intent(inout) :: ipiv(*)
+integer(blas77_int), intent(inout) :: ldb
+real(blas77_f32), intent(inout) :: b(ldb,*)
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+integer(blas77_int), intent(inout) :: info
 end

@@ -1,13 +1,13 @@
 pure subroutine dlaed1(n,d,q,ldq,indxq,rho,cutpnt,work,iwork,info) CNAME(dlaed1)
 import
-integer(blas77_int)::n
-real(blas77_f64)::d(*)
-integer(blas77_int)::ldq
-real(blas77_f64)::q(ldq,*)
-integer(blas77_int)::indxq(*)
-real(blas77_f64)::rho
-integer(blas77_int)::cutpnt
-real(blas77_f64)::work(*)
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: n
+real(blas77_f64), intent(inout) :: d(*)
+integer(blas77_int), intent(inout) :: ldq
+real(blas77_f64), intent(inout) :: q(ldq,*)
+integer(blas77_int), intent(inout) :: indxq(*)
+real(blas77_f64), intent(inout) :: rho
+integer(blas77_int), intent(inout) :: cutpnt
+real(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: info
 end

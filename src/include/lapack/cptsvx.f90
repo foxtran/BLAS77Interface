@@ -1,20 +1,20 @@
 pure subroutine cptsvx(fact,n,nrhs,d,e,df,ef,b,ldb,x,ldx,rcond,ferr,berr,work,rwork,info) CNAME(cptsvx)
 import
-character(len=1)::fact
-integer(blas77_int)::n
-integer(blas77_int)::nrhs
-real(blas77_f32)::d(*)
-complex(blas77_f32)::e(*)
-real(blas77_f32)::df(*)
-complex(blas77_f32)::ef(*)
-integer(blas77_int)::ldb
-complex(blas77_f32)::b(ldb,*)
-integer(blas77_int)::ldx
-complex(blas77_f32)::x(ldx,*)
-real(blas77_f32)::rcond
-real(blas77_f32)::ferr(*)
-real(blas77_f32)::berr(*)
-complex(blas77_f32)::work(*)
-real(blas77_f32)::rwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: fact
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: nrhs
+real(blas77_f32), intent(inout) :: d(*)
+complex(blas77_f32), intent(inout) :: e(*)
+real(blas77_f32), intent(inout) :: df(*)
+complex(blas77_f32), intent(inout) :: ef(*)
+integer(blas77_int), intent(inout) :: ldb
+complex(blas77_f32), intent(inout) :: b(ldb,*)
+integer(blas77_int), intent(inout) :: ldx
+complex(blas77_f32), intent(inout) :: x(ldx,*)
+real(blas77_f32), intent(inout) :: rcond
+real(blas77_f32), intent(inout) :: ferr(*)
+real(blas77_f32), intent(inout) :: berr(*)
+complex(blas77_f32), intent(inout) :: work(*)
+real(blas77_f32), intent(inout) :: rwork(*)
+integer(blas77_int), intent(inout) :: info
 end

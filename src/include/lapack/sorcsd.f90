@@ -1,33 +1,33 @@
 pure subroutine sorcsd(jobu1,jobu2,jobv1t,jobv2t,trans,signs,m,p,q,x11,ldx11,x12,ldx12,x21,ldx21,x22,ldx22,theta,u1,ldu1,u2,ldu2,v1t,ldv1t,v2t,ldv2t,work,lwork,iwork,info) CNAME(sorcsd)
 import
-character(len=1)::jobu1
-character(len=1)::jobu2
-character(len=1)::jobv1t
-character(len=1)::jobv2t
-character(len=1)::trans
-character(len=1)::signs
-integer(blas77_int)::m
-integer(blas77_int)::p
-integer(blas77_int)::q
-integer(blas77_int)::ldx11
-real(blas77_f32)::x11(ldx11,*)
-integer(blas77_int)::ldx12
-real(blas77_f32)::x12(ldx12,*)
-integer(blas77_int)::ldx21
-real(blas77_f32)::x21(ldx21,*)
-integer(blas77_int)::ldx22
-real(blas77_f32)::x22(ldx22,*)
-real(blas77_f32)::theta(*)
-integer(blas77_int)::ldu1
-real(blas77_f32)::u1(ldu1,*)
-integer(blas77_int)::ldu2
-real(blas77_f32)::u2(ldu2,*)
-integer(blas77_int)::ldv1t
-real(blas77_f32)::v1t(ldv1t,*)
-integer(blas77_int)::ldv2t
-real(blas77_f32)::v2t(ldv2t,*)
-real(blas77_f32)::work(*)
-integer(blas77_int)::lwork
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: jobu1
+character(len=1), intent(inout) :: jobu2
+character(len=1), intent(inout) :: jobv1t
+character(len=1), intent(inout) :: jobv2t
+character(len=1), intent(inout) :: trans
+character(len=1), intent(inout) :: signs
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: p
+integer(blas77_int), intent(inout) :: q
+integer(blas77_int), intent(inout) :: ldx11
+real(blas77_f32), intent(inout) :: x11(ldx11,*)
+integer(blas77_int), intent(inout) :: ldx12
+real(blas77_f32), intent(inout) :: x12(ldx12,*)
+integer(blas77_int), intent(inout) :: ldx21
+real(blas77_f32), intent(inout) :: x21(ldx21,*)
+integer(blas77_int), intent(inout) :: ldx22
+real(blas77_f32), intent(inout) :: x22(ldx22,*)
+real(blas77_f32), intent(inout) :: theta(*)
+integer(blas77_int), intent(inout) :: ldu1
+real(blas77_f32), intent(inout) :: u1(ldu1,*)
+integer(blas77_int), intent(inout) :: ldu2
+real(blas77_f32), intent(inout) :: u2(ldu2,*)
+integer(blas77_int), intent(inout) :: ldv1t
+real(blas77_f32), intent(inout) :: v1t(ldv1t,*)
+integer(blas77_int), intent(inout) :: ldv2t
+real(blas77_f32), intent(inout) :: v2t(ldv2t,*)
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: info
 end

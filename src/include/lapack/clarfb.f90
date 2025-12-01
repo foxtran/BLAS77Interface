@@ -1,18 +1,18 @@
 pure subroutine clarfb(side,trans,direct,storev,m,n,k,v,ldv,t,ldt,c,ldc,work,ldwork) CNAME(clarfb)
 import
-character(len=1)::side
-character(len=1)::trans
-character(len=1)::direct
-character(len=1)::storev
-integer(blas77_int)::m
-integer(blas77_int)::n
-integer(blas77_int)::k
-integer(blas77_int)::ldv
-complex(blas77_f32)::v(ldv,*)
-integer(blas77_int)::ldt
-complex(blas77_f32)::t(ldt,*)
-integer(blas77_int)::ldc
-complex(blas77_f32)::c(ldc,*)
-integer(blas77_int)::ldwork
-complex(blas77_f32)::work(ldwork,*)
+character(len=1), intent(inout) :: side
+character(len=1), intent(inout) :: trans
+character(len=1), intent(inout) :: direct
+character(len=1), intent(inout) :: storev
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: k
+integer(blas77_int), intent(inout) :: ldv
+complex(blas77_f32), intent(inout) :: v(ldv,*)
+integer(blas77_int), intent(inout) :: ldt
+complex(blas77_f32), intent(inout) :: t(ldt,*)
+integer(blas77_int), intent(inout) :: ldc
+complex(blas77_f32), intent(inout) :: c(ldc,*)
+integer(blas77_int), intent(inout) :: ldwork
+complex(blas77_f32), intent(inout) :: work(ldwork,*)
 end

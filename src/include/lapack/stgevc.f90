@@ -1,19 +1,19 @@
 pure subroutine stgevc(side,howmny,select,n,s,lds,p,ldp,vl,ldvl,vr,ldvr,mm,m,work,info) CNAME(stgevc)
 import
-character(len=1)::side
-character(len=1)::howmny
-logical(blas77_int)::select(*)
-integer(blas77_int)::n
-integer(blas77_int)::lds
-real(blas77_f32)::s(lds,*)
-integer(blas77_int)::ldp
-real(blas77_f32)::p(ldp,*)
-integer(blas77_int)::ldvl
-real(blas77_f32)::vl(ldvl,*)
-integer(blas77_int)::ldvr
-real(blas77_f32)::vr(ldvr,*)
-integer(blas77_int)::mm
-integer(blas77_int)::m
-real(blas77_f32)::work(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: side
+character(len=1), intent(inout) :: howmny
+logical(blas77_int), intent(inout) :: select(*)
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lds
+real(blas77_f32), intent(inout) :: s(lds,*)
+integer(blas77_int), intent(inout) :: ldp
+real(blas77_f32), intent(inout) :: p(ldp,*)
+integer(blas77_int), intent(inout) :: ldvl
+real(blas77_f32), intent(inout) :: vl(ldvl,*)
+integer(blas77_int), intent(inout) :: ldvr
+real(blas77_f32), intent(inout) :: vr(ldvr,*)
+integer(blas77_int), intent(inout) :: mm
+integer(blas77_int), intent(inout) :: m
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: info
 end

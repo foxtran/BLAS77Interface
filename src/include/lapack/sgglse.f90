@@ -1,16 +1,16 @@
 pure subroutine sgglse(m,n,p,a,lda,b,ldb,c,d,x,work,lwork,info) CNAME(sgglse)
 import
-integer(blas77_int)::m
-integer(blas77_int)::n
-integer(blas77_int)::p
-integer(blas77_int)::lda
-real(blas77_f32)::a(lda,*)
-integer(blas77_int)::ldb
-real(blas77_f32)::b(ldb,*)
-real(blas77_f32)::c(*)
-real(blas77_f32)::d(*)
-real(blas77_f32)::x(*)
-real(blas77_f32)::work(*)
-integer(blas77_int)::lwork
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: p
+integer(blas77_int), intent(inout) :: lda
+real(blas77_f32), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ldb
+real(blas77_f32), intent(inout) :: b(ldb,*)
+real(blas77_f32), intent(inout) :: c(*)
+real(blas77_f32), intent(inout) :: d(*)
+real(blas77_f32), intent(inout) :: x(*)
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+integer(blas77_int), intent(inout) :: info
 end

@@ -1,7 +1,7 @@
 pure function dlapy3(x,y,z) CNAME(dlapy3)
 import
-real(blas77_f64)::x
-real(blas77_f64)::y
-real(blas77_f64)::z
-real(blas77_f64)::dlapy3
+real(blas77_f64), intent(inout) :: x
+real(blas77_f64), intent(inout) :: y
+real(blas77_f64), intent(inout) :: z
+real(blas77_f64), intent(inout) :: dlapy3
 end

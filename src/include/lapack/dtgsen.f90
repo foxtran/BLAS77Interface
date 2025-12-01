@@ -1,28 +1,28 @@
 pure subroutine dtgsen(ijob,wantq,wantz,select,n,a,lda,b,ldb,alphar,alphai,beta,q,ldq,z,ldz,m,pl,pr,dif,work,lwork,iwork,liwork,info) CNAME(dtgsen)
 import
-integer(blas77_int)::ijob
-logical(blas77_int)::wantq
-logical(blas77_int)::wantz
-logical(blas77_int)::select(*)
-integer(blas77_int)::n
-integer(blas77_int)::lda
-real(blas77_f64)::a(lda,*)
-integer(blas77_int)::ldb
-real(blas77_f64)::b(ldb,*)
-real(blas77_f64)::alphar(*)
-real(blas77_f64)::alphai(*)
-real(blas77_f64)::beta(*)
-integer(blas77_int)::ldq
-real(blas77_f64)::q(ldq,*)
-integer(blas77_int)::ldz
-real(blas77_f64)::z(ldz,*)
-integer(blas77_int)::m
-real(blas77_f64)::pl
-real(blas77_f64)::pr
-real(blas77_f64)::dif(*)
-real(blas77_f64)::work(*)
-integer(blas77_int)::lwork
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::liwork
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: ijob
+logical(blas77_int), intent(inout) :: wantq
+logical(blas77_int), intent(inout) :: wantz
+logical(blas77_int), intent(inout) :: select(*)
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lda
+real(blas77_f64), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ldb
+real(blas77_f64), intent(inout) :: b(ldb,*)
+real(blas77_f64), intent(inout) :: alphar(*)
+real(blas77_f64), intent(inout) :: alphai(*)
+real(blas77_f64), intent(inout) :: beta(*)
+integer(blas77_int), intent(inout) :: ldq
+real(blas77_f64), intent(inout) :: q(ldq,*)
+integer(blas77_int), intent(inout) :: ldz
+real(blas77_f64), intent(inout) :: z(ldz,*)
+integer(blas77_int), intent(inout) :: m
+real(blas77_f64), intent(inout) :: pl
+real(blas77_f64), intent(inout) :: pr
+real(blas77_f64), intent(inout) :: dif(*)
+real(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: liwork
+integer(blas77_int), intent(inout) :: info
 end

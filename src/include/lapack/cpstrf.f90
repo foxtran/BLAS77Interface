@@ -1,12 +1,12 @@
 pure subroutine cpstrf(uplo,n,a,lda,piv,rank,tol,work,info) CNAME(cpstrf)
 import
-character(len=1)::uplo
-integer(blas77_int)::n
-integer(blas77_int)::lda
-complex(blas77_f32)::a(lda,*)
-integer(blas77_int)::piv(n)
-integer(blas77_int)::rank
-real(blas77_f32)::tol
-real(blas77_f32)::work(2*n)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f32), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: piv(n)
+integer(blas77_int), intent(inout) :: rank
+real(blas77_f32), intent(inout) :: tol
+real(blas77_f32), intent(inout) :: work(2*n)
+integer(blas77_int), intent(inout) :: info
 end

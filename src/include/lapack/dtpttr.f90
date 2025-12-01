@@ -1,9 +1,9 @@
 pure subroutine dtpttr(uplo,n,ap,a,lda,info) CNAME(dtpttr)
 import
-character(len=1)::uplo
-integer(blas77_int)::n
-real(blas77_f64)::ap(*)
-integer(blas77_int)::lda
-real(blas77_f64)::a(lda,*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+real(blas77_f64), intent(inout) :: ap(*)
+integer(blas77_int), intent(inout) :: lda
+real(blas77_f64), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: info
 end

@@ -1,24 +1,24 @@
 pure subroutine dlar1v(n,b1,bn,lambda,d,l,ld,lld,pivmin,gaptol,z,wantnc,negcnt,ztz,mingma,r,isuppz,nrminv,resid,rqcorr,work) CNAME(dlar1v)
 import
-integer(blas77_int)::n
-integer(blas77_int)::b1
-integer(blas77_int)::bn
-real(blas77_f64)::lambda
-real(blas77_f64)::d(*)
-real(blas77_f64)::l(*)
-real(blas77_f64)::ld(*)
-real(blas77_f64)::lld(*)
-real(blas77_f64)::pivmin
-real(blas77_f64)::gaptol
-real(blas77_f64)::z(*)
-logical(blas77_int)::wantnc
-integer(blas77_int)::negcnt
-real(blas77_f64)::ztz
-real(blas77_f64)::mingma
-integer(blas77_int)::r
-integer(blas77_int)::isuppz(*)
-real(blas77_f64)::nrminv
-real(blas77_f64)::resid
-real(blas77_f64)::rqcorr
-real(blas77_f64)::work(*)
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: b1
+integer(blas77_int), intent(inout) :: bn
+real(blas77_f64), intent(inout) :: lambda
+real(blas77_f64), intent(inout) :: d(*)
+real(blas77_f64), intent(inout) :: l(*)
+real(blas77_f64), intent(inout) :: ld(*)
+real(blas77_f64), intent(inout) :: lld(*)
+real(blas77_f64), intent(inout) :: pivmin
+real(blas77_f64), intent(inout) :: gaptol
+real(blas77_f64), intent(inout) :: z(*)
+logical(blas77_int), intent(inout) :: wantnc
+integer(blas77_int), intent(inout) :: negcnt
+real(blas77_f64), intent(inout) :: ztz
+real(blas77_f64), intent(inout) :: mingma
+integer(blas77_int), intent(inout) :: r
+integer(blas77_int), intent(inout) :: isuppz(*)
+real(blas77_f64), intent(inout) :: nrminv
+real(blas77_f64), intent(inout) :: resid
+real(blas77_f64), intent(inout) :: rqcorr
+real(blas77_f64), intent(inout) :: work(*)
 end

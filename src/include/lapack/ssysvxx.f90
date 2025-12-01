@@ -1,29 +1,29 @@
 pure subroutine ssysvxx(fact,uplo,n,nrhs,a,lda,af,ldaf,ipiv,equed,s,b,ldb,x,ldx,rcond,rpvgrw,berr,n_err_bnds,err_bnds_norm,err_bnds_comp,nparams,params,work,iwork,info) CNAME(ssysvxx)
 import
-character(len=1)::fact
-character(len=1)::uplo
-integer(blas77_int)::n
-integer(blas77_int)::nrhs
-integer(blas77_int)::lda
-real(blas77_f32)::a(lda,*)
-integer(blas77_int)::ldaf
-real(blas77_f32)::af(ldaf,*)
-integer(blas77_int)::ipiv(*)
-character(len=1)::equed
-real(blas77_f32)::s(*)
-integer(blas77_int)::ldb
-real(blas77_f32)::b(ldb,*)
-integer(blas77_int)::ldx
-real(blas77_f32)::x(ldx,*)
-real(blas77_f32)::rcond
-real(blas77_f32)::rpvgrw
-real(blas77_f32)::berr(*)
-integer(blas77_int)::n_err_bnds
-real(blas77_f32)::err_bnds_norm(nrhs,*)
-real(blas77_f32)::err_bnds_comp(nrhs,*)
-integer(blas77_int)::nparams
-real(blas77_f32)::params(*)
-real(blas77_f32)::work(*)
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: fact
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: nrhs
+integer(blas77_int), intent(inout) :: lda
+real(blas77_f32), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ldaf
+real(blas77_f32), intent(inout) :: af(ldaf,*)
+integer(blas77_int), intent(inout) :: ipiv(*)
+character(len=1), intent(inout) :: equed
+real(blas77_f32), intent(inout) :: s(*)
+integer(blas77_int), intent(inout) :: ldb
+real(blas77_f32), intent(inout) :: b(ldb,*)
+integer(blas77_int), intent(inout) :: ldx
+real(blas77_f32), intent(inout) :: x(ldx,*)
+real(blas77_f32), intent(inout) :: rcond
+real(blas77_f32), intent(inout) :: rpvgrw
+real(blas77_f32), intent(inout) :: berr(*)
+integer(blas77_int), intent(inout) :: n_err_bnds
+real(blas77_f32), intent(inout) :: err_bnds_norm(nrhs,*)
+real(blas77_f32), intent(inout) :: err_bnds_comp(nrhs,*)
+integer(blas77_int), intent(inout) :: nparams
+real(blas77_f32), intent(inout) :: params(*)
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: info
 end

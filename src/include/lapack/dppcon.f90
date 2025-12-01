@@ -1,11 +1,11 @@
 pure subroutine dppcon(uplo,n,ap,anorm,rcond,work,iwork,info) CNAME(dppcon)
 import
-character(len=1)::uplo
-integer(blas77_int)::n
-real(blas77_f64)::ap(*)
-real(blas77_f64)::anorm
-real(blas77_f64)::rcond
-real(blas77_f64)::work(*)
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+real(blas77_f64), intent(inout) :: ap(*)
+real(blas77_f64), intent(inout) :: anorm
+real(blas77_f64), intent(inout) :: rcond
+real(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: info
 end

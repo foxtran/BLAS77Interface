@@ -1,28 +1,28 @@
 pure subroutine dlarrd(range,order,n,vl,vu,il,iu,gers,reltol,d,e,e2,pivmin,nsplit,isplit,m,w,werr,wl,wu,iblock,indexw,work,iwork,info) CNAME(dlarrd)
 import
-character(len=1)::range
-character(len=1)::order
-integer(blas77_int)::n
-real(blas77_f64)::vl
-real(blas77_f64)::vu
-integer(blas77_int)::il
-integer(blas77_int)::iu
-real(blas77_f64)::gers(*)
-real(blas77_f64)::reltol
-real(blas77_f64)::d(*)
-real(blas77_f64)::e(*)
-real(blas77_f64)::e2(*)
-real(blas77_f64)::pivmin
-integer(blas77_int)::nsplit
-integer(blas77_int)::isplit(*)
-integer(blas77_int)::m
-real(blas77_f64)::w(*)
-real(blas77_f64)::werr(*)
-real(blas77_f64)::wl
-real(blas77_f64)::wu
-integer(blas77_int)::iblock(*)
-integer(blas77_int)::indexw(*)
-real(blas77_f64)::work(*)
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: range
+character(len=1), intent(inout) :: order
+integer(blas77_int), intent(inout) :: n
+real(blas77_f64), intent(inout) :: vl
+real(blas77_f64), intent(inout) :: vu
+integer(blas77_int), intent(inout) :: il
+integer(blas77_int), intent(inout) :: iu
+real(blas77_f64), intent(inout) :: gers(*)
+real(blas77_f64), intent(inout) :: reltol
+real(blas77_f64), intent(inout) :: d(*)
+real(blas77_f64), intent(inout) :: e(*)
+real(blas77_f64), intent(inout) :: e2(*)
+real(blas77_f64), intent(inout) :: pivmin
+integer(blas77_int), intent(inout) :: nsplit
+integer(blas77_int), intent(inout) :: isplit(*)
+integer(blas77_int), intent(inout) :: m
+real(blas77_f64), intent(inout) :: w(*)
+real(blas77_f64), intent(inout) :: werr(*)
+real(blas77_f64), intent(inout) :: wl
+real(blas77_f64), intent(inout) :: wu
+integer(blas77_int), intent(inout) :: iblock(*)
+integer(blas77_int), intent(inout) :: indexw(*)
+real(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: info
 end

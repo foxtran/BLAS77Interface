@@ -1,29 +1,29 @@
 pure subroutine chbgvx(jobz,range,uplo,n,ka,kb,ab,ldab,bb,ldbb,q,ldq,vl,vu,il,iu,abstol,m,w,z,ldz,work,rwork,iwork,ifail,info) CNAME(chbgvx)
 import
-character(len=1)::jobz
-character(len=1)::range
-character(len=1)::uplo
-integer(blas77_int)::n
-integer(blas77_int)::ka
-integer(blas77_int)::kb
-integer(blas77_int)::ldab
-complex(blas77_f32)::ab(ldab,*)
-integer(blas77_int)::ldbb
-complex(blas77_f32)::bb(ldbb,*)
-integer(blas77_int)::ldq
-complex(blas77_f32)::q(ldq,*)
-real(blas77_f32)::vl
-real(blas77_f32)::vu
-integer(blas77_int)::il
-integer(blas77_int)::iu
-real(blas77_f32)::abstol
-integer(blas77_int)::m
-real(blas77_f32)::w(*)
-integer(blas77_int)::ldz
-complex(blas77_f32)::z(ldz,*)
-complex(blas77_f32)::work(*)
-real(blas77_f32)::rwork(*)
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::ifail(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: jobz
+character(len=1), intent(inout) :: range
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: ka
+integer(blas77_int), intent(inout) :: kb
+integer(blas77_int), intent(inout) :: ldab
+complex(blas77_f32), intent(inout) :: ab(ldab,*)
+integer(blas77_int), intent(inout) :: ldbb
+complex(blas77_f32), intent(inout) :: bb(ldbb,*)
+integer(blas77_int), intent(inout) :: ldq
+complex(blas77_f32), intent(inout) :: q(ldq,*)
+real(blas77_f32), intent(inout) :: vl
+real(blas77_f32), intent(inout) :: vu
+integer(blas77_int), intent(inout) :: il
+integer(blas77_int), intent(inout) :: iu
+real(blas77_f32), intent(inout) :: abstol
+integer(blas77_int), intent(inout) :: m
+real(blas77_f32), intent(inout) :: w(*)
+integer(blas77_int), intent(inout) :: ldz
+complex(blas77_f32), intent(inout) :: z(ldz,*)
+complex(blas77_f32), intent(inout) :: work(*)
+real(blas77_f32), intent(inout) :: rwork(*)
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: ifail(*)
+integer(blas77_int), intent(inout) :: info
 end

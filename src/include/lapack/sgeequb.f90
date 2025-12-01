@@ -1,13 +1,13 @@
 pure subroutine sgeequb(m,n,a,lda,r,c,rowcnd,colcnd,amax,info) CNAME(sgeequb)
 import
-integer(blas77_int)::m
-integer(blas77_int)::n
-integer(blas77_int)::lda
-real(blas77_f32)::a(lda,*)
-real(blas77_f32)::r(*)
-real(blas77_f32)::c(*)
-real(blas77_f32)::rowcnd
-real(blas77_f32)::colcnd
-real(blas77_f32)::amax
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lda
+real(blas77_f32), intent(inout) :: a(lda,*)
+real(blas77_f32), intent(inout) :: r(*)
+real(blas77_f32), intent(inout) :: c(*)
+real(blas77_f32), intent(inout) :: rowcnd
+real(blas77_f32), intent(inout) :: colcnd
+real(blas77_f32), intent(inout) :: amax
+integer(blas77_int), intent(inout) :: info
 end

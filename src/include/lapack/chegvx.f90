@@ -1,27 +1,27 @@
 pure subroutine chegvx(itype,jobz,range,uplo,n,a,lda,b,ldb,vl,vu,il,iu,abstol,m,w,z,ldz,work,lwork,rwork,iwork,ifail,info) CNAME(chegvx)
 import
-integer(blas77_int)::itype
-character(len=1)::jobz
-character(len=1)::range
-character(len=1)::uplo
-integer(blas77_int)::n
-integer(blas77_int)::lda
-complex(blas77_f32)::a(lda,*)
-integer(blas77_int)::ldb
-complex(blas77_f32)::b(ldb,*)
-real(blas77_f32)::vl
-real(blas77_f32)::vu
-integer(blas77_int)::il
-integer(blas77_int)::iu
-real(blas77_f32)::abstol
-integer(blas77_int)::m
-real(blas77_f32)::w(*)
-integer(blas77_int)::ldz
-complex(blas77_f32)::z(ldz,*)
-complex(blas77_f32)::work(*)
-integer(blas77_int)::lwork
-real(blas77_f32)::rwork(*)
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::ifail(*)
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: itype
+character(len=1), intent(inout) :: jobz
+character(len=1), intent(inout) :: range
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f32), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ldb
+complex(blas77_f32), intent(inout) :: b(ldb,*)
+real(blas77_f32), intent(inout) :: vl
+real(blas77_f32), intent(inout) :: vu
+integer(blas77_int), intent(inout) :: il
+integer(blas77_int), intent(inout) :: iu
+real(blas77_f32), intent(inout) :: abstol
+integer(blas77_int), intent(inout) :: m
+real(blas77_f32), intent(inout) :: w(*)
+integer(blas77_int), intent(inout) :: ldz
+complex(blas77_f32), intent(inout) :: z(ldz,*)
+complex(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+real(blas77_f32), intent(inout) :: rwork(*)
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: ifail(*)
+integer(blas77_int), intent(inout) :: info
 end

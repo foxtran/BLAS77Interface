@@ -1,10 +1,10 @@
 pure subroutine clatrz(m,n,l,a,lda,tau,work) CNAME(clatrz)
 import
-integer(blas77_int)::m
-integer(blas77_int)::n
-integer(blas77_int)::l
-integer(blas77_int)::lda
-complex(blas77_f32)::a(lda,*)
-complex(blas77_f32)::tau(*)
-complex(blas77_f32)::work(*)
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: l
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f32), intent(inout) :: a(lda,*)
+complex(blas77_f32), intent(inout) :: tau(*)
+complex(blas77_f32), intent(inout) :: work(*)
 end

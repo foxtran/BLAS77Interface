@@ -1,16 +1,16 @@
 pure subroutine zlabrd(m,n,nb,a,lda,d,e,tauq,taup,x,ldx,y,ldy) CNAME(zlabrd)
 import
-integer(blas77_int)::m
-integer(blas77_int)::n
-integer(blas77_int)::nb
-integer(blas77_int)::lda
-complex(blas77_f64)::a(lda,*)
-real(blas77_f64)::d(*)
-real(blas77_f64)::e(*)
-complex(blas77_f64)::tauq(*)
-complex(blas77_f64)::taup(*)
-integer(blas77_int)::ldx
-complex(blas77_f64)::x(ldx,*)
-integer(blas77_int)::ldy
-complex(blas77_f64)::y(ldy,*)
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: nb
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f64), intent(inout) :: a(lda,*)
+real(blas77_f64), intent(inout) :: d(*)
+real(blas77_f64), intent(inout) :: e(*)
+complex(blas77_f64), intent(inout) :: tauq(*)
+complex(blas77_f64), intent(inout) :: taup(*)
+integer(blas77_int), intent(inout) :: ldx
+complex(blas77_f64), intent(inout) :: x(ldx,*)
+integer(blas77_int), intent(inout) :: ldy
+complex(blas77_f64), intent(inout) :: y(ldy,*)
 end

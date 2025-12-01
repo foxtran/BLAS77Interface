@@ -1,12 +1,12 @@
 pure subroutine slarzt(direct,storev,n,k,v,ldv,tau,t,ldt) CNAME(slarzt)
 import
-character(len=1)::direct
-character(len=1)::storev
-integer(blas77_int)::n
-integer(blas77_int)::k
-integer(blas77_int)::ldv
-real(blas77_f32)::v(ldv,*)
-real(blas77_f32)::tau(*)
-integer(blas77_int)::ldt
-real(blas77_f32)::t(ldt,*)
+character(len=1), intent(inout) :: direct
+character(len=1), intent(inout) :: storev
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: k
+integer(blas77_int), intent(inout) :: ldv
+real(blas77_f32), intent(inout) :: v(ldv,*)
+real(blas77_f32), intent(inout) :: tau(*)
+integer(blas77_int), intent(inout) :: ldt
+real(blas77_f32), intent(inout) :: t(ldt,*)
 end

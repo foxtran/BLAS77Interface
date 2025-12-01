@@ -1,20 +1,20 @@
 pure subroutine sbdsvdx(uplo,jobz,range,n,d,e,vl,vu,il,iu,ns,s,z,ldz,work,iwork,info) CNAME(sbdsvdx)
 import
-character(len=1)::uplo
-character(len=1)::jobz
-character(len=1)::range
-integer(blas77_int)::n
-real(blas77_f32)::d(*)
-real(blas77_f32)::e(*)
-real(blas77_f32)::vl
-real(blas77_f32)::vu
-integer(blas77_int)::il
-integer(blas77_int)::iu
-integer(blas77_int)::ns
-real(blas77_f32)::s(*)
-integer(blas77_int)::ldz
-real(blas77_f32)::z(ldz,*)
-real(blas77_f32)::work(*)
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+character(len=1), intent(inout) :: jobz
+character(len=1), intent(inout) :: range
+integer(blas77_int), intent(inout) :: n
+real(blas77_f32), intent(inout) :: d(*)
+real(blas77_f32), intent(inout) :: e(*)
+real(blas77_f32), intent(inout) :: vl
+real(blas77_f32), intent(inout) :: vu
+integer(blas77_int), intent(inout) :: il
+integer(blas77_int), intent(inout) :: iu
+integer(blas77_int), intent(inout) :: ns
+real(blas77_f32), intent(inout) :: s(*)
+integer(blas77_int), intent(inout) :: ldz
+real(blas77_f32), intent(inout) :: z(ldz,*)
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: info
 end

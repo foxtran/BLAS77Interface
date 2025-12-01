@@ -1,16 +1,16 @@
 pure subroutine chseqr(job,compz,n,ilo,ihi,h,ldh,w,z,ldz,work,lwork,info) CNAME(chseqr)
 import
-character(len=1)::job
-character(len=1)::compz
-integer(blas77_int)::n
-integer(blas77_int)::ilo
-integer(blas77_int)::ihi
-integer(blas77_int)::ldh
-complex(blas77_f32)::h(ldh,*)
-complex(blas77_f32)::w(*)
-integer(blas77_int)::ldz
-complex(blas77_f32)::z(ldz,*)
-complex(blas77_f32)::work(*)
-integer(blas77_int)::lwork
-integer(blas77_int)::info
+character(len=1), intent(inout) :: job
+character(len=1), intent(inout) :: compz
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: ilo
+integer(blas77_int), intent(inout) :: ihi
+integer(blas77_int), intent(inout) :: ldh
+complex(blas77_f32), intent(inout) :: h(ldh,*)
+complex(blas77_f32), intent(inout) :: w(*)
+integer(blas77_int), intent(inout) :: ldz
+complex(blas77_f32), intent(inout) :: z(ldz,*)
+complex(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+integer(blas77_int), intent(inout) :: info
 end

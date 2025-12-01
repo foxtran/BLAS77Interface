@@ -1,19 +1,19 @@
 pure subroutine stgexc(wantq,wantz,n,a,lda,b,ldb,q,ldq,z,ldz,ifst,ilst,work,lwork,info) CNAME(stgexc)
 import
-logical(blas77_int)::wantq
-logical(blas77_int)::wantz
-integer(blas77_int)::n
-integer(blas77_int)::lda
-real(blas77_f32)::a(lda,*)
-integer(blas77_int)::ldb
-real(blas77_f32)::b(ldb,*)
-integer(blas77_int)::ldq
-real(blas77_f32)::q(ldq,*)
-integer(blas77_int)::ldz
-real(blas77_f32)::z(ldz,*)
-integer(blas77_int)::ifst
-integer(blas77_int)::ilst
-real(blas77_f32)::work(*)
-integer(blas77_int)::lwork
-integer(blas77_int)::info
+logical(blas77_int), intent(inout) :: wantq
+logical(blas77_int), intent(inout) :: wantz
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lda
+real(blas77_f32), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ldb
+real(blas77_f32), intent(inout) :: b(ldb,*)
+integer(blas77_int), intent(inout) :: ldq
+real(blas77_f32), intent(inout) :: q(ldq,*)
+integer(blas77_int), intent(inout) :: ldz
+real(blas77_f32), intent(inout) :: z(ldz,*)
+integer(blas77_int), intent(inout) :: ifst
+integer(blas77_int), intent(inout) :: ilst
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+integer(blas77_int), intent(inout) :: info
 end

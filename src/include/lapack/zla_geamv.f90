@@ -1,14 +1,14 @@
 pure subroutine zla_geamv(trans,m,n,alpha,a,lda,x,incx,beta,y,incy) CNAME(zla_geamv)
 import
-integer(blas77_int)::trans
-integer(blas77_int)::m
-integer(blas77_int)::n
-real(blas77_f64)::alpha
-integer(blas77_int)::lda
-complex(blas77_f64)::a(lda,*)
-complex(blas77_f64)::x(*)
-integer(blas77_int)::incx
-real(blas77_f64)::beta
-real(blas77_f64)::y(*)
-integer(blas77_int)::incy
+integer(blas77_int), intent(inout) :: trans
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+real(blas77_f64), intent(inout) :: alpha
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f64), intent(inout) :: a(lda,*)
+complex(blas77_f64), intent(inout) :: x(*)
+integer(blas77_int), intent(inout) :: incx
+real(blas77_f64), intent(inout) :: beta
+real(blas77_f64), intent(inout) :: y(*)
+integer(blas77_int), intent(inout) :: incy
 end

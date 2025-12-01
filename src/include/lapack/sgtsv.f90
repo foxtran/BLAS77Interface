@@ -1,11 +1,11 @@
 pure subroutine sgtsv(n,nrhs,dl,d,du,b,ldb,info) CNAME(sgtsv)
 import
-integer(blas77_int)::n
-integer(blas77_int)::nrhs
-real(blas77_f32)::dl(*)
-real(blas77_f32)::d(*)
-real(blas77_f32)::du(*)
-integer(blas77_int)::ldb
-real(blas77_f32)::b(ldb,*)
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: nrhs
+real(blas77_f32), intent(inout) :: dl(*)
+real(blas77_f32), intent(inout) :: d(*)
+real(blas77_f32), intent(inout) :: du(*)
+integer(blas77_int), intent(inout) :: ldb
+real(blas77_f32), intent(inout) :: b(ldb,*)
+integer(blas77_int), intent(inout) :: info
 end

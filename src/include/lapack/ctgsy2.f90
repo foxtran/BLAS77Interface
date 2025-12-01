@@ -1,23 +1,23 @@
 pure subroutine ctgsy2(trans,ijob,m,n,a,lda,b,ldb,c,ldc,d,ldd,e,lde,f,ldf,scale,rdsum,rdscal,info) CNAME(ctgsy2)
 import
-character(len=1)::trans
-integer(blas77_int)::ijob
-integer(blas77_int)::m
-integer(blas77_int)::n
-integer(blas77_int)::lda
-complex(blas77_f32)::a(lda,*)
-integer(blas77_int)::ldb
-complex(blas77_f32)::b(ldb,*)
-integer(blas77_int)::ldc
-complex(blas77_f32)::c(ldc,*)
-integer(blas77_int)::ldd
-complex(blas77_f32)::d(ldd,*)
-integer(blas77_int)::lde
-complex(blas77_f32)::e(lde,*)
-integer(blas77_int)::ldf
-complex(blas77_f32)::f(ldf,*)
-real(blas77_f32)::scale
-real(blas77_f32)::rdsum
-real(blas77_f32)::rdscal
-integer(blas77_int)::info
+character(len=1), intent(inout) :: trans
+integer(blas77_int), intent(inout) :: ijob
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f32), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ldb
+complex(blas77_f32), intent(inout) :: b(ldb,*)
+integer(blas77_int), intent(inout) :: ldc
+complex(blas77_f32), intent(inout) :: c(ldc,*)
+integer(blas77_int), intent(inout) :: ldd
+complex(blas77_f32), intent(inout) :: d(ldd,*)
+integer(blas77_int), intent(inout) :: lde
+complex(blas77_f32), intent(inout) :: e(lde,*)
+integer(blas77_int), intent(inout) :: ldf
+complex(blas77_f32), intent(inout) :: f(ldf,*)
+real(blas77_f32), intent(inout) :: scale
+real(blas77_f32), intent(inout) :: rdsum
+real(blas77_f32), intent(inout) :: rdscal
+integer(blas77_int), intent(inout) :: info
 end

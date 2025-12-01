@@ -1,9 +1,9 @@
 pure function slansp(norm,uplo,n,ap,work) CNAME(slansp)
 import
-character(len=1)::norm
-character(len=1)::uplo
-integer(blas77_int)::n
-real(blas77_f32)::ap(*)
-real(blas77_f32)::work(*)
-real(blas77_f32)::slansp
+character(len=1), intent(inout) :: norm
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+real(blas77_f32), intent(inout) :: ap(*)
+real(blas77_f32), intent(inout) :: work(*)
+real(blas77_f32), intent(inout) :: slansp
 end

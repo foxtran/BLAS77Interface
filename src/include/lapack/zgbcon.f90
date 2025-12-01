@@ -1,15 +1,15 @@
 pure subroutine zgbcon(norm,n,kl,ku,ab,ldab,ipiv,anorm,rcond,work,rwork,info) CNAME(zgbcon)
 import
-character(len=1)::norm
-integer(blas77_int)::n
-integer(blas77_int)::kl
-integer(blas77_int)::ku
-integer(blas77_int)::ldab
-complex(blas77_f64)::ab(ldab,*)
-integer(blas77_int)::ipiv(*)
-real(blas77_f64)::anorm
-real(blas77_f64)::rcond
-complex(blas77_f64)::work(*)
-real(blas77_f64)::rwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: norm
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: kl
+integer(blas77_int), intent(inout) :: ku
+integer(blas77_int), intent(inout) :: ldab
+complex(blas77_f64), intent(inout) :: ab(ldab,*)
+integer(blas77_int), intent(inout) :: ipiv(*)
+real(blas77_f64), intent(inout) :: anorm
+real(blas77_f64), intent(inout) :: rcond
+complex(blas77_f64), intent(inout) :: work(*)
+real(blas77_f64), intent(inout) :: rwork(*)
+integer(blas77_int), intent(inout) :: info
 end

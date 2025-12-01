@@ -1,17 +1,17 @@
 pure subroutine dhseqr(job,compz,n,ilo,ihi,h,ldh,wr,wi,z,ldz,work,lwork,info) CNAME(dhseqr)
 import
-character(len=1)::job
-character(len=1)::compz
-integer(blas77_int)::n
-integer(blas77_int)::ilo
-integer(blas77_int)::ihi
-integer(blas77_int)::ldh
-real(blas77_f64)::h(ldh,*)
-real(blas77_f64)::wr(*)
-real(blas77_f64)::wi(*)
-integer(blas77_int)::ldz
-real(blas77_f64)::z(ldz,*)
-real(blas77_f64)::work(*)
-integer(blas77_int)::lwork
-integer(blas77_int)::info
+character(len=1), intent(inout) :: job
+character(len=1), intent(inout) :: compz
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: ilo
+integer(blas77_int), intent(inout) :: ihi
+integer(blas77_int), intent(inout) :: ldh
+real(blas77_f64), intent(inout) :: h(ldh,*)
+real(blas77_f64), intent(inout) :: wr(*)
+real(blas77_f64), intent(inout) :: wi(*)
+integer(blas77_int), intent(inout) :: ldz
+real(blas77_f64), intent(inout) :: z(ldz,*)
+real(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+integer(blas77_int), intent(inout) :: info
 end

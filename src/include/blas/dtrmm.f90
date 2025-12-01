@@ -1,14 +1,14 @@
 pure subroutine dtrmm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) CNAME(dtrmm)
 import
-character(len=1)::side
-character(len=1)::uplo
-character(len=1)::transa
-character(len=1)::diag
-integer(blas77_int)::m
-integer(blas77_int)::n
-real(blas77_f64)::alpha
-integer(blas77_int)::lda
-real(blas77_f64)::a(lda,*)
-integer(blas77_int)::ldb
-real(blas77_f64)::b(ldb,*)
+character(len=1), intent(inout) :: side
+character(len=1), intent(inout) :: uplo
+character(len=1), intent(inout) :: transa
+character(len=1), intent(inout) :: diag
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+real(blas77_f64), intent(inout) :: alpha
+integer(blas77_int), intent(inout) :: lda
+real(blas77_f64), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ldb
+real(blas77_f64), intent(inout) :: b(ldb,*)
 end

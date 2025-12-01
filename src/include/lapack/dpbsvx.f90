@@ -1,24 +1,24 @@
 pure subroutine dpbsvx(fact,uplo,n,kd,nrhs,ab,ldab,afb,ldafb,equed,s,b,ldb,x,ldx,rcond,ferr,berr,work,iwork,info) CNAME(dpbsvx)
 import
-character(len=1)::fact
-character(len=1)::uplo
-integer(blas77_int)::n
-integer(blas77_int)::kd
-integer(blas77_int)::nrhs
-integer(blas77_int)::ldab
-real(blas77_f64)::ab(ldab,*)
-integer(blas77_int)::ldafb
-real(blas77_f64)::afb(ldafb,*)
-character(len=1)::equed
-real(blas77_f64)::s(*)
-integer(blas77_int)::ldb
-real(blas77_f64)::b(ldb,*)
-integer(blas77_int)::ldx
-real(blas77_f64)::x(ldx,*)
-real(blas77_f64)::rcond
-real(blas77_f64)::ferr(*)
-real(blas77_f64)::berr(*)
-real(blas77_f64)::work(*)
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: fact
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: kd
+integer(blas77_int), intent(inout) :: nrhs
+integer(blas77_int), intent(inout) :: ldab
+real(blas77_f64), intent(inout) :: ab(ldab,*)
+integer(blas77_int), intent(inout) :: ldafb
+real(blas77_f64), intent(inout) :: afb(ldafb,*)
+character(len=1), intent(inout) :: equed
+real(blas77_f64), intent(inout) :: s(*)
+integer(blas77_int), intent(inout) :: ldb
+real(blas77_f64), intent(inout) :: b(ldb,*)
+integer(blas77_int), intent(inout) :: ldx
+real(blas77_f64), intent(inout) :: x(ldx,*)
+real(blas77_f64), intent(inout) :: rcond
+real(blas77_f64), intent(inout) :: ferr(*)
+real(blas77_f64), intent(inout) :: berr(*)
+real(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: info
 end

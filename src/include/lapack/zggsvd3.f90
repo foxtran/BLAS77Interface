@@ -1,28 +1,28 @@
 pure subroutine zggsvd3(jobu,jobv,jobq,m,n,p,k,l,a,lda,b,ldb,alpha,beta,u,ldu,v,ldv,q,ldq,work,lwork,rwork,iwork,info) CNAME(zggsvd3)
 import
-character(len=1)::jobu
-character(len=1)::jobv
-character(len=1)::jobq
-integer(blas77_int)::m
-integer(blas77_int)::n
-integer(blas77_int)::p
-integer(blas77_int)::k
-integer(blas77_int)::l
-integer(blas77_int)::lda
-complex(blas77_f64)::a(lda,*)
-integer(blas77_int)::ldb
-complex(blas77_f64)::b(ldb,*)
-real(blas77_f64)::alpha(*)
-real(blas77_f64)::beta(*)
-integer(blas77_int)::ldu
-complex(blas77_f64)::u(ldu,*)
-integer(blas77_int)::ldv
-complex(blas77_f64)::v(ldv,*)
-integer(blas77_int)::ldq
-complex(blas77_f64)::q(ldq,*)
-complex(blas77_f64)::work(*)
-integer(blas77_int)::lwork
-real(blas77_f64)::rwork(*)
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: jobu
+character(len=1), intent(inout) :: jobv
+character(len=1), intent(inout) :: jobq
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: p
+integer(blas77_int), intent(inout) :: k
+integer(blas77_int), intent(inout) :: l
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f64), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ldb
+complex(blas77_f64), intent(inout) :: b(ldb,*)
+real(blas77_f64), intent(inout) :: alpha(*)
+real(blas77_f64), intent(inout) :: beta(*)
+integer(blas77_int), intent(inout) :: ldu
+complex(blas77_f64), intent(inout) :: u(ldu,*)
+integer(blas77_int), intent(inout) :: ldv
+complex(blas77_f64), intent(inout) :: v(ldv,*)
+integer(blas77_int), intent(inout) :: ldq
+complex(blas77_f64), intent(inout) :: q(ldq,*)
+complex(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+real(blas77_f64), intent(inout) :: rwork(*)
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: info
 end

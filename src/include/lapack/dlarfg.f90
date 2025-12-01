@@ -1,8 +1,8 @@
 pure subroutine dlarfg(n,alpha,x,incx,tau) CNAME(dlarfg)
 import
-integer(blas77_int)::n
-real(blas77_f64)::alpha
-real(blas77_f64)::x(*)
-integer(blas77_int)::incx
-real(blas77_f64)::tau
+integer(blas77_int), intent(inout) :: n
+real(blas77_f64), intent(inout) :: alpha
+real(blas77_f64), intent(inout) :: x(*)
+integer(blas77_int), intent(inout) :: incx
+real(blas77_f64), intent(inout) :: tau
 end

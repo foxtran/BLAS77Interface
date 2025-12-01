@@ -1,11 +1,11 @@
 pure subroutine zhetd2(uplo,n,a,lda,d,e,tau,info) CNAME(zhetd2)
 import
-character(len=1)::uplo
-integer(blas77_int)::n
-integer(blas77_int)::lda
-complex(blas77_f64)::a(lda,*)
-real(blas77_f64)::d(*)
-real(blas77_f64)::e(*)
-complex(blas77_f64)::tau(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f64), intent(inout) :: a(lda,*)
+real(blas77_f64), intent(inout) :: d(*)
+real(blas77_f64), intent(inout) :: e(*)
+complex(blas77_f64), intent(inout) :: tau(*)
+integer(blas77_int), intent(inout) :: info
 end

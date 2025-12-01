@@ -1,19 +1,19 @@
 pure subroutine cgghd3(compq,compz,n,ilo,ihi,a,lda,b,ldb,q,ldq,z,ldz,work,lwork,info) CNAME(cgghd3)
 import
-character(len=1)::compq
-character(len=1)::compz
-integer(blas77_int)::n
-integer(blas77_int)::ilo
-integer(blas77_int)::ihi
-integer(blas77_int)::lda
-complex(blas77_f32)::a(lda,*)
-integer(blas77_int)::ldb
-complex(blas77_f32)::b(ldb,*)
-integer(blas77_int)::ldq
-complex(blas77_f32)::q(ldq,*)
-integer(blas77_int)::ldz
-complex(blas77_f32)::z(ldz,*)
-complex(blas77_f32)::work(*)
-integer(blas77_int)::lwork
-integer(blas77_int)::info
+character(len=1), intent(inout) :: compq
+character(len=1), intent(inout) :: compz
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: ilo
+integer(blas77_int), intent(inout) :: ihi
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f32), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ldb
+complex(blas77_f32), intent(inout) :: b(ldb,*)
+integer(blas77_int), intent(inout) :: ldq
+complex(blas77_f32), intent(inout) :: q(ldq,*)
+integer(blas77_int), intent(inout) :: ldz
+complex(blas77_f32), intent(inout) :: z(ldz,*)
+complex(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+integer(blas77_int), intent(inout) :: info
 end

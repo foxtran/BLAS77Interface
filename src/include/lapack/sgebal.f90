@@ -1,11 +1,11 @@
 pure subroutine sgebal(job,n,a,lda,ilo,ihi,scale,info) CNAME(sgebal)
 import
-character(len=1)::job
-integer(blas77_int)::n
-integer(blas77_int)::lda
-real(blas77_f32)::a(lda,*)
-integer(blas77_int)::ilo
-integer(blas77_int)::ihi
-real(blas77_f32)::scale(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: job
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lda
+real(blas77_f32), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ilo
+integer(blas77_int), intent(inout) :: ihi
+real(blas77_f32), intent(inout) :: scale(*)
+integer(blas77_int), intent(inout) :: info
 end

@@ -1,7 +1,7 @@
 pure function dzasum(n,zx,incx) CNAME(dzasum)
 import
-integer(blas77_int)::n
-complex(blas77_f64)::zx(*)
-integer(blas77_int)::incx
-real(blas77_f64)::dzasum
+integer(blas77_int), intent(inout) :: n
+complex(blas77_f64), intent(inout) :: zx(*)
+integer(blas77_int), intent(inout) :: incx
+real(blas77_f64), intent(inout) :: dzasum
 end

@@ -1,10 +1,10 @@
 pure subroutine csytf2_rk(uplo,n,a,lda,e,ipiv,info) CNAME(csytf2_rk)
 import
-character(len=1)::uplo
-integer(blas77_int)::n
-integer(blas77_int)::lda
-complex(blas77_f32)::a(lda,*)
-complex(blas77_f32)::e(*)
-integer(blas77_int)::ipiv(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f32), intent(inout) :: a(lda,*)
+complex(blas77_f32), intent(inout) :: e(*)
+integer(blas77_int), intent(inout) :: ipiv(*)
+integer(blas77_int), intent(inout) :: info
 end

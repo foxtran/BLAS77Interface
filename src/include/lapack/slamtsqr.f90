@@ -1,19 +1,19 @@
 pure subroutine slamtsqr(side,trans,m,n,k,mb,nb,a,lda,t,ldt,c,ldc,work,lwork,info) CNAME(slamtsqr)
 import
-character(len=1)::side
-character(len=1)::trans
-integer(blas77_int)::m
-integer(blas77_int)::n
-integer(blas77_int)::k
-integer(blas77_int)::mb
-integer(blas77_int)::nb
-integer(blas77_int)::lda
-real(blas77_f32)::a(lda,*)
-integer(blas77_int)::ldt
-real(blas77_f32)::t(ldt,*)
-integer(blas77_int)::ldc
-real(blas77_f32)::c(ldc,*)
-real(blas77_f32)::work(*)
-integer(blas77_int)::lwork
-integer(blas77_int)::info
+character(len=1), intent(inout) :: side
+character(len=1), intent(inout) :: trans
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: k
+integer(blas77_int), intent(inout) :: mb
+integer(blas77_int), intent(inout) :: nb
+integer(blas77_int), intent(inout) :: lda
+real(blas77_f32), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ldt
+real(blas77_f32), intent(inout) :: t(ldt,*)
+integer(blas77_int), intent(inout) :: ldc
+real(blas77_f32), intent(inout) :: c(ldc,*)
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+integer(blas77_int), intent(inout) :: info
 end

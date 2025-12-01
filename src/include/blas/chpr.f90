@@ -1,9 +1,9 @@
 pure subroutine chpr(uplo,n,alpha,x,incx,ap) CNAME(chpr)
 import
-character(len=1)::uplo
-integer(blas77_int)::n
-real(blas77_f32)::alpha
-complex(blas77_f32)::x(*)
-integer(blas77_int)::incx
-complex(blas77_f32)::ap(*)
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+real(blas77_f32), intent(inout) :: alpha
+complex(blas77_f32), intent(inout) :: x(*)
+integer(blas77_int), intent(inout) :: incx
+complex(blas77_f32), intent(inout) :: ap(*)
 end

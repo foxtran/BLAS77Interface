@@ -20,12 +20,12 @@ integer(blas77_int),intent(out)::nd
 complex(blas77_f32),intent(inout)::alpha(*)
 complex(blas77_f32),intent(inout)::beta(*)
 integer(blas77_int),intent(in)::ldqc
-complex(blas77_f32)::qc(ldqc,*)
+complex(blas77_f32), intent(inout) :: qc(ldqc,*)
 integer(blas77_int),intent(in)::ldzc
-complex(blas77_f32)::zc(ldzc,*)
-complex(blas77_f32)::work(*)
+complex(blas77_f32), intent(inout) :: zc(ldzc,*)
+complex(blas77_f32), intent(inout) :: work(*)
 integer(blas77_int),intent(in)::lwork
-real(blas77_f32)::rwork(*)
+real(blas77_f32), intent(inout) :: rwork(*)
 integer(blas77_int),intent(in)::rec
 integer(blas77_int),intent(out)::info
 end

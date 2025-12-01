@@ -1,6 +1,6 @@
 pure function dlapy2(x,y) CNAME(dlapy2)
 import
-real(blas77_f64)::x
-real(blas77_f64)::y
-real(blas77_f64)::dlapy2
+real(blas77_f64), intent(inout) :: x
+real(blas77_f64), intent(inout) :: y
+real(blas77_f64), intent(inout) :: dlapy2
 end

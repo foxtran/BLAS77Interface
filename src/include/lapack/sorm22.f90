@@ -1,16 +1,16 @@
 pure subroutine sorm22(side,trans,m,n,n1,n2,q,ldq,c,ldc,work,lwork,info) CNAME(sorm22)
 import
-character(len=1)::side
-character(len=1)::trans
-integer(blas77_int)::m
-integer(blas77_int)::n
-integer(blas77_int)::n1
-integer(blas77_int)::n2
-integer(blas77_int)::ldq
-real(blas77_f32)::q(ldq,*)
-integer(blas77_int)::ldc
-real(blas77_f32)::c(ldc,*)
-real(blas77_f32)::work(*)
-integer(blas77_int)::lwork
-integer(blas77_int)::info
+character(len=1), intent(inout) :: side
+character(len=1), intent(inout) :: trans
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: n1
+integer(blas77_int), intent(inout) :: n2
+integer(blas77_int), intent(inout) :: ldq
+real(blas77_f32), intent(inout) :: q(ldq,*)
+integer(blas77_int), intent(inout) :: ldc
+real(blas77_f32), intent(inout) :: c(ldc,*)
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+integer(blas77_int), intent(inout) :: info
 end

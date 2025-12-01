@@ -1,11 +1,11 @@
 pure subroutine sopgtr(uplo,n,ap,tau,q,ldq,work,info) CNAME(sopgtr)
 import
-character(len=1)::uplo
-integer(blas77_int)::n
-real(blas77_f32)::ap(*)
-real(blas77_f32)::tau(*)
-integer(blas77_int)::ldq
-real(blas77_f32)::q(ldq,*)
-real(blas77_f32)::work(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+real(blas77_f32), intent(inout) :: ap(*)
+real(blas77_f32), intent(inout) :: tau(*)
+integer(blas77_int), intent(inout) :: ldq
+real(blas77_f32), intent(inout) :: q(ldq,*)
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: info
 end

@@ -1,23 +1,23 @@
 pure subroutine sgtrfs(trans,n,nrhs,dl,d,du,dlf,df,duf,du2,ipiv,b,ldb,x,ldx,ferr,berr,work,iwork,info) CNAME(sgtrfs)
 import
-character(len=1)::trans
-integer(blas77_int)::n
-integer(blas77_int)::nrhs
-real(blas77_f32)::dl(*)
-real(blas77_f32)::d(*)
-real(blas77_f32)::du(*)
-real(blas77_f32)::dlf(*)
-real(blas77_f32)::df(*)
-real(blas77_f32)::duf(*)
-real(blas77_f32)::du2(*)
-integer(blas77_int)::ipiv(*)
-integer(blas77_int)::ldb
-real(blas77_f32)::b(ldb,*)
-integer(blas77_int)::ldx
-real(blas77_f32)::x(ldx,*)
-real(blas77_f32)::ferr(*)
-real(blas77_f32)::berr(*)
-real(blas77_f32)::work(*)
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: trans
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: nrhs
+real(blas77_f32), intent(inout) :: dl(*)
+real(blas77_f32), intent(inout) :: d(*)
+real(blas77_f32), intent(inout) :: du(*)
+real(blas77_f32), intent(inout) :: dlf(*)
+real(blas77_f32), intent(inout) :: df(*)
+real(blas77_f32), intent(inout) :: duf(*)
+real(blas77_f32), intent(inout) :: du2(*)
+integer(blas77_int), intent(inout) :: ipiv(*)
+integer(blas77_int), intent(inout) :: ldb
+real(blas77_f32), intent(inout) :: b(ldb,*)
+integer(blas77_int), intent(inout) :: ldx
+real(blas77_f32), intent(inout) :: x(ldx,*)
+real(blas77_f32), intent(inout) :: ferr(*)
+real(blas77_f32), intent(inout) :: berr(*)
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: info
 end

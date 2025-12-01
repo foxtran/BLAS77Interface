@@ -1,9 +1,9 @@
 pure subroutine daxpy(n,da,dx,incx,dy,incy) CNAME(daxpy)
 import
-integer(blas77_int)::n
-real(blas77_f64)::da
-real(blas77_f64)::dx(*)
-integer(blas77_int)::incx
-real(blas77_f64)::dy(*)
-integer(blas77_int)::incy
+integer(blas77_int), intent(inout) :: n
+real(blas77_f64), intent(inout) :: da
+real(blas77_f64), intent(inout) :: dx(*)
+integer(blas77_int), intent(inout) :: incx
+real(blas77_f64), intent(inout) :: dy(*)
+integer(blas77_int), intent(inout) :: incy
 end

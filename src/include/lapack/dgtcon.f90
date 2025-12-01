@@ -1,15 +1,15 @@
 pure subroutine dgtcon(norm,n,dl,d,du,du2,ipiv,anorm,rcond,work,iwork,info) CNAME(dgtcon)
 import
-character(len=1)::norm
-integer(blas77_int)::n
-real(blas77_f64)::dl(*)
-real(blas77_f64)::d(*)
-real(blas77_f64)::du(*)
-real(blas77_f64)::du2(*)
-integer(blas77_int)::ipiv(*)
-real(blas77_f64)::anorm
-real(blas77_f64)::rcond
-real(blas77_f64)::work(*)
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: norm
+integer(blas77_int), intent(inout) :: n
+real(blas77_f64), intent(inout) :: dl(*)
+real(blas77_f64), intent(inout) :: d(*)
+real(blas77_f64), intent(inout) :: du(*)
+real(blas77_f64), intent(inout) :: du2(*)
+integer(blas77_int), intent(inout) :: ipiv(*)
+real(blas77_f64), intent(inout) :: anorm
+real(blas77_f64), intent(inout) :: rcond
+real(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: info
 end

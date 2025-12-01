@@ -1,8 +1,8 @@
 pure subroutine dlartg(f,g,c,s,r) CNAME(dlartg)
 import
-real(blas77_f64)::f
-real(blas77_f64)::g
-real(blas77_f64)::c
-real(blas77_f64)::s
-real(blas77_f64)::r
+real(blas77_f64), intent(inout) :: f
+real(blas77_f64), intent(inout) :: g
+real(blas77_f64), intent(inout) :: c
+real(blas77_f64), intent(inout) :: s
+real(blas77_f64), intent(inout) :: r
 end

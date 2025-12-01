@@ -1,11 +1,11 @@
 pure subroutine slar2v(n,x,y,z,incx,c,s,incc) CNAME(slar2v)
 import
-integer(blas77_int)::n
-real(blas77_f32)::x(*)
-real(blas77_f32)::y(*)
-real(blas77_f32)::z(*)
-integer(blas77_int)::incx
-real(blas77_f32)::c(*)
-real(blas77_f32)::s(*)
-integer(blas77_int)::incc
+integer(blas77_int), intent(inout) :: n
+real(blas77_f32), intent(inout) :: x(*)
+real(blas77_f32), intent(inout) :: y(*)
+real(blas77_f32), intent(inout) :: z(*)
+integer(blas77_int), intent(inout) :: incx
+real(blas77_f32), intent(inout) :: c(*)
+real(blas77_f32), intent(inout) :: s(*)
+integer(blas77_int), intent(inout) :: incc
 end

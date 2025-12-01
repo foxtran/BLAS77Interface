@@ -1,9 +1,9 @@
 pure subroutine clacn2(n,v,x,est,kase,isave) CNAME(clacn2)
 import
-integer(blas77_int)::n
-complex(blas77_f32)::v(*)
-complex(blas77_f32)::x(*)
-real(blas77_f32)::est
-integer(blas77_int)::kase
-integer(blas77_int)::isave(3)
+integer(blas77_int), intent(inout) :: n
+complex(blas77_f32), intent(inout) :: v(*)
+complex(blas77_f32), intent(inout) :: x(*)
+real(blas77_f32), intent(inout) :: est
+integer(blas77_int), intent(inout) :: kase
+integer(blas77_int), intent(inout) :: isave(3)
 end

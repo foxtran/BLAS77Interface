@@ -1,13 +1,13 @@
 pure subroutine csytrs_3(uplo,n,nrhs,a,lda,e,ipiv,b,ldb,info) CNAME(csytrs_3)
 import
-character(len=1)::uplo
-integer(blas77_int)::n
-integer(blas77_int)::nrhs
-integer(blas77_int)::lda
-complex(blas77_f32)::a(lda,*)
-complex(blas77_f32)::e(*)
-integer(blas77_int)::ipiv(*)
-integer(blas77_int)::ldb
-complex(blas77_f32)::b(ldb,*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: nrhs
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f32), intent(inout) :: a(lda,*)
+complex(blas77_f32), intent(inout) :: e(*)
+integer(blas77_int), intent(inout) :: ipiv(*)
+integer(blas77_int), intent(inout) :: ldb
+complex(blas77_f32), intent(inout) :: b(ldb,*)
+integer(blas77_int), intent(inout) :: info
 end

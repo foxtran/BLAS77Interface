@@ -1,7 +1,7 @@
 pure subroutine dscal(n,da,dx,incx) CNAME(dscal)
 import
-integer(blas77_int)::n
-real(blas77_f64)::da
-real(blas77_f64)::dx(*)
-integer(blas77_int)::incx
+integer(blas77_int), intent(inout) :: n
+real(blas77_f64), intent(inout) :: da
+real(blas77_f64), intent(inout) :: dx(*)
+integer(blas77_int), intent(inout) :: incx
 end

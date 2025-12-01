@@ -1,14 +1,14 @@
 pure subroutine zgeqrs(m,n,nrhs,a,lda,tau,b,ldb,work,lwork,info) CNAME(zgeqrs)
 import
-integer(blas77_int)::m
-integer(blas77_int)::n
-integer(blas77_int)::nrhs
-integer(blas77_int)::lda
-complex(blas77_f64)::a(lda,*)
-complex(blas77_f64)::tau(*)
-integer(blas77_int)::ldb
-complex(blas77_f64)::b(ldb,*)
-complex(blas77_f64)::work(*)
-integer(blas77_int)::lwork
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: nrhs
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f64), intent(inout) :: a(lda,*)
+complex(blas77_f64), intent(inout) :: tau(*)
+integer(blas77_int), intent(inout) :: ldb
+complex(blas77_f64), intent(inout) :: b(ldb,*)
+complex(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+integer(blas77_int), intent(inout) :: info
 end

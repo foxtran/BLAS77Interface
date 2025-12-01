@@ -1,9 +1,9 @@
 pure subroutine srotm(n,sx,incx,sy,incy,sparam) CNAME(srotm)
 import
-integer(blas77_int)::n
-real(blas77_f32)::sx(*)
-integer(blas77_int)::incx
-real(blas77_f32)::sy(*)
-integer(blas77_int)::incy
-real(blas77_f32)::sparam(5)
+integer(blas77_int), intent(inout) :: n
+real(blas77_f32), intent(inout) :: sx(*)
+integer(blas77_int), intent(inout) :: incx
+real(blas77_f32), intent(inout) :: sy(*)
+integer(blas77_int), intent(inout) :: incy
+real(blas77_f32), intent(inout) :: sparam(5)
 end

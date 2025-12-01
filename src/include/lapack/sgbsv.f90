@@ -1,13 +1,13 @@
 pure subroutine sgbsv(n,kl,ku,nrhs,ab,ldab,ipiv,b,ldb,info) CNAME(sgbsv)
 import
-integer(blas77_int)::n
-integer(blas77_int)::kl
-integer(blas77_int)::ku
-integer(blas77_int)::nrhs
-integer(blas77_int)::ldab
-real(blas77_f32)::ab(ldab,*)
-integer(blas77_int)::ipiv(*)
-integer(blas77_int)::ldb
-real(blas77_f32)::b(ldb,*)
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: kl
+integer(blas77_int), intent(inout) :: ku
+integer(blas77_int), intent(inout) :: nrhs
+integer(blas77_int), intent(inout) :: ldab
+real(blas77_f32), intent(inout) :: ab(ldab,*)
+integer(blas77_int), intent(inout) :: ipiv(*)
+integer(blas77_int), intent(inout) :: ldb
+real(blas77_f32), intent(inout) :: b(ldb,*)
+integer(blas77_int), intent(inout) :: info
 end

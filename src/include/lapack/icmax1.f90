@@ -1,7 +1,7 @@
 pure function icmax1(n,cx,incx) CNAME(icmax1)
 import
-integer(blas77_int)::n
-complex(blas77_f32)::cx(*)
-integer(blas77_int)::incx
-integer(blas77_int)::icmax1
+integer(blas77_int), intent(inout) :: n
+complex(blas77_f32), intent(inout) :: cx(*)
+integer(blas77_int), intent(inout) :: incx
+integer(blas77_int), intent(inout) :: icmax1
 end

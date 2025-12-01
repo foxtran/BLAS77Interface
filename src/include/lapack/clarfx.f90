@@ -1,11 +1,11 @@
 pure subroutine clarfx(side,m,n,v,tau,c,ldc,work) CNAME(clarfx)
 import
-character(len=1)::side
-integer(blas77_int)::m
-integer(blas77_int)::n
-complex(blas77_f32)::v(*)
-complex(blas77_f32)::tau
-integer(blas77_int)::ldc
-complex(blas77_f32)::c(ldc,*)
-complex(blas77_f32)::work(*)
+character(len=1), intent(inout) :: side
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+complex(blas77_f32), intent(inout) :: v(*)
+complex(blas77_f32), intent(inout) :: tau
+integer(blas77_int), intent(inout) :: ldc
+complex(blas77_f32), intent(inout) :: c(ldc,*)
+complex(blas77_f32), intent(inout) :: work(*)
 end

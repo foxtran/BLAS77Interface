@@ -1,15 +1,15 @@
 pure subroutine dlasd8(icompq,k,d,z,vf,vl,difl,difr,lddifr,dsigma,work,info) CNAME(dlasd8)
 import
-integer(blas77_int)::icompq
-integer(blas77_int)::k
-real(blas77_f64)::d(*)
-real(blas77_f64)::z(*)
-real(blas77_f64)::vf(*)
-real(blas77_f64)::vl(*)
-real(blas77_f64)::difl(*)
-integer(blas77_int)::lddifr
-real(blas77_f64)::difr(lddifr,*)
-real(blas77_f64)::dsigma(*)
-real(blas77_f64)::work(*)
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: icompq
+integer(blas77_int), intent(inout) :: k
+real(blas77_f64), intent(inout) :: d(*)
+real(blas77_f64), intent(inout) :: z(*)
+real(blas77_f64), intent(inout) :: vf(*)
+real(blas77_f64), intent(inout) :: vl(*)
+real(blas77_f64), intent(inout) :: difl(*)
+integer(blas77_int), intent(inout) :: lddifr
+real(blas77_f64), intent(inout) :: difr(lddifr,*)
+real(blas77_f64), intent(inout) :: dsigma(*)
+real(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: info
 end

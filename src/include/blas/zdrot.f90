@@ -1,10 +1,10 @@
 pure subroutine zdrot(n,zx,incx,zy,incy,c,s) CNAME(zdrot)
 import
-integer(blas77_int)::n
-complex(blas77_f64)::zx(*)
-integer(blas77_int)::incx
-complex(blas77_f64)::zy(*)
-integer(blas77_int)::incy
-real(blas77_f64)::c
-real(blas77_f64)::s
+integer(blas77_int), intent(inout) :: n
+complex(blas77_f64), intent(inout) :: zx(*)
+integer(blas77_int), intent(inout) :: incx
+complex(blas77_f64), intent(inout) :: zy(*)
+integer(blas77_int), intent(inout) :: incy
+real(blas77_f64), intent(inout) :: c
+real(blas77_f64), intent(inout) :: s
 end

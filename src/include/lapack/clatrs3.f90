@@ -1,18 +1,18 @@
 pure subroutine clatrs3(uplo,trans,diag,normin,n,nrhs,a,lda,x,ldx,scale,cnorm,work,lwork,info) CNAME(clatrs3)
 import
-character(len=1)::uplo
-character(len=1)::trans
-character(len=1)::diag
-character(len=1)::normin
-integer(blas77_int)::n
-integer(blas77_int)::nrhs
-integer(blas77_int)::lda
-complex(blas77_f32)::a(lda,*)
-integer(blas77_int)::ldx
-complex(blas77_f32)::x(ldx,*)
-real(blas77_f32)::scale(*)
-real(blas77_f32)::cnorm(*)
-real(blas77_f32)::work(*)
-integer(blas77_int)::lwork
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+character(len=1), intent(inout) :: trans
+character(len=1), intent(inout) :: diag
+character(len=1), intent(inout) :: normin
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: nrhs
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f32), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ldx
+complex(blas77_f32), intent(inout) :: x(ldx,*)
+real(blas77_f32), intent(inout) :: scale(*)
+real(blas77_f32), intent(inout) :: cnorm(*)
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+integer(blas77_int), intent(inout) :: info
 end

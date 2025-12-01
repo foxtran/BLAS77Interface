@@ -1,10 +1,10 @@
 pure subroutine claset(uplo,m,n,alpha,beta,a,lda) CNAME(claset)
 import
-character(len=1)::uplo
-integer(blas77_int)::m
-integer(blas77_int)::n
-complex(blas77_f32)::alpha
-complex(blas77_f32)::beta
-integer(blas77_int)::lda
-complex(blas77_f32)::a(lda,*)
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+complex(blas77_f32), intent(inout) :: alpha
+complex(blas77_f32), intent(inout) :: beta
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f32), intent(inout) :: a(lda,*)
 end

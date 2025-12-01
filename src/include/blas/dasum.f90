@@ -1,7 +1,7 @@
 pure function dasum(n,dx,incx) CNAME(dasum)
 import
-integer(blas77_int)::n
-real(blas77_f64)::dx(*)
-integer(blas77_int)::incx
-real(blas77_f64)::dasum
+integer(blas77_int), intent(inout) :: n
+real(blas77_f64), intent(inout) :: dx(*)
+integer(blas77_int), intent(inout) :: incx
+real(blas77_f64), intent(inout) :: dasum
 end

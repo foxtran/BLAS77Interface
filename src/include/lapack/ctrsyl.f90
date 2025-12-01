@@ -1,16 +1,16 @@
 pure subroutine ctrsyl(trana,tranb,isgn,m,n,a,lda,b,ldb,c,ldc,scale,info) CNAME(ctrsyl)
 import
-character(len=1)::trana
-character(len=1)::tranb
-integer(blas77_int)::isgn
-integer(blas77_int)::m
-integer(blas77_int)::n
-integer(blas77_int)::lda
-complex(blas77_f32)::a(lda,*)
-integer(blas77_int)::ldb
-complex(blas77_f32)::b(ldb,*)
-integer(blas77_int)::ldc
-complex(blas77_f32)::c(ldc,*)
-real(blas77_f32)::scale
-integer(blas77_int)::info
+character(len=1), intent(inout) :: trana
+character(len=1), intent(inout) :: tranb
+integer(blas77_int), intent(inout) :: isgn
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f32), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ldb
+complex(blas77_f32), intent(inout) :: b(ldb,*)
+integer(blas77_int), intent(inout) :: ldc
+complex(blas77_f32), intent(inout) :: c(ldc,*)
+real(blas77_f32), intent(inout) :: scale
+integer(blas77_int), intent(inout) :: info
 end

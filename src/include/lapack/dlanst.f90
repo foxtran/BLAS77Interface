@@ -1,8 +1,8 @@
 pure function dlanst(norm,n,d,e) CNAME(dlanst)
 import
-character(len=1)::norm
-integer(blas77_int)::n
-real(blas77_f64)::d(*)
-real(blas77_f64)::e(*)
-real(blas77_f64)::dlanst
+character(len=1), intent(inout) :: norm
+integer(blas77_int), intent(inout) :: n
+real(blas77_f64), intent(inout) :: d(*)
+real(blas77_f64), intent(inout) :: e(*)
+real(blas77_f64), intent(inout) :: dlanst
 end

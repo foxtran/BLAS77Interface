@@ -1,12 +1,12 @@
 pure subroutine slaic1(job,j,x,sest,w,gamma,sestpr,s,c) CNAME(slaic1)
 import
-integer(blas77_int)::job
-integer(blas77_int)::j
-real(blas77_f32)::x(j)
-real(blas77_f32)::sest
-real(blas77_f32)::w(j)
-real(blas77_f32)::gamma
-real(blas77_f32)::sestpr
-real(blas77_f32)::s
-real(blas77_f32)::c
+integer(blas77_int), intent(inout) :: job
+integer(blas77_int), intent(inout) :: j
+real(blas77_f32), intent(inout) :: x(j)
+real(blas77_f32), intent(inout) :: sest
+real(blas77_f32), intent(inout) :: w(j)
+real(blas77_f32), intent(inout) :: gamma
+real(blas77_f32), intent(inout) :: sestpr
+real(blas77_f32), intent(inout) :: s
+real(blas77_f32), intent(inout) :: c
 end

@@ -1,11 +1,11 @@
 pure subroutine zhpcon(uplo,n,ap,ipiv,anorm,rcond,work,info) CNAME(zhpcon)
 import
-character(len=1)::uplo
-integer(blas77_int)::n
-complex(blas77_f64)::ap(*)
-integer(blas77_int)::ipiv(*)
-real(blas77_f64)::anorm
-real(blas77_f64)::rcond
-complex(blas77_f64)::work(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+complex(blas77_f64), intent(inout) :: ap(*)
+integer(blas77_int), intent(inout) :: ipiv(*)
+real(blas77_f64), intent(inout) :: anorm
+real(blas77_f64), intent(inout) :: rcond
+complex(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: info
 end

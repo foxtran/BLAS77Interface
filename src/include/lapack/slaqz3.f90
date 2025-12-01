@@ -21,10 +21,10 @@ real(blas77_f32),intent(inout)::alphar(*)
 real(blas77_f32),intent(inout)::alphai(*)
 real(blas77_f32),intent(inout)::beta(*)
 integer(blas77_int),intent(in)::ldqc
-real(blas77_f32)::qc(ldqc,*)
+real(blas77_f32), intent(inout) :: qc(ldqc,*)
 integer(blas77_int),intent(in)::ldzc
-real(blas77_f32)::zc(ldzc,*)
-real(blas77_f32)::work(*)
+real(blas77_f32), intent(inout) :: zc(ldzc,*)
+real(blas77_f32), intent(inout) :: work(*)
 integer(blas77_int),intent(in)::lwork
 integer(blas77_int),intent(in)::rec
 integer(blas77_int),intent(out)::info

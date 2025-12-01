@@ -1,19 +1,19 @@
 pure subroutine dlasy2(ltranl,ltranr,isgn,n1,n2,tl,ldtl,tr,ldtr,b,ldb,scale,x,ldx,xnorm,info) CNAME(dlasy2)
 import
-logical(blas77_int)::ltranl
-logical(blas77_int)::ltranr
-integer(blas77_int)::isgn
-integer(blas77_int)::n1
-integer(blas77_int)::n2
-integer(blas77_int)::ldtl
-real(blas77_f64)::tl(ldtl,*)
-integer(blas77_int)::ldtr
-real(blas77_f64)::tr(ldtr,*)
-integer(blas77_int)::ldb
-real(blas77_f64)::b(ldb,*)
-real(blas77_f64)::scale
-integer(blas77_int)::ldx
-real(blas77_f64)::x(ldx,*)
-real(blas77_f64)::xnorm
-integer(blas77_int)::info
+logical(blas77_int), intent(inout) :: ltranl
+logical(blas77_int), intent(inout) :: ltranr
+integer(blas77_int), intent(inout) :: isgn
+integer(blas77_int), intent(inout) :: n1
+integer(blas77_int), intent(inout) :: n2
+integer(blas77_int), intent(inout) :: ldtl
+real(blas77_f64), intent(inout) :: tl(ldtl,*)
+integer(blas77_int), intent(inout) :: ldtr
+real(blas77_f64), intent(inout) :: tr(ldtr,*)
+integer(blas77_int), intent(inout) :: ldb
+real(blas77_f64), intent(inout) :: b(ldb,*)
+real(blas77_f64), intent(inout) :: scale
+integer(blas77_int), intent(inout) :: ldx
+real(blas77_f64), intent(inout) :: x(ldx,*)
+real(blas77_f64), intent(inout) :: xnorm
+integer(blas77_int), intent(inout) :: info
 end

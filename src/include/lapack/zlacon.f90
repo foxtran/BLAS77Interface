@@ -1,8 +1,8 @@
 pure subroutine zlacon(n,v,x,est,kase) CNAME(zlacon)
 import
-integer(blas77_int)::n
-complex(blas77_f64)::v(n)
-complex(blas77_f64)::x(n)
-real(blas77_f64)::est
-integer(blas77_int)::kase
+integer(blas77_int), intent(inout) :: n
+complex(blas77_f64), intent(inout) :: v(n)
+complex(blas77_f64), intent(inout) :: x(n)
+real(blas77_f64), intent(inout) :: est
+integer(blas77_int), intent(inout) :: kase
 end

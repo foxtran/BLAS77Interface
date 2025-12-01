@@ -1,21 +1,21 @@
 pure subroutine cgeesx(jobvs,sort,select,sense,n,a,lda,sdim,w,vs,ldvs,rconde,rcondv,work,lwork,rwork,bwork,info) CNAME(cgeesx)
 import
-character(len=1)::jobvs
-character(len=1)::sort
-procedure(logical(blas77_int))::select
-character(len=1)::sense
-integer(blas77_int)::n
-integer(blas77_int)::lda
-complex(blas77_f32)::a(lda,*)
-integer(blas77_int)::sdim
-complex(blas77_f32)::w(*)
-integer(blas77_int)::ldvs
-complex(blas77_f32)::vs(ldvs,*)
-real(blas77_f32)::rconde
-real(blas77_f32)::rcondv
-complex(blas77_f32)::work(*)
-integer(blas77_int)::lwork
-real(blas77_f32)::rwork(*)
-logical(blas77_int)::bwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: jobvs
+character(len=1), intent(inout) :: sort
+procedure(logical(blas77_int)), intent(inout) :: select
+character(len=1), intent(inout) :: sense
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f32), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: sdim
+complex(blas77_f32), intent(inout) :: w(*)
+integer(blas77_int), intent(inout) :: ldvs
+complex(blas77_f32), intent(inout) :: vs(ldvs,*)
+real(blas77_f32), intent(inout) :: rconde
+real(blas77_f32), intent(inout) :: rcondv
+complex(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+real(blas77_f32), intent(inout) :: rwork(*)
+logical(blas77_int), intent(inout) :: bwork(*)
+integer(blas77_int), intent(inout) :: info
 end

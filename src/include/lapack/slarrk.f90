@@ -1,14 +1,14 @@
 pure subroutine slarrk(n,iw,gl,gu,d,e2,pivmin,reltol,w,werr,info) CNAME(slarrk)
 import
-integer(blas77_int)::n
-integer(blas77_int)::iw
-real(blas77_f32)::gl
-real(blas77_f32)::gu
-real(blas77_f32)::d(*)
-real(blas77_f32)::e2(*)
-real(blas77_f32)::pivmin
-real(blas77_f32)::reltol
-real(blas77_f32)::w
-real(blas77_f32)::werr
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: iw
+real(blas77_f32), intent(inout) :: gl
+real(blas77_f32), intent(inout) :: gu
+real(blas77_f32), intent(inout) :: d(*)
+real(blas77_f32), intent(inout) :: e2(*)
+real(blas77_f32), intent(inout) :: pivmin
+real(blas77_f32), intent(inout) :: reltol
+real(blas77_f32), intent(inout) :: w
+real(blas77_f32), intent(inout) :: werr
+integer(blas77_int), intent(inout) :: info
 end

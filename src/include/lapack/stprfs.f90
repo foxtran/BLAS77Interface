@@ -1,18 +1,18 @@
 pure subroutine stprfs(uplo,trans,diag,n,nrhs,ap,b,ldb,x,ldx,ferr,berr,work,iwork,info) CNAME(stprfs)
 import
-character(len=1)::uplo
-character(len=1)::trans
-character(len=1)::diag
-integer(blas77_int)::n
-integer(blas77_int)::nrhs
-real(blas77_f32)::ap(*)
-integer(blas77_int)::ldb
-real(blas77_f32)::b(ldb,*)
-integer(blas77_int)::ldx
-real(blas77_f32)::x(ldx,*)
-real(blas77_f32)::ferr(*)
-real(blas77_f32)::berr(*)
-real(blas77_f32)::work(*)
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+character(len=1), intent(inout) :: trans
+character(len=1), intent(inout) :: diag
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: nrhs
+real(blas77_f32), intent(inout) :: ap(*)
+integer(blas77_int), intent(inout) :: ldb
+real(blas77_f32), intent(inout) :: b(ldb,*)
+integer(blas77_int), intent(inout) :: ldx
+real(blas77_f32), intent(inout) :: x(ldx,*)
+real(blas77_f32), intent(inout) :: ferr(*)
+real(blas77_f32), intent(inout) :: berr(*)
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: info
 end

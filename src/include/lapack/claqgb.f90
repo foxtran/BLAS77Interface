@@ -1,15 +1,15 @@
 pure subroutine claqgb(m,n,kl,ku,ab,ldab,r,c,rowcnd,colcnd,amax,equed) CNAME(claqgb)
 import
-integer(blas77_int)::m
-integer(blas77_int)::n
-integer(blas77_int)::kl
-integer(blas77_int)::ku
-integer(blas77_int)::ldab
-complex(blas77_f32)::ab(ldab,*)
-real(blas77_f32)::r(*)
-real(blas77_f32)::c(*)
-real(blas77_f32)::rowcnd
-real(blas77_f32)::colcnd
-real(blas77_f32)::amax
-character(len=1)::equed
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: kl
+integer(blas77_int), intent(inout) :: ku
+integer(blas77_int), intent(inout) :: ldab
+complex(blas77_f32), intent(inout) :: ab(ldab,*)
+real(blas77_f32), intent(inout) :: r(*)
+real(blas77_f32), intent(inout) :: c(*)
+real(blas77_f32), intent(inout) :: rowcnd
+real(blas77_f32), intent(inout) :: colcnd
+real(blas77_f32), intent(inout) :: amax
+character(len=1), intent(inout) :: equed
 end

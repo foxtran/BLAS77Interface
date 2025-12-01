@@ -1,12 +1,12 @@
 pure subroutine dtpcon(norm,uplo,diag,n,ap,rcond,work,iwork,info) CNAME(dtpcon)
 import
-character(len=1)::norm
-character(len=1)::uplo
-character(len=1)::diag
-integer(blas77_int)::n
-real(blas77_f64)::ap(*)
-real(blas77_f64)::rcond
-real(blas77_f64)::work(*)
-integer(blas77_int)::iwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: norm
+character(len=1), intent(inout) :: uplo
+character(len=1), intent(inout) :: diag
+integer(blas77_int), intent(inout) :: n
+real(blas77_f64), intent(inout) :: ap(*)
+real(blas77_f64), intent(inout) :: rcond
+real(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: iwork(*)
+integer(blas77_int), intent(inout) :: info
 end

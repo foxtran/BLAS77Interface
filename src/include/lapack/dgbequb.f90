@@ -1,15 +1,15 @@
 pure subroutine dgbequb(m,n,kl,ku,ab,ldab,r,c,rowcnd,colcnd,amax,info) CNAME(dgbequb)
 import
-integer(blas77_int)::m
-integer(blas77_int)::n
-integer(blas77_int)::kl
-integer(blas77_int)::ku
-integer(blas77_int)::ldab
-real(blas77_f64)::ab(ldab,*)
-real(blas77_f64)::r(*)
-real(blas77_f64)::c(*)
-real(blas77_f64)::rowcnd
-real(blas77_f64)::colcnd
-real(blas77_f64)::amax
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: kl
+integer(blas77_int), intent(inout) :: ku
+integer(blas77_int), intent(inout) :: ldab
+real(blas77_f64), intent(inout) :: ab(ldab,*)
+real(blas77_f64), intent(inout) :: r(*)
+real(blas77_f64), intent(inout) :: c(*)
+real(blas77_f64), intent(inout) :: rowcnd
+real(blas77_f64), intent(inout) :: colcnd
+real(blas77_f64), intent(inout) :: amax
+integer(blas77_int), intent(inout) :: info
 end

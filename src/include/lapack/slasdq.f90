@@ -1,19 +1,19 @@
 pure subroutine slasdq(uplo,sqre,n,ncvt,nru,ncc,d,e,vt,ldvt,u,ldu,c,ldc,work,info) CNAME(slasdq)
 import
-character(len=1)::uplo
-integer(blas77_int)::sqre
-integer(blas77_int)::n
-integer(blas77_int)::ncvt
-integer(blas77_int)::nru
-integer(blas77_int)::ncc
-real(blas77_f32)::d(*)
-real(blas77_f32)::e(*)
-integer(blas77_int)::ldvt
-real(blas77_f32)::vt(ldvt,*)
-integer(blas77_int)::ldu
-real(blas77_f32)::u(ldu,*)
-integer(blas77_int)::ldc
-real(blas77_f32)::c(ldc,*)
-real(blas77_f32)::work(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: sqre
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: ncvt
+integer(blas77_int), intent(inout) :: nru
+integer(blas77_int), intent(inout) :: ncc
+real(blas77_f32), intent(inout) :: d(*)
+real(blas77_f32), intent(inout) :: e(*)
+integer(blas77_int), intent(inout) :: ldvt
+real(blas77_f32), intent(inout) :: vt(ldvt,*)
+integer(blas77_int), intent(inout) :: ldu
+real(blas77_f32), intent(inout) :: u(ldu,*)
+integer(blas77_int), intent(inout) :: ldc
+real(blas77_f32), intent(inout) :: c(ldc,*)
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: info
 end

@@ -1,7 +1,7 @@
 pure subroutine csscal(n,sa,cx,incx) CNAME(csscal)
 import
-integer(blas77_int)::n
-real(blas77_f32)::sa
-complex(blas77_f32)::cx(*)
-integer(blas77_int)::incx
+integer(blas77_int), intent(inout) :: n
+real(blas77_f32), intent(inout) :: sa
+complex(blas77_f32), intent(inout) :: cx(*)
+integer(blas77_int), intent(inout) :: incx
 end

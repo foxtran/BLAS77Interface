@@ -1,27 +1,27 @@
 pure subroutine slals0(icompq,nl,nr,sqre,nrhs,b,ldb,bx,ldbx,perm,givptr,givcol,ldgcol,givnum,ldgnum,poles,difl,difr,z,k,c,s,work,info) CNAME(slals0)
 import
-integer(blas77_int)::icompq
-integer(blas77_int)::nl
-integer(blas77_int)::nr
-integer(blas77_int)::sqre
-integer(blas77_int)::nrhs
-integer(blas77_int)::ldb
-real(blas77_f32)::b(ldb,*)
-integer(blas77_int)::ldbx
-real(blas77_f32)::bx(ldbx,*)
-integer(blas77_int)::perm(*)
-integer(blas77_int)::givptr
-integer(blas77_int)::ldgcol
-integer(blas77_int)::givcol(ldgcol,*)
-integer(blas77_int)::ldgnum
-real(blas77_f32)::givnum(ldgnum,*)
-real(blas77_f32)::poles(ldgnum,*)
-real(blas77_f32)::difl(*)
-real(blas77_f32)::difr(ldgnum,*)
-real(blas77_f32)::z(*)
-integer(blas77_int)::k
-real(blas77_f32)::c
-real(blas77_f32)::s
-real(blas77_f32)::work(*)
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: icompq
+integer(blas77_int), intent(inout) :: nl
+integer(blas77_int), intent(inout) :: nr
+integer(blas77_int), intent(inout) :: sqre
+integer(blas77_int), intent(inout) :: nrhs
+integer(blas77_int), intent(inout) :: ldb
+real(blas77_f32), intent(inout) :: b(ldb,*)
+integer(blas77_int), intent(inout) :: ldbx
+real(blas77_f32), intent(inout) :: bx(ldbx,*)
+integer(blas77_int), intent(inout) :: perm(*)
+integer(blas77_int), intent(inout) :: givptr
+integer(blas77_int), intent(inout) :: ldgcol
+integer(blas77_int), intent(inout) :: givcol(ldgcol,*)
+integer(blas77_int), intent(inout) :: ldgnum
+real(blas77_f32), intent(inout) :: givnum(ldgnum,*)
+real(blas77_f32), intent(inout) :: poles(ldgnum,*)
+real(blas77_f32), intent(inout) :: difl(*)
+real(blas77_f32), intent(inout) :: difr(ldgnum,*)
+real(blas77_f32), intent(inout) :: z(*)
+integer(blas77_int), intent(inout) :: k
+real(blas77_f32), intent(inout) :: c
+real(blas77_f32), intent(inout) :: s
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: info
 end

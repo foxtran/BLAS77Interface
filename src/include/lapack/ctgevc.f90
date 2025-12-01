@@ -1,20 +1,20 @@
 pure subroutine ctgevc(side,howmny,select,n,s,lds,p,ldp,vl,ldvl,vr,ldvr,mm,m,work,rwork,info) CNAME(ctgevc)
 import
-character(len=1)::side
-character(len=1)::howmny
-logical(blas77_int)::select(*)
-integer(blas77_int)::n
-integer(blas77_int)::lds
-complex(blas77_f32)::s(lds,*)
-integer(blas77_int)::ldp
-complex(blas77_f32)::p(ldp,*)
-integer(blas77_int)::ldvl
-complex(blas77_f32)::vl(ldvl,*)
-integer(blas77_int)::ldvr
-complex(blas77_f32)::vr(ldvr,*)
-integer(blas77_int)::mm
-integer(blas77_int)::m
-complex(blas77_f32)::work(*)
-real(blas77_f32)::rwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: side
+character(len=1), intent(inout) :: howmny
+logical(blas77_int), intent(inout) :: select(*)
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lds
+complex(blas77_f32), intent(inout) :: s(lds,*)
+integer(blas77_int), intent(inout) :: ldp
+complex(blas77_f32), intent(inout) :: p(ldp,*)
+integer(blas77_int), intent(inout) :: ldvl
+complex(blas77_f32), intent(inout) :: vl(ldvl,*)
+integer(blas77_int), intent(inout) :: ldvr
+complex(blas77_f32), intent(inout) :: vr(ldvr,*)
+integer(blas77_int), intent(inout) :: mm
+integer(blas77_int), intent(inout) :: m
+complex(blas77_f32), intent(inout) :: work(*)
+real(blas77_f32), intent(inout) :: rwork(*)
+integer(blas77_int), intent(inout) :: info
 end

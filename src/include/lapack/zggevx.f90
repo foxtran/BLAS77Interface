@@ -1,32 +1,32 @@
 pure subroutine zggevx(balanc,jobvl,jobvr,sense,n,a,lda,b,ldb,alpha,beta,vl,ldvl,vr,ldvr,ilo,ihi,lscale,rscale,abnrm,bbnrm,rconde,rcondv,work,lwork,rwork,iwork,bwork,info) CNAME(zggevx)
 import
-character(len=1)::balanc
-character(len=1)::jobvl
-character(len=1)::jobvr
-character(len=1)::sense
-integer(blas77_int)::n
-integer(blas77_int)::lda
-complex(blas77_f64)::a(lda,*)
-integer(blas77_int)::ldb
-complex(blas77_f64)::b(ldb,*)
-complex(blas77_f64)::alpha(*)
-complex(blas77_f64)::beta(*)
-integer(blas77_int)::ldvl
-complex(blas77_f64)::vl(ldvl,*)
-integer(blas77_int)::ldvr
-complex(blas77_f64)::vr(ldvr,*)
-integer(blas77_int)::ilo
-integer(blas77_int)::ihi
-real(blas77_f64)::lscale(*)
-real(blas77_f64)::rscale(*)
-real(blas77_f64)::abnrm
-real(blas77_f64)::bbnrm
-real(blas77_f64)::rconde(*)
-real(blas77_f64)::rcondv(*)
-complex(blas77_f64)::work(*)
-integer(blas77_int)::lwork
-real(blas77_f64)::rwork(*)
-integer(blas77_int)::iwork(*)
-logical(blas77_int)::bwork(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: balanc
+character(len=1), intent(inout) :: jobvl
+character(len=1), intent(inout) :: jobvr
+character(len=1), intent(inout) :: sense
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f64), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ldb
+complex(blas77_f64), intent(inout) :: b(ldb,*)
+complex(blas77_f64), intent(inout) :: alpha(*)
+complex(blas77_f64), intent(inout) :: beta(*)
+integer(blas77_int), intent(inout) :: ldvl
+complex(blas77_f64), intent(inout) :: vl(ldvl,*)
+integer(blas77_int), intent(inout) :: ldvr
+complex(blas77_f64), intent(inout) :: vr(ldvr,*)
+integer(blas77_int), intent(inout) :: ilo
+integer(blas77_int), intent(inout) :: ihi
+real(blas77_f64), intent(inout) :: lscale(*)
+real(blas77_f64), intent(inout) :: rscale(*)
+real(blas77_f64), intent(inout) :: abnrm
+real(blas77_f64), intent(inout) :: bbnrm
+real(blas77_f64), intent(inout) :: rconde(*)
+real(blas77_f64), intent(inout) :: rcondv(*)
+complex(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+real(blas77_f64), intent(inout) :: rwork(*)
+integer(blas77_int), intent(inout) :: iwork(*)
+logical(blas77_int), intent(inout) :: bwork(*)
+integer(blas77_int), intent(inout) :: info
 end

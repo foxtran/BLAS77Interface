@@ -1,28 +1,28 @@
 pure subroutine zlaqr2(wantt,wantz,n,ktop,kbot,nw,h,ldh,iloz,ihiz,z,ldz,ns,nd,sh,v,ldv,nh,t,ldt,nv,wv,ldwv,work,lwork) CNAME(zlaqr2)
 import
-logical(blas77_int)::wantt
-logical(blas77_int)::wantz
-integer(blas77_int)::n
-integer(blas77_int)::ktop
-integer(blas77_int)::kbot
-integer(blas77_int)::nw
-integer(blas77_int)::ldh
-complex(blas77_f64)::h(ldh,*)
-integer(blas77_int)::iloz
-integer(blas77_int)::ihiz
-integer(blas77_int)::ldz
-complex(blas77_f64)::z(ldz,*)
-integer(blas77_int)::ns
-integer(blas77_int)::nd
-complex(blas77_f64)::sh(*)
-integer(blas77_int)::ldv
-complex(blas77_f64)::v(ldv,*)
-integer(blas77_int)::nh
-integer(blas77_int)::ldt
-complex(blas77_f64)::t(ldt,*)
-integer(blas77_int)::nv
-integer(blas77_int)::ldwv
-complex(blas77_f64)::wv(ldwv,*)
-complex(blas77_f64)::work(*)
-integer(blas77_int)::lwork
+logical(blas77_int), intent(inout) :: wantt
+logical(blas77_int), intent(inout) :: wantz
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: ktop
+integer(blas77_int), intent(inout) :: kbot
+integer(blas77_int), intent(inout) :: nw
+integer(blas77_int), intent(inout) :: ldh
+complex(blas77_f64), intent(inout) :: h(ldh,*)
+integer(blas77_int), intent(inout) :: iloz
+integer(blas77_int), intent(inout) :: ihiz
+integer(blas77_int), intent(inout) :: ldz
+complex(blas77_f64), intent(inout) :: z(ldz,*)
+integer(blas77_int), intent(inout) :: ns
+integer(blas77_int), intent(inout) :: nd
+complex(blas77_f64), intent(inout) :: sh(*)
+integer(blas77_int), intent(inout) :: ldv
+complex(blas77_f64), intent(inout) :: v(ldv,*)
+integer(blas77_int), intent(inout) :: nh
+integer(blas77_int), intent(inout) :: ldt
+complex(blas77_f64), intent(inout) :: t(ldt,*)
+integer(blas77_int), intent(inout) :: nv
+integer(blas77_int), intent(inout) :: ldwv
+complex(blas77_f64), intent(inout) :: wv(ldwv,*)
+complex(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
 end

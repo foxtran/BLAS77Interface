@@ -1,10 +1,10 @@
 pure subroutine slacn2(n,v,x,isgn,est,kase,isave) CNAME(slacn2)
 import
-integer(blas77_int)::n
-real(blas77_f32)::v(*)
-real(blas77_f32)::x(*)
-integer(blas77_int)::isgn(*)
-real(blas77_f32)::est
-integer(blas77_int)::kase
-integer(blas77_int)::isave(3)
+integer(blas77_int), intent(inout) :: n
+real(blas77_f32), intent(inout) :: v(*)
+real(blas77_f32), intent(inout) :: x(*)
+integer(blas77_int), intent(inout) :: isgn(*)
+real(blas77_f32), intent(inout) :: est
+integer(blas77_int), intent(inout) :: kase
+integer(blas77_int), intent(inout) :: isave(3)
 end

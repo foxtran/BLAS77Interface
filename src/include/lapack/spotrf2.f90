@@ -1,8 +1,8 @@
 pure subroutine spotrf2(uplo,n,a,lda,info) CNAME(spotrf2)
 import
-character(len=1)::uplo
-integer(blas77_int)::n
-integer(blas77_int)::lda
-real(blas77_f32)::a(lda,*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lda
+real(blas77_f32), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: info
 end

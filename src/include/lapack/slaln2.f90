@@ -1,21 +1,21 @@
 pure subroutine slaln2(ltrans,na,nw,smin,ca,a,lda,d1,d2,b,ldb,wr,wi,x,ldx,scale,xnorm,info) CNAME(slaln2)
 import
-logical(blas77_int)::ltrans
-integer(blas77_int)::na
-integer(blas77_int)::nw
-real(blas77_f32)::smin
-real(blas77_f32)::ca
-integer(blas77_int)::lda
-real(blas77_f32)::a(lda,*)
-real(blas77_f32)::d1
-real(blas77_f32)::d2
-integer(blas77_int)::ldb
-real(blas77_f32)::b(ldb,*)
-real(blas77_f32)::wr
-real(blas77_f32)::wi
-integer(blas77_int)::ldx
-real(blas77_f32)::x(ldx,*)
-real(blas77_f32)::scale
-real(blas77_f32)::xnorm
-integer(blas77_int)::info
+logical(blas77_int), intent(inout) :: ltrans
+integer(blas77_int), intent(inout) :: na
+integer(blas77_int), intent(inout) :: nw
+real(blas77_f32), intent(inout) :: smin
+real(blas77_f32), intent(inout) :: ca
+integer(blas77_int), intent(inout) :: lda
+real(blas77_f32), intent(inout) :: a(lda,*)
+real(blas77_f32), intent(inout) :: d1
+real(blas77_f32), intent(inout) :: d2
+integer(blas77_int), intent(inout) :: ldb
+real(blas77_f32), intent(inout) :: b(ldb,*)
+real(blas77_f32), intent(inout) :: wr
+real(blas77_f32), intent(inout) :: wi
+integer(blas77_int), intent(inout) :: ldx
+real(blas77_f32), intent(inout) :: x(ldx,*)
+real(blas77_f32), intent(inout) :: scale
+real(blas77_f32), intent(inout) :: xnorm
+integer(blas77_int), intent(inout) :: info
 end

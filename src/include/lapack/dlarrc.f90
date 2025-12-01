@@ -1,14 +1,14 @@
 pure subroutine dlarrc(jobt,n,vl,vu,d,e,pivmin,eigcnt,lcnt,rcnt,info) CNAME(dlarrc)
 import
-character(len=1)::jobt
-integer(blas77_int)::n
-real(blas77_f64)::vl
-real(blas77_f64)::vu
-real(blas77_f64)::d(*)
-real(blas77_f64)::e(*)
-real(blas77_f64)::pivmin
-integer(blas77_int)::eigcnt
-integer(blas77_int)::lcnt
-integer(blas77_int)::rcnt
-integer(blas77_int)::info
+character(len=1), intent(inout) :: jobt
+integer(blas77_int), intent(inout) :: n
+real(blas77_f64), intent(inout) :: vl
+real(blas77_f64), intent(inout) :: vu
+real(blas77_f64), intent(inout) :: d(*)
+real(blas77_f64), intent(inout) :: e(*)
+real(blas77_f64), intent(inout) :: pivmin
+integer(blas77_int), intent(inout) :: eigcnt
+integer(blas77_int), intent(inout) :: lcnt
+integer(blas77_int), intent(inout) :: rcnt
+integer(blas77_int), intent(inout) :: info
 end

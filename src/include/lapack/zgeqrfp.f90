@@ -1,11 +1,11 @@
 pure subroutine zgeqrfp(m,n,a,lda,tau,work,lwork,info) CNAME(zgeqrfp)
 import
-integer(blas77_int)::m
-integer(blas77_int)::n
-integer(blas77_int)::lda
-complex(blas77_f64)::a(lda,*)
-complex(blas77_f64)::tau(*)
-complex(blas77_f64)::work(*)
-integer(blas77_int)::lwork
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f64), intent(inout) :: a(lda,*)
+complex(blas77_f64), intent(inout) :: tau(*)
+complex(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+integer(blas77_int), intent(inout) :: info
 end

@@ -1,16 +1,16 @@
 pure subroutine ssbgst(vect,uplo,n,ka,kb,ab,ldab,bb,ldbb,x,ldx,work,info) CNAME(ssbgst)
 import
-character(len=1)::vect
-character(len=1)::uplo
-integer(blas77_int)::n
-integer(blas77_int)::ka
-integer(blas77_int)::kb
-integer(blas77_int)::ldab
-real(blas77_f32)::ab(ldab,*)
-integer(blas77_int)::ldbb
-real(blas77_f32)::bb(ldbb,*)
-integer(blas77_int)::ldx
-real(blas77_f32)::x(ldx,*)
-real(blas77_f32)::work(*)
-integer(blas77_int)::info
+character(len=1), intent(inout) :: vect
+character(len=1), intent(inout) :: uplo
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: ka
+integer(blas77_int), intent(inout) :: kb
+integer(blas77_int), intent(inout) :: ldab
+real(blas77_f32), intent(inout) :: ab(ldab,*)
+integer(blas77_int), intent(inout) :: ldbb
+real(blas77_f32), intent(inout) :: bb(ldbb,*)
+integer(blas77_int), intent(inout) :: ldx
+real(blas77_f32), intent(inout) :: x(ldx,*)
+real(blas77_f32), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: info
 end

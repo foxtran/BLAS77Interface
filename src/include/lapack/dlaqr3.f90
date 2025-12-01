@@ -1,29 +1,29 @@
 pure subroutine dlaqr3(wantt,wantz,n,ktop,kbot,nw,h,ldh,iloz,ihiz,z,ldz,ns,nd,sr,si,v,ldv,nh,t,ldt,nv,wv,ldwv,work,lwork) CNAME(dlaqr3)
 import
-logical(blas77_int)::wantt
-logical(blas77_int)::wantz
-integer(blas77_int)::n
-integer(blas77_int)::ktop
-integer(blas77_int)::kbot
-integer(blas77_int)::nw
-integer(blas77_int)::ldh
-real(blas77_f64)::h(ldh,*)
-integer(blas77_int)::iloz
-integer(blas77_int)::ihiz
-integer(blas77_int)::ldz
-real(blas77_f64)::z(ldz,*)
-integer(blas77_int)::ns
-integer(blas77_int)::nd
-real(blas77_f64)::sr(*)
-real(blas77_f64)::si(*)
-integer(blas77_int)::ldv
-real(blas77_f64)::v(ldv,*)
-integer(blas77_int)::nh
-integer(blas77_int)::ldt
-real(blas77_f64)::t(ldt,*)
-integer(blas77_int)::nv
-integer(blas77_int)::ldwv
-real(blas77_f64)::wv(ldwv,*)
-real(blas77_f64)::work(*)
-integer(blas77_int)::lwork
+logical(blas77_int), intent(inout) :: wantt
+logical(blas77_int), intent(inout) :: wantz
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: ktop
+integer(blas77_int), intent(inout) :: kbot
+integer(blas77_int), intent(inout) :: nw
+integer(blas77_int), intent(inout) :: ldh
+real(blas77_f64), intent(inout) :: h(ldh,*)
+integer(blas77_int), intent(inout) :: iloz
+integer(blas77_int), intent(inout) :: ihiz
+integer(blas77_int), intent(inout) :: ldz
+real(blas77_f64), intent(inout) :: z(ldz,*)
+integer(blas77_int), intent(inout) :: ns
+integer(blas77_int), intent(inout) :: nd
+real(blas77_f64), intent(inout) :: sr(*)
+real(blas77_f64), intent(inout) :: si(*)
+integer(blas77_int), intent(inout) :: ldv
+real(blas77_f64), intent(inout) :: v(ldv,*)
+integer(blas77_int), intent(inout) :: nh
+integer(blas77_int), intent(inout) :: ldt
+real(blas77_f64), intent(inout) :: t(ldt,*)
+integer(blas77_int), intent(inout) :: nv
+integer(blas77_int), intent(inout) :: ldwv
+real(blas77_f64), intent(inout) :: wv(ldwv,*)
+real(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
 end

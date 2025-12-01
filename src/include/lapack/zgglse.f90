@@ -1,16 +1,16 @@
 pure subroutine zgglse(m,n,p,a,lda,b,ldb,c,d,x,work,lwork,info) CNAME(zgglse)
 import
-integer(blas77_int)::m
-integer(blas77_int)::n
-integer(blas77_int)::p
-integer(blas77_int)::lda
-complex(blas77_f64)::a(lda,*)
-integer(blas77_int)::ldb
-complex(blas77_f64)::b(ldb,*)
-complex(blas77_f64)::c(*)
-complex(blas77_f64)::d(*)
-complex(blas77_f64)::x(*)
-complex(blas77_f64)::work(*)
-integer(blas77_int)::lwork
-integer(blas77_int)::info
+integer(blas77_int), intent(inout) :: m
+integer(blas77_int), intent(inout) :: n
+integer(blas77_int), intent(inout) :: p
+integer(blas77_int), intent(inout) :: lda
+complex(blas77_f64), intent(inout) :: a(lda,*)
+integer(blas77_int), intent(inout) :: ldb
+complex(blas77_f64), intent(inout) :: b(ldb,*)
+complex(blas77_f64), intent(inout) :: c(*)
+complex(blas77_f64), intent(inout) :: d(*)
+complex(blas77_f64), intent(inout) :: x(*)
+complex(blas77_f64), intent(inout) :: work(*)
+integer(blas77_int), intent(inout) :: lwork
+integer(blas77_int), intent(inout) :: info
 end
