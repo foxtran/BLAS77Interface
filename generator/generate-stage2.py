@@ -28,6 +28,13 @@ def apply_interface_transforms(text: str) -> str:
 
     text = text.replace("recursive ", "")
 
+    lines = text.split("\n")
+    lines = [
+        line.replace("::", ", intent(inout) :: ") if "intent" not in line else line
+        for line in lines
+    ]
+    text = "\n".join(lines)
+
     return text
 
 
@@ -57,8 +64,7 @@ def process_dummy(code: str, library_name: str) -> str:
     args = m.group(3)
 
     body_lines = lines[1:-1]
-
-    body_lines = ["  " + line.replace("::", " :: ") for line in body_lines]
+    body_lines = ["  " + line for line in body_lines]
 
     out = [
         f'{kind} {name}{args} bind(C, name="BLAS77Interface${name}")',
