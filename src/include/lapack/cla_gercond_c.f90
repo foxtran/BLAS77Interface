@@ -1,16 +1,16 @@
 pure function cla_gercond_c(trans,n,a,lda,af,ldaf,ipiv,c,capply,info,work,rwork) CNAME(cla_gercond_c)
 import
-character(len=1), intent(inout) :: trans
-integer(blas77_int), intent(inout) :: n
-integer(blas77_int), intent(inout) :: lda
-complex(blas77_f32), intent(inout) :: a(lda,*)
-integer(blas77_int), intent(inout) :: ldaf
-complex(blas77_f32), intent(inout) :: af(ldaf,*)
-integer(blas77_int), intent(inout) :: ipiv(*)
-real(blas77_f32), intent(inout) :: c(*)
-logical(blas77_int), intent(inout) :: capply
-integer(blas77_int), intent(inout) :: info
-complex(blas77_f32), intent(inout) :: work(*)
-real(blas77_f32), intent(inout) :: rwork(*)
+character(len=1), intent(in) :: trans
+integer(blas77_int), intent(in) :: n
+integer(blas77_int), intent(in) :: lda
+complex(blas77_f32), intent(in) :: a(lda,*)
+integer(blas77_int), intent(in) :: ldaf
+complex(blas77_f32), intent(in) :: af(ldaf,*)
+integer(blas77_int), intent(in) :: ipiv(*)
+real(blas77_f32), intent(in) :: c(*)
+logical(blas77_int), intent(in) :: capply
+integer(blas77_int), intent(in) :: info
+complex(blas77_f32), intent(in) :: work(*)
+real(blas77_f32), intent(in) :: rwork(*)
 real(blas77_f32)::cla_gercond_c
 end

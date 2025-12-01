@@ -1,9 +1,9 @@
 pure function zdotc(n,zx,incx,zy,incy) CNAME(zdotc)
 import
-integer(blas77_int), intent(inout) :: n
-complex(blas77_f64), intent(inout) :: zx(*)
-integer(blas77_int), intent(inout) :: incx
-complex(blas77_f64), intent(inout) :: zy(*)
-integer(blas77_int), intent(inout) :: incy
+integer(blas77_int), intent(in) :: n
+complex(blas77_f64), intent(in) :: zx(*)
+integer(blas77_int), intent(in) :: incx
+complex(blas77_f64), intent(in) :: zy(*)
+integer(blas77_int), intent(in) :: incy
 complex(blas77_f64)::zdotc
 end

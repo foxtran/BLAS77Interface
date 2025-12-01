@@ -1,16 +1,16 @@
 pure function sla_syrcond(uplo,n,a,lda,af,ldaf,ipiv,cmode,c,info,work,iwork) CNAME(sla_syrcond)
 import
-character(len=1), intent(inout) :: uplo
-integer(blas77_int), intent(inout) :: n
-integer(blas77_int), intent(inout) :: lda
-real(blas77_f32), intent(inout) :: a(lda,*)
-integer(blas77_int), intent(inout) :: ldaf
-real(blas77_f32), intent(inout) :: af(ldaf,*)
-integer(blas77_int), intent(inout) :: ipiv(*)
-integer(blas77_int), intent(inout) :: cmode
-real(blas77_f32), intent(inout) :: c(*)
-integer(blas77_int), intent(inout) :: info
-real(blas77_f32), intent(inout) :: work(*)
-integer(blas77_int), intent(inout) :: iwork(*)
+character(len=1), intent(in) :: uplo
+integer(blas77_int), intent(in) :: n
+integer(blas77_int), intent(in) :: lda
+real(blas77_f32), intent(in) :: a(lda,*)
+integer(blas77_int), intent(in) :: ldaf
+real(blas77_f32), intent(in) :: af(ldaf,*)
+integer(blas77_int), intent(in) :: ipiv(*)
+integer(blas77_int), intent(in) :: cmode
+real(blas77_f32), intent(in) :: c(*)
+integer(blas77_int), intent(in) :: info
+real(blas77_f32), intent(in) :: work(*)
+integer(blas77_int), intent(in) :: iwork(*)
 real(blas77_f32)::sla_syrcond
 end

@@ -1,9 +1,9 @@
 pure function slangt(norm,n,dl,d,du) CNAME(slangt)
 import
-character(len=1), intent(inout) :: norm
-integer(blas77_int), intent(inout) :: n
-real(blas77_f32), intent(inout) :: dl(*)
-real(blas77_f32), intent(inout) :: d(*)
-real(blas77_f32), intent(inout) :: du(*)
+character(len=1), intent(in) :: norm
+integer(blas77_int), intent(in) :: n
+real(blas77_f32), intent(in) :: dl(*)
+real(blas77_f32), intent(in) :: d(*)
+real(blas77_f32), intent(in) :: du(*)
 real(blas77_f32)::slangt
 end

@@ -1,10 +1,10 @@
 pure function dlansy(norm,uplo,n,a,lda,work) CNAME(dlansy)
 import
-character(len=1), intent(inout) :: norm
-character(len=1), intent(inout) :: uplo
-integer(blas77_int), intent(inout) :: n
-integer(blas77_int), intent(inout) :: lda
-real(blas77_f64), intent(inout) :: a(lda,*)
-real(blas77_f64), intent(inout) :: work(*)
+character(len=1), intent(in) :: norm
+character(len=1), intent(in) :: uplo
+integer(blas77_int), intent(in) :: n
+integer(blas77_int), intent(in) :: lda
+real(blas77_f64), intent(in) :: a(lda,*)
+real(blas77_f64), intent(in) :: work(*)
 real(blas77_f64)::dlansy
 end

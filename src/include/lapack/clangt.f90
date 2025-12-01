@@ -1,9 +1,9 @@
 pure function clangt(norm,n,dl,d,du) CNAME(clangt)
 import
-character(len=1), intent(inout) :: norm
-integer(blas77_int), intent(inout) :: n
-complex(blas77_f32), intent(inout) :: dl(*)
-complex(blas77_f32), intent(inout) :: d(*)
-complex(blas77_f32), intent(inout) :: du(*)
+character(len=1), intent(in) :: norm
+integer(blas77_int), intent(in) :: n
+complex(blas77_f32), intent(in) :: dl(*)
+complex(blas77_f32), intent(in) :: d(*)
+complex(blas77_f32), intent(in) :: du(*)
 real(blas77_f32)::clangt
 end

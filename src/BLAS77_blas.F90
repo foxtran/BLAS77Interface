@@ -47,11 +47,11 @@ function cdotc(n,cx,incx,cy,incy) bind(C, name="BLAS77Interface$cdotc")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  complex(blas77_f32), intent(inout) :: cx(*)
-  integer(blas77_int), intent(inout) :: incx
-  complex(blas77_f32), intent(inout) :: cy(*)
-  integer(blas77_int), intent(inout) :: incy
+  integer(blas77_int), intent(in) :: n
+  complex(blas77_f32), intent(in) :: cx(*)
+  integer(blas77_int), intent(in) :: incx
+  complex(blas77_f32), intent(in) :: cy(*)
+  integer(blas77_int), intent(in) :: incy
   complex(blas77_f32)::cdotc
 
   error_stop "This is an interface tester!"
@@ -61,11 +61,11 @@ function cdotu(n,cx,incx,cy,incy) bind(C, name="BLAS77Interface$cdotu")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  complex(blas77_f32), intent(inout) :: cx(*)
-  integer(blas77_int), intent(inout) :: incx
-  complex(blas77_f32), intent(inout) :: cy(*)
-  integer(blas77_int), intent(inout) :: incy
+  integer(blas77_int), intent(in) :: n
+  complex(blas77_f32), intent(in) :: cx(*)
+  integer(blas77_int), intent(in) :: incx
+  complex(blas77_f32), intent(in) :: cy(*)
+  integer(blas77_int), intent(in) :: incy
   complex(blas77_f32)::cdotu
 
   error_stop "This is an interface tester!"
@@ -621,9 +621,9 @@ function dasum(n,dx,incx) bind(C, name="BLAS77Interface$dasum")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  real(blas77_f64), intent(inout) :: dx(*)
-  integer(blas77_int), intent(inout) :: incx
+  integer(blas77_int), intent(in) :: n
+  real(blas77_f64), intent(in) :: dx(*)
+  integer(blas77_int), intent(in) :: incx
   real(blas77_f64)::dasum
 
   error_stop "This is an interface tester!"
@@ -662,7 +662,7 @@ function dcabs1(z) bind(C, name="BLAS77Interface$dcabs1")
   use blas77_types
   implicit none
 
-  complex(blas77_f64), intent(inout) :: z
+  complex(blas77_f64), intent(in) :: z
   real(blas77_f64)::dcabs1
 
   error_stop "This is an interface tester!"
@@ -685,11 +685,11 @@ function ddot(n,dx,incx,dy,incy) bind(C, name="BLAS77Interface$ddot")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  real(blas77_f64), intent(inout) :: dx(*)
-  integer(blas77_int), intent(inout) :: incx
-  real(blas77_f64), intent(inout) :: dy(*)
-  integer(blas77_int), intent(inout) :: incy
+  integer(blas77_int), intent(in) :: n
+  real(blas77_f64), intent(in) :: dx(*)
+  integer(blas77_int), intent(in) :: incx
+  real(blas77_f64), intent(in) :: dy(*)
+  integer(blas77_int), intent(in) :: incy
   real(blas77_f64)::ddot
 
   error_stop "This is an interface tester!"
@@ -798,9 +798,9 @@ function dnrm2(n,x,incx) bind(C, name="BLAS77Interface$dnrm2")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  real(blas77_f64), intent(inout) :: x(*)
-  integer(blas77_int), intent(inout) :: incx
+  integer(blas77_int), intent(in) :: n
+  real(blas77_f64), intent(in) :: x(*)
+  integer(blas77_int), intent(in) :: incx
   real(blas77_f64)::dnrm2
 
   error_stop "This is an interface tester!"
@@ -895,11 +895,11 @@ function dsdot(n,sx,incx,sy,incy) bind(C, name="BLAS77Interface$dsdot")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  real(blas77_f32), intent(inout) :: sx(*)
-  integer(blas77_int), intent(inout) :: incx
-  real(blas77_f32), intent(inout) :: sy(*)
-  integer(blas77_int), intent(inout) :: incy
+  integer(blas77_int), intent(in) :: n
+  real(blas77_f32), intent(in) :: sx(*)
+  integer(blas77_int), intent(in) :: incx
+  real(blas77_f32), intent(in) :: sy(*)
+  integer(blas77_int), intent(in) :: incy
   real(blas77_f64)::dsdot
 
   error_stop "This is an interface tester!"
@@ -1286,9 +1286,9 @@ function dzasum(n,zx,incx) bind(C, name="BLAS77Interface$dzasum")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  complex(blas77_f64), intent(inout) :: zx(*)
-  integer(blas77_int), intent(inout) :: incx
+  integer(blas77_int), intent(in) :: n
+  complex(blas77_f64), intent(in) :: zx(*)
+  integer(blas77_int), intent(in) :: incx
   real(blas77_f64)::dzasum
 
   error_stop "This is an interface tester!"
@@ -1298,9 +1298,9 @@ function dznrm2(n,x,incx) bind(C, name="BLAS77Interface$dznrm2")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  complex(blas77_f64), intent(inout) :: x(*)
-  integer(blas77_int), intent(inout) :: incx
+  integer(blas77_int), intent(in) :: n
+  complex(blas77_f64), intent(in) :: x(*)
+  integer(blas77_int), intent(in) :: incx
   real(blas77_f64)::dznrm2
 
   error_stop "This is an interface tester!"
@@ -1310,9 +1310,9 @@ function icamax(n,cx,incx) bind(C, name="BLAS77Interface$icamax")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  complex(blas77_f32), intent(inout) :: cx(*)
-  integer(blas77_int), intent(inout) :: incx
+  integer(blas77_int), intent(in) :: n
+  complex(blas77_f32), intent(in) :: cx(*)
+  integer(blas77_int), intent(in) :: incx
   integer(blas77_int)::icamax
 
   error_stop "This is an interface tester!"
@@ -1322,9 +1322,9 @@ function idamax(n,dx,incx) bind(C, name="BLAS77Interface$idamax")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  real(blas77_f64), intent(inout) :: dx(*)
-  integer(blas77_int), intent(inout) :: incx
+  integer(blas77_int), intent(in) :: n
+  real(blas77_f64), intent(in) :: dx(*)
+  integer(blas77_int), intent(in) :: incx
   integer(blas77_int)::idamax
 
   error_stop "This is an interface tester!"
@@ -1334,9 +1334,9 @@ function isamax(n,sx,incx) bind(C, name="BLAS77Interface$isamax")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  real(blas77_f32), intent(inout) :: sx(*)
-  integer(blas77_int), intent(inout) :: incx
+  integer(blas77_int), intent(in) :: n
+  real(blas77_f32), intent(in) :: sx(*)
+  integer(blas77_int), intent(in) :: incx
   integer(blas77_int)::isamax
 
   error_stop "This is an interface tester!"
@@ -1346,9 +1346,9 @@ function izamax(n,zx,incx) bind(C, name="BLAS77Interface$izamax")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  complex(blas77_f64), intent(inout) :: zx(*)
-  integer(blas77_int), intent(inout) :: incx
+  integer(blas77_int), intent(in) :: n
+  complex(blas77_f64), intent(in) :: zx(*)
+  integer(blas77_int), intent(in) :: incx
   integer(blas77_int)::izamax
 
   error_stop "This is an interface tester!"
@@ -1358,8 +1358,8 @@ function lsame(ca,cb) bind(C, name="BLAS77Interface$lsame")
   use blas77_types
   implicit none
 
-  character(len=1), intent(inout) :: ca
-  character(len=1), intent(inout) :: cb
+  character(len=1), intent(in) :: ca
+  character(len=1), intent(in) :: cb
   logical(blas77_int)::lsame
 
   error_stop "This is an interface tester!"
@@ -1369,9 +1369,9 @@ function sasum(n,sx,incx) bind(C, name="BLAS77Interface$sasum")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  real(blas77_f32), intent(inout) :: sx(*)
-  integer(blas77_int), intent(inout) :: incx
+  integer(blas77_int), intent(in) :: n
+  real(blas77_f32), intent(in) :: sx(*)
+  integer(blas77_int), intent(in) :: incx
   real(blas77_f32)::sasum
 
   error_stop "This is an interface tester!"
@@ -1410,7 +1410,7 @@ function scabs1(z) bind(C, name="BLAS77Interface$scabs1")
   use blas77_types
   implicit none
 
-  complex(blas77_f32), intent(inout) :: z
+  complex(blas77_f32), intent(in) :: z
   real(blas77_f32)::scabs1
 
   error_stop "This is an interface tester!"
@@ -1420,9 +1420,9 @@ function scasum(n,cx,incx) bind(C, name="BLAS77Interface$scasum")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  complex(blas77_f32), intent(inout) :: cx(*)
-  integer(blas77_int), intent(inout) :: incx
+  integer(blas77_int), intent(in) :: n
+  complex(blas77_f32), intent(in) :: cx(*)
+  integer(blas77_int), intent(in) :: incx
   real(blas77_f32)::scasum
 
   error_stop "This is an interface tester!"
@@ -1432,9 +1432,9 @@ function scnrm2(n,x,incx) bind(C, name="BLAS77Interface$scnrm2")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  complex(blas77_f32), intent(inout) :: x(*)
-  integer(blas77_int), intent(inout) :: incx
+  integer(blas77_int), intent(in) :: n
+  complex(blas77_f32), intent(in) :: x(*)
+  integer(blas77_int), intent(in) :: incx
   real(blas77_f32)::scnrm2
 
   error_stop "This is an interface tester!"
@@ -1457,11 +1457,11 @@ function sdot(n,sx,incx,sy,incy) bind(C, name="BLAS77Interface$sdot")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  real(blas77_f32), intent(inout) :: sx(*)
-  integer(blas77_int), intent(inout) :: incx
-  real(blas77_f32), intent(inout) :: sy(*)
-  integer(blas77_int), intent(inout) :: incy
+  integer(blas77_int), intent(in) :: n
+  real(blas77_f32), intent(in) :: sx(*)
+  integer(blas77_int), intent(in) :: incx
+  real(blas77_f32), intent(in) :: sy(*)
+  integer(blas77_int), intent(in) :: incy
   real(blas77_f32)::sdot
 
   error_stop "This is an interface tester!"
@@ -1471,12 +1471,12 @@ function sdsdot(n,sb,sx,incx,sy,incy) bind(C, name="BLAS77Interface$sdsdot")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  real(blas77_f32), intent(inout) :: sb
-  real(blas77_f32), intent(inout) :: sx(*)
-  integer(blas77_int), intent(inout) :: incx
-  real(blas77_f32), intent(inout) :: sy(*)
-  integer(blas77_int), intent(inout) :: incy
+  integer(blas77_int), intent(in) :: n
+  real(blas77_f32), intent(in) :: sb
+  real(blas77_f32), intent(in) :: sx(*)
+  integer(blas77_int), intent(in) :: incx
+  real(blas77_f32), intent(in) :: sy(*)
+  integer(blas77_int), intent(in) :: incy
   real(blas77_f32)::sdsdot
 
   error_stop "This is an interface tester!"
@@ -1585,9 +1585,9 @@ function snrm2(n,x,incx) bind(C, name="BLAS77Interface$snrm2")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  real(blas77_f32), intent(inout) :: x(*)
-  integer(blas77_int), intent(inout) :: incx
+  integer(blas77_int), intent(in) :: n
+  real(blas77_f32), intent(in) :: x(*)
+  integer(blas77_int), intent(in) :: incx
   real(blas77_f32)::snrm2
 
   error_stop "This is an interface tester!"
@@ -2122,11 +2122,11 @@ function zdotc(n,zx,incx,zy,incy) bind(C, name="BLAS77Interface$zdotc")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  complex(blas77_f64), intent(inout) :: zx(*)
-  integer(blas77_int), intent(inout) :: incx
-  complex(blas77_f64), intent(inout) :: zy(*)
-  integer(blas77_int), intent(inout) :: incy
+  integer(blas77_int), intent(in) :: n
+  complex(blas77_f64), intent(in) :: zx(*)
+  integer(blas77_int), intent(in) :: incx
+  complex(blas77_f64), intent(in) :: zy(*)
+  integer(blas77_int), intent(in) :: incy
   complex(blas77_f64)::zdotc
 
   error_stop "This is an interface tester!"
@@ -2136,11 +2136,11 @@ function zdotu(n,zx,incx,zy,incy) bind(C, name="BLAS77Interface$zdotu")
   use blas77_types
   implicit none
 
-  integer(blas77_int), intent(inout) :: n
-  complex(blas77_f64), intent(inout) :: zx(*)
-  integer(blas77_int), intent(inout) :: incx
-  complex(blas77_f64), intent(inout) :: zy(*)
-  integer(blas77_int), intent(inout) :: incy
+  integer(blas77_int), intent(in) :: n
+  complex(blas77_f64), intent(in) :: zx(*)
+  integer(blas77_int), intent(in) :: incx
+  complex(blas77_f64), intent(in) :: zy(*)
+  integer(blas77_int), intent(in) :: incy
   complex(blas77_f64)::zdotu
 
   error_stop "This is an interface tester!"

@@ -1,12 +1,12 @@
 pure function clantr(norm,uplo,diag,m,n,a,lda,work) CNAME(clantr)
 import
-character(len=1), intent(inout) :: norm
-character(len=1), intent(inout) :: uplo
-character(len=1), intent(inout) :: diag
-integer(blas77_int), intent(inout) :: m
-integer(blas77_int), intent(inout) :: n
-integer(blas77_int), intent(inout) :: lda
-complex(blas77_f32), intent(inout) :: a(lda,*)
-real(blas77_f32), intent(inout) :: work(*)
+character(len=1), intent(in) :: norm
+character(len=1), intent(in) :: uplo
+character(len=1), intent(in) :: diag
+integer(blas77_int), intent(in) :: m
+integer(blas77_int), intent(in) :: n
+integer(blas77_int), intent(in) :: lda
+complex(blas77_f32), intent(in) :: a(lda,*)
+real(blas77_f32), intent(in) :: work(*)
 real(blas77_f32)::clantr
 end

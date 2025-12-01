@@ -1,9 +1,9 @@
 pure function ddot(n,dx,incx,dy,incy) CNAME(ddot)
 import
-integer(blas77_int), intent(inout) :: n
-real(blas77_f64), intent(inout) :: dx(*)
-integer(blas77_int), intent(inout) :: incx
-real(blas77_f64), intent(inout) :: dy(*)
-integer(blas77_int), intent(inout) :: incy
+integer(blas77_int), intent(in) :: n
+real(blas77_f64), intent(in) :: dx(*)
+integer(blas77_int), intent(in) :: incx
+real(blas77_f64), intent(in) :: dy(*)
+integer(blas77_int), intent(in) :: incy
 real(blas77_f64)::ddot
 end
