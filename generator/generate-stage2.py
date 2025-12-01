@@ -26,23 +26,17 @@ def apply_interface_transforms(text: str) -> str:
 
     text = text.replace("character(", "character(len=")
 
+    text = text.replace("recursive ", "")
+
     return text
 
 
 def process_include(text: str) -> str:
-    rec = False
-    if "recursive" in text:
-        text = text.replace("recursive ", "")
-        rec = True
-
     pattern = re.compile(
         r"^(function|subroutine)\s+([A-Za-z0-9_]+)([^(]*\([^)]*\))",
         re.MULTILINE,
     )
     text = pattern.sub(r"\1 \2\3 CNAME(\2)\nimport", text)
-
-    if rec:
-        return "pure recursive " + text
 
     return "pure " + text
 
@@ -52,7 +46,6 @@ def process_dummy(code: str, library_name: str) -> str:
     Transform a Fortran subroutine/function into its dummy implementation.
     """
 
-    code = code.replace("recursive ", "")
     lines = code.strip().splitlines()
 
     header = lines[0].strip()
