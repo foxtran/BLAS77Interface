@@ -52,7 +52,7 @@ def process_include(text: str) -> str:
         r"^(function|subroutine)\s+([A-Za-z0-9_]+)([^(]*\([^)]*\))",
         re.MULTILINE,
     )
-    text = pattern.sub(r"\1 \2\3 CNAME(\2)\nimport", text)
+    text = pattern.sub(r"\1 \2\3 BEGCNAME(\2,SUFFIX)\nENDCNAME(\2,SUFFIX)\nimport", text)
 
     return "pure " + text
 
