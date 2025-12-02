@@ -1,4 +1,5 @@
-subroutine cdotc_Apple(res,n,cx,incx,cy,incy) CNAME(cdotc)
+subroutine cdotc_Apple(res,n,cx,incx,cy,incy) BEGCNAME(cdotc,SUFFIX)
+ENDCNAME(cdotc,SUFFIX)
 import
 integer(blas77_int)::n
 complex(blas77_f32)::cx(*)

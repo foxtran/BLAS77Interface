@@ -1,4 +1,5 @@
-subroutine zdotc_Apple(res,n,zx,incx,zy,incy) CNAME(zdotc)
+subroutine zdotc_Apple(res,n,zx,incx,zy,incy) BEGCNAME(zdotc,SUFFIX)
+ENDCNAME(zdotc,SUFFIX)
 import
 integer(blas77_int)::n
 complex(blas77_f64)::zx(*)

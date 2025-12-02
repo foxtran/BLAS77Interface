@@ -1,4 +1,5 @@
-subroutine zdotu_Apple(res,n,zx,incx,zy,incy) CNAME(zdotu)
+subroutine zdotu_Apple(res,n,zx,incx,zy,incy) BEGCNAME(zdotu,SUFFIX)
+ENDCNAME(zdotu,SUFFIX)
 import
 integer(blas77_int)::n
 complex(blas77_f64)::zx(*)
