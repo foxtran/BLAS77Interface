@@ -4,7 +4,7 @@ program sblas
    implicit none
    real :: x(2)=[3.,4.], y(2)=[1.,1.]
    complex :: w(2)=[(4.,3.),(3.,4.)], z(2)=[(5.,6.),(7.,8.)]
-   character(*), parameter :: cfmt='(*(g0.4,1x))'
+   character(*), parameter :: cfmt='(*(G0.4,1X))'
    write(*,cfmt) 'sdot=',   sdot(2,x,1,y,1),       'should be 7.000'
    write(*,cfmt) 'sdsdot=', sdsdot(2,0.0,x,1,y,1), 'should be 7.000'
    write(*,cfmt) 'snrm2=',  snrm2(2,x,1),          'should be 5.000'
