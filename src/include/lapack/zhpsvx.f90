@@ -1,4 +1,5 @@
-pure subroutine zhpsvx(fact,uplo,n,nrhs,ap,afp,ipiv,b,ldb,x,ldx,rcond,ferr,berr,work,rwork,info) BEGCNAME(zhpsvx,SUFFIX)
+pure subroutine zhpsvx(fact,uplo,n,nrhs,ap,afp,ipiv,b,ldb,x,ldx,rcond,ferr,berr, &
+    work,rwork,info) BEGCNAME(zhpsvx,SUFFIX)
 ENDCNAME(zhpsvx,SUFFIX)
 import
 character(len=1), intent(inout) :: fact

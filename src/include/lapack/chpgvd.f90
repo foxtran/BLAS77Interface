@@ -1,4 +1,5 @@
-pure subroutine chpgvd(itype,jobz,uplo,n,ap,bp,w,z,ldz,work,lwork,rwork,lrwork,iwork,liwork,info) BEGCNAME(chpgvd,SUFFIX)
+pure subroutine chpgvd(itype,jobz,uplo,n,ap,bp,w,z,ldz,work,lwork,rwork,lrwork, &
+    iwork,liwork,info) BEGCNAME(chpgvd,SUFFIX)
 ENDCNAME(chpgvd,SUFFIX)
 import
 integer(blas77_int), intent(inout) :: itype

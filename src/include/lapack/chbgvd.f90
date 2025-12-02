@@ -1,4 +1,5 @@
-pure subroutine chbgvd(jobz,uplo,n,ka,kb,ab,ldab,bb,ldbb,w,z,ldz,work,lwork,rwork,lrwork,iwork,liwork,info) BEGCNAME(chbgvd,SUFFIX)
+pure subroutine chbgvd(jobz,uplo,n,ka,kb,ab,ldab,bb,ldbb,w,z,ldz,work,lwork, &
+    rwork,lrwork,iwork,liwork,info) BEGCNAME(chbgvd,SUFFIX)
 ENDCNAME(chbgvd,SUFFIX)
 import
 character(len=1), intent(inout) :: jobz

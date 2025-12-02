@@ -1,4 +1,5 @@
-pure subroutine zherfs(uplo,n,nrhs,a,lda,af,ldaf,ipiv,b,ldb,x,ldx,ferr,berr,work,rwork,info) BEGCNAME(zherfs,SUFFIX)
+pure subroutine zherfs(uplo,n,nrhs,a,lda,af,ldaf,ipiv,b,ldb,x,ldx,ferr,berr, &
+    work,rwork,info) BEGCNAME(zherfs,SUFFIX)
 ENDCNAME(zherfs,SUFFIX)
 import
 character(len=1), intent(inout) :: uplo

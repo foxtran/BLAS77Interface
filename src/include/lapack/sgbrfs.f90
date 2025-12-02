@@ -1,4 +1,5 @@
-pure subroutine sgbrfs(trans,n,kl,ku,nrhs,ab,ldab,afb,ldafb,ipiv,b,ldb,x,ldx,ferr,berr,work,iwork,info) BEGCNAME(sgbrfs,SUFFIX)
+pure subroutine sgbrfs(trans,n,kl,ku,nrhs,ab,ldab,afb,ldafb,ipiv,b,ldb,x,ldx, &
+    ferr,berr,work,iwork,info) BEGCNAME(sgbrfs,SUFFIX)
 ENDCNAME(sgbrfs,SUFFIX)
 import
 character(len=1), intent(inout) :: trans

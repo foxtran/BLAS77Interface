@@ -1,4 +1,5 @@
-pure subroutine dlaqr5(wantt,wantz,kacc22,n,ktop,kbot,nshfts,sr,si,h,ldh,iloz,ihiz,z,ldz,v,ldv,u,ldu,nv,wv,ldwv,nh,wh,ldwh) BEGCNAME(dlaqr5,SUFFIX)
+pure subroutine dlaqr5(wantt,wantz,kacc22,n,ktop,kbot,nshfts,sr,si,h,ldh,iloz, &
+    ihiz,z,ldz,v,ldv,u,ldu,nv,wv,ldwv,nh,wh,ldwh) BEGCNAME(dlaqr5,SUFFIX)
 ENDCNAME(dlaqr5,SUFFIX)
 import
 logical(blas77_int), intent(inout) :: wantt

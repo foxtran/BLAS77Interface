@@ -1,4 +1,5 @@
-pure subroutine strevc(side,howmny,select,n,t,ldt,vl,ldvl,vr,ldvr,mm,m,work,info) BEGCNAME(strevc,SUFFIX)
+pure subroutine strevc(side,howmny,select,n,t,ldt,vl,ldvl,vr,ldvr,mm,m,work, &
+    info) BEGCNAME(strevc,SUFFIX)
 ENDCNAME(strevc,SUFFIX)
 import
 character(len=1), intent(inout) :: side

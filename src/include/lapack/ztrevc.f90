@@ -1,4 +1,5 @@
-pure subroutine ztrevc(side,howmny,select,n,t,ldt,vl,ldvl,vr,ldvr,mm,m,work,rwork,info) BEGCNAME(ztrevc,SUFFIX)
+pure subroutine ztrevc(side,howmny,select,n,t,ldt,vl,ldvl,vr,ldvr,mm,m,work, &
+    rwork,info) BEGCNAME(ztrevc,SUFFIX)
 ENDCNAME(ztrevc,SUFFIX)
 import
 character(len=1), intent(inout) :: side

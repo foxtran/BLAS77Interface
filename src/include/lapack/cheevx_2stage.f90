@@ -1,4 +1,5 @@
-pure subroutine cheevx_2stage(jobz,range,uplo,n,a,lda,vl,vu,il,iu,abstol,m,w,z,ldz,work,lwork,rwork,iwork,ifail,info) BEGCNAME(cheevx_2stage,SUFFIX)
+pure subroutine cheevx_2stage(jobz,range,uplo,n,a,lda,vl,vu,il,iu,abstol,m,w,z, &
+    ldz,work,lwork,rwork,iwork,ifail,info) BEGCNAME(cheevx_2stage,SUFFIX)
 ENDCNAME(cheevx_2stage,SUFFIX)
 import
 character(len=1), intent(inout) :: jobz

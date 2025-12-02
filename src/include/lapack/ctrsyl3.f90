@@ -1,4 +1,5 @@
-pure subroutine ctrsyl3(trana,tranb,isgn,m,n,a,lda,b,ldb,c,ldc,scale,swork,ldswork,info) BEGCNAME(ctrsyl3,SUFFIX)
+pure subroutine ctrsyl3(trana,tranb,isgn,m,n,a,lda,b,ldb,c,ldc,scale,swork, &
+    ldswork,info) BEGCNAME(ctrsyl3,SUFFIX)
 ENDCNAME(ctrsyl3,SUFFIX)
 import
 character(len=1), intent(inout) :: trana

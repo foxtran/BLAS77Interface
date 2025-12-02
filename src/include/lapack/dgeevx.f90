@@ -1,4 +1,6 @@
-pure subroutine dgeevx(balanc,jobvl,jobvr,sense,n,a,lda,wr,wi,vl,ldvl,vr,ldvr,ilo,ihi,scale,abnrm,rconde,rcondv,work,lwork,iwork,info) BEGCNAME(dgeevx,SUFFIX)
+pure subroutine dgeevx(balanc,jobvl,jobvr,sense,n,a,lda,wr,wi,vl,ldvl,vr,ldvr, &
+    ilo,ihi,scale,abnrm,rconde,rcondv,work,lwork,iwork,info) BEGCNAME(dgeevx, &
+    SUFFIX)
 ENDCNAME(dgeevx,SUFFIX)
 import
 character(len=1), intent(inout) :: balanc

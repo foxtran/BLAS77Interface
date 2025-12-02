@@ -1,4 +1,5 @@
-pure subroutine cunbdb6(m1,m2,n,x1,incx1,x2,incx2,q1,ldq1,q2,ldq2,work,lwork,info) BEGCNAME(cunbdb6,SUFFIX)
+pure subroutine cunbdb6(m1,m2,n,x1,incx1,x2,incx2,q1,ldq1,q2,ldq2,work,lwork, &
+    info) BEGCNAME(cunbdb6,SUFFIX)
 ENDCNAME(cunbdb6,SUFFIX)
 import
 integer(blas77_int), intent(inout) :: m1

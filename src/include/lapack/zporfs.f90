@@ -1,4 +1,5 @@
-pure subroutine zporfs(uplo,n,nrhs,a,lda,af,ldaf,b,ldb,x,ldx,ferr,berr,work,rwork,info) BEGCNAME(zporfs,SUFFIX)
+pure subroutine zporfs(uplo,n,nrhs,a,lda,af,ldaf,b,ldb,x,ldx,ferr,berr,work, &
+    rwork,info) BEGCNAME(zporfs,SUFFIX)
 ENDCNAME(zporfs,SUFFIX)
 import
 character(len=1), intent(inout) :: uplo

@@ -1,4 +1,5 @@
-pure subroutine csytrf_aa_2stage(uplo,n,a,lda,tb,ltb,ipiv,ipiv2,work,lwork,info) BEGCNAME(csytrf_aa_2stage,SUFFIX)
+pure subroutine csytrf_aa_2stage(uplo,n,a,lda,tb,ltb,ipiv,ipiv2,work,lwork, &
+    info) BEGCNAME(csytrf_aa_2stage,SUFFIX)
 ENDCNAME(csytrf_aa_2stage,SUFFIX)
 import
 character(len=1), intent(inout) :: uplo

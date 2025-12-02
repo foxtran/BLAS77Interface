@@ -1,4 +1,5 @@
-pure subroutine dgtrfs(trans,n,nrhs,dl,d,du,dlf,df,duf,du2,ipiv,b,ldb,x,ldx,ferr,berr,work,iwork,info) BEGCNAME(dgtrfs,SUFFIX)
+pure subroutine dgtrfs(trans,n,nrhs,dl,d,du,dlf,df,duf,du2,ipiv,b,ldb,x,ldx, &
+    ferr,berr,work,iwork,info) BEGCNAME(dgtrfs,SUFFIX)
 ENDCNAME(dgtrfs,SUFFIX)
 import
 character(len=1), intent(inout) :: trans

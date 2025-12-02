@@ -1,4 +1,5 @@
-pure subroutine zhesvx(fact,uplo,n,nrhs,a,lda,af,ldaf,ipiv,b,ldb,x,ldx,rcond,ferr,berr,work,lwork,rwork,info) BEGCNAME(zhesvx,SUFFIX)
+pure subroutine zhesvx(fact,uplo,n,nrhs,a,lda,af,ldaf,ipiv,b,ldb,x,ldx,rcond, &
+    ferr,berr,work,lwork,rwork,info) BEGCNAME(zhesvx,SUFFIX)
 ENDCNAME(zhesvx,SUFFIX)
 import
 character(len=1), intent(inout) :: fact

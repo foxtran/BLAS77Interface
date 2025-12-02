@@ -1,4 +1,5 @@
-pure subroutine chpgvx(itype,jobz,range,uplo,n,ap,bp,vl,vu,il,iu,abstol,m,w,z,ldz,work,rwork,iwork,ifail,info) BEGCNAME(chpgvx,SUFFIX)
+pure subroutine chpgvx(itype,jobz,range,uplo,n,ap,bp,vl,vu,il,iu,abstol,m,w,z, &
+    ldz,work,rwork,iwork,ifail,info) BEGCNAME(chpgvx,SUFFIX)
 ENDCNAME(chpgvx,SUFFIX)
 import
 integer(blas77_int), intent(inout) :: itype

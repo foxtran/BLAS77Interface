@@ -1,4 +1,5 @@
-pure subroutine zgeesx(jobvs,sort,select,sense,n,a,lda,sdim,w,vs,ldvs,rconde,rcondv,work,lwork,rwork,bwork,info) BEGCNAME(zgeesx,SUFFIX)
+pure subroutine zgeesx(jobvs,sort,select,sense,n,a,lda,sdim,w,vs,ldvs,rconde, &
+    rcondv,work,lwork,rwork,bwork,info) BEGCNAME(zgeesx,SUFFIX)
 ENDCNAME(zgeesx,SUFFIX)
 import
 character(len=1), intent(inout) :: jobvs

@@ -1,4 +1,5 @@
-pure function cla_gercond_c(trans,n,a,lda,af,ldaf,ipiv,c,capply,info,work,rwork) BEGCNAME(cla_gercond_c,SUFFIX)
+pure function cla_gercond_c(trans,n,a,lda,af,ldaf,ipiv,c,capply,info,work, &
+    rwork) BEGCNAME(cla_gercond_c,SUFFIX)
 ENDCNAME(cla_gercond_c,SUFFIX)
 import
 character(len=1), intent(in) :: trans

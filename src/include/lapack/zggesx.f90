@@ -1,4 +1,6 @@
-pure subroutine zggesx(jobvsl,jobvsr,sort,selctg,sense,n,a,lda,b,ldb,sdim,alpha,beta,vsl,ldvsl,vsr,ldvsr,rconde,rcondv,work,lwork,rwork,iwork,liwork,bwork,info) BEGCNAME(zggesx,SUFFIX)
+pure subroutine zggesx(jobvsl,jobvsr,sort,selctg,sense,n,a,lda,b,ldb,sdim,alpha, &
+    beta,vsl,ldvsl,vsr,ldvsr,rconde,rcondv,work,lwork,rwork,iwork,liwork,bwork, &
+    info) BEGCNAME(zggesx,SUFFIX)
 ENDCNAME(zggesx,SUFFIX)
 import
 character(len=1), intent(inout) :: jobvsl

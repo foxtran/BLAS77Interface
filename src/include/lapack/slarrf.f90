@@ -1,4 +1,5 @@
-pure subroutine slarrf(n,d,l,ld,clstrt,clend,w,wgap,werr,spdiam,clgapl,clgapr,pivmin,sigma,dplus,lplus,work,info) BEGCNAME(slarrf,SUFFIX)
+pure subroutine slarrf(n,d,l,ld,clstrt,clend,w,wgap,werr,spdiam,clgapl,clgapr, &
+    pivmin,sigma,dplus,lplus,work,info) BEGCNAME(slarrf,SUFFIX)
 ENDCNAME(slarrf,SUFFIX)
 import
 integer(blas77_int), intent(inout) :: n

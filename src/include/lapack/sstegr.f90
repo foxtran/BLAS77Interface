@@ -1,4 +1,5 @@
-pure subroutine sstegr(jobz,range,n,d,e,vl,vu,il,iu,abstol,m,w,z,ldz,isuppz,work,lwork,iwork,liwork,info) BEGCNAME(sstegr,SUFFIX)
+pure subroutine sstegr(jobz,range,n,d,e,vl,vu,il,iu,abstol,m,w,z,ldz,isuppz, &
+    work,lwork,iwork,liwork,info) BEGCNAME(sstegr,SUFFIX)
 ENDCNAME(sstegr,SUFFIX)
 import
 character(len=1), intent(inout) :: jobz

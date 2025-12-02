@@ -1,7 +1,8 @@
 #include "cname-rules.inc"
 #include "error_stop-rules.inc"
 
-subroutine caxpby(n,ca,cx,incx,cb,cy,incy) bind(C, name="caxpby$BLAS77Interface")
+subroutine caxpby(n,ca,cx,incx,cb,cy,incy) bind(C, &
+    name="caxpby$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -71,7 +72,8 @@ function cdotu(n,cx,incx,cy,incy) bind(C, name="cdotu$BLAS77Interface")
   error_stop "This is an interface tester!"
 end function cdotu
 
-subroutine cgbmv(trans,m,n,kl,ku,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="cgbmv$BLAS77Interface")
+subroutine cgbmv(trans,m,n,kl,ku,alpha,a,lda,x,incx,beta,y,incy) bind(C, &
+    name="cgbmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -92,7 +94,8 @@ subroutine cgbmv(trans,m,n,kl,ku,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="c
   error_stop "This is an interface tester!"
 end subroutine cgbmv
 
-subroutine cgemm(transa,transb,m,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="cgemm$BLAS77Interface")
+subroutine cgemm(transa,transb,m,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="cgemm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -113,7 +116,8 @@ subroutine cgemm(transa,transb,m,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name=
   error_stop "This is an interface tester!"
 end subroutine cgemm
 
-subroutine cgemmtr(uplo,transa,transb,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="cgemmtr$BLAS77Interface")
+subroutine cgemmtr(uplo,transa,transb,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="cgemmtr$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -134,7 +138,8 @@ subroutine cgemmtr(uplo,transa,transb,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, 
   error_stop "This is an interface tester!"
 end subroutine cgemmtr
 
-subroutine cgemv(trans,m,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="cgemv$BLAS77Interface")
+subroutine cgemv(trans,m,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, &
+    name="cgemv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -153,7 +158,8 @@ subroutine cgemv(trans,m,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="cgemv$B
   error_stop "This is an interface tester!"
 end subroutine cgemv
 
-subroutine cgerc(m,n,alpha,x,incx,y,incy,a,lda) bind(C, name="cgerc$BLAS77Interface")
+subroutine cgerc(m,n,alpha,x,incx,y,incy,a,lda) bind(C, &
+    name="cgerc$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -170,7 +176,8 @@ subroutine cgerc(m,n,alpha,x,incx,y,incy,a,lda) bind(C, name="cgerc$BLAS77Interf
   error_stop "This is an interface tester!"
 end subroutine cgerc
 
-subroutine cgeru(m,n,alpha,x,incx,y,incy,a,lda) bind(C, name="cgeru$BLAS77Interface")
+subroutine cgeru(m,n,alpha,x,incx,y,incy,a,lda) bind(C, &
+    name="cgeru$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -187,7 +194,8 @@ subroutine cgeru(m,n,alpha,x,incx,y,incy,a,lda) bind(C, name="cgeru$BLAS77Interf
   error_stop "This is an interface tester!"
 end subroutine cgeru
 
-subroutine chbmv(uplo,n,k,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="chbmv$BLAS77Interface")
+subroutine chbmv(uplo,n,k,alpha,a,lda,x,incx,beta,y,incy) bind(C, &
+    name="chbmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -206,7 +214,8 @@ subroutine chbmv(uplo,n,k,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="chbmv$BL
   error_stop "This is an interface tester!"
 end subroutine chbmv
 
-subroutine chemm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="chemm$BLAS77Interface")
+subroutine chemm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="chemm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -226,7 +235,8 @@ subroutine chemm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="chemm
   error_stop "This is an interface tester!"
 end subroutine chemm
 
-subroutine chemv(uplo,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="chemv$BLAS77Interface")
+subroutine chemv(uplo,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, &
+    name="chemv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -244,7 +254,8 @@ subroutine chemv(uplo,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="chemv$BLAS
   error_stop "This is an interface tester!"
 end subroutine chemv
 
-subroutine cher2(uplo,n,alpha,x,incx,y,incy,a,lda) bind(C, name="cher2$BLAS77Interface")
+subroutine cher2(uplo,n,alpha,x,incx,y,incy,a,lda) bind(C, &
+    name="cher2$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -261,7 +272,8 @@ subroutine cher2(uplo,n,alpha,x,incx,y,incy,a,lda) bind(C, name="cher2$BLAS77Int
   error_stop "This is an interface tester!"
 end subroutine cher2
 
-subroutine cher2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="cher2k$BLAS77Interface")
+subroutine cher2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="cher2k$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -296,7 +308,8 @@ subroutine cher(uplo,n,alpha,x,incx,a,lda) bind(C, name="cher$BLAS77Interface")
   error_stop "This is an interface tester!"
 end subroutine cher
 
-subroutine cherk(uplo,trans,n,k,alpha,a,lda,beta,c,ldc) bind(C, name="cherk$BLAS77Interface")
+subroutine cherk(uplo,trans,n,k,alpha,a,lda,beta,c,ldc) bind(C, &
+    name="cherk$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -314,7 +327,8 @@ subroutine cherk(uplo,trans,n,k,alpha,a,lda,beta,c,ldc) bind(C, name="cherk$BLAS
   error_stop "This is an interface tester!"
 end subroutine cherk
 
-subroutine chpmv(uplo,n,alpha,ap,x,incx,beta,y,incy) bind(C, name="chpmv$BLAS77Interface")
+subroutine chpmv(uplo,n,alpha,ap,x,incx,beta,y,incy) bind(C, &
+    name="chpmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -331,7 +345,8 @@ subroutine chpmv(uplo,n,alpha,ap,x,incx,beta,y,incy) bind(C, name="chpmv$BLAS77I
   error_stop "This is an interface tester!"
 end subroutine chpmv
 
-subroutine chpr2(uplo,n,alpha,x,incx,y,incy,ap) bind(C, name="chpr2$BLAS77Interface")
+subroutine chpr2(uplo,n,alpha,x,incx,y,incy,ap) bind(C, &
+    name="chpr2$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -425,7 +440,8 @@ subroutine cswap(n,cx,incx,cy,incy) bind(C, name="cswap$BLAS77Interface")
   error_stop "This is an interface tester!"
 end subroutine cswap
 
-subroutine csymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="csymm$BLAS77Interface")
+subroutine csymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="csymm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -445,7 +461,8 @@ subroutine csymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="csymm
   error_stop "This is an interface tester!"
 end subroutine csymm
 
-subroutine csyr2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="csyr2k$BLAS77Interface")
+subroutine csyr2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="csyr2k$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -465,7 +482,8 @@ subroutine csyr2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="csy
   error_stop "This is an interface tester!"
 end subroutine csyr2k
 
-subroutine csyrk(uplo,trans,n,k,alpha,a,lda,beta,c,ldc) bind(C, name="csyrk$BLAS77Interface")
+subroutine csyrk(uplo,trans,n,k,alpha,a,lda,beta,c,ldc) bind(C, &
+    name="csyrk$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -483,7 +501,8 @@ subroutine csyrk(uplo,trans,n,k,alpha,a,lda,beta,c,ldc) bind(C, name="csyrk$BLAS
   error_stop "This is an interface tester!"
 end subroutine csyrk
 
-subroutine ctbmv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, name="ctbmv$BLAS77Interface")
+subroutine ctbmv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, &
+    name="ctbmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -500,7 +519,8 @@ subroutine ctbmv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, name="ctbmv$BLAS77Int
   error_stop "This is an interface tester!"
 end subroutine ctbmv
 
-subroutine ctbsv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, name="ctbsv$BLAS77Interface")
+subroutine ctbsv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, &
+    name="ctbsv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -517,7 +537,8 @@ subroutine ctbsv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, name="ctbsv$BLAS77Int
   error_stop "This is an interface tester!"
 end subroutine ctbsv
 
-subroutine ctpmv(uplo,trans,diag,n,ap,x,incx) bind(C, name="ctpmv$BLAS77Interface")
+subroutine ctpmv(uplo,trans,diag,n,ap,x,incx) bind(C, &
+    name="ctpmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -532,7 +553,8 @@ subroutine ctpmv(uplo,trans,diag,n,ap,x,incx) bind(C, name="ctpmv$BLAS77Interfac
   error_stop "This is an interface tester!"
 end subroutine ctpmv
 
-subroutine ctpsv(uplo,trans,diag,n,ap,x,incx) bind(C, name="ctpsv$BLAS77Interface")
+subroutine ctpsv(uplo,trans,diag,n,ap,x,incx) bind(C, &
+    name="ctpsv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -547,7 +569,8 @@ subroutine ctpsv(uplo,trans,diag,n,ap,x,incx) bind(C, name="ctpsv$BLAS77Interfac
   error_stop "This is an interface tester!"
 end subroutine ctpsv
 
-subroutine ctrmm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, name="ctrmm$BLAS77Interface")
+subroutine ctrmm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, &
+    name="ctrmm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -566,7 +589,8 @@ subroutine ctrmm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, name="ctrm
   error_stop "This is an interface tester!"
 end subroutine ctrmm
 
-subroutine ctrmv(uplo,trans,diag,n,a,lda,x,incx) bind(C, name="ctrmv$BLAS77Interface")
+subroutine ctrmv(uplo,trans,diag,n,a,lda,x,incx) bind(C, &
+    name="ctrmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -582,7 +606,8 @@ subroutine ctrmv(uplo,trans,diag,n,a,lda,x,incx) bind(C, name="ctrmv$BLAS77Inter
   error_stop "This is an interface tester!"
 end subroutine ctrmv
 
-subroutine ctrsm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, name="ctrsm$BLAS77Interface")
+subroutine ctrsm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, &
+    name="ctrsm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -601,7 +626,8 @@ subroutine ctrsm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, name="ctrs
   error_stop "This is an interface tester!"
 end subroutine ctrsm
 
-subroutine ctrsv(uplo,trans,diag,n,a,lda,x,incx) bind(C, name="ctrsv$BLAS77Interface")
+subroutine ctrsv(uplo,trans,diag,n,a,lda,x,incx) bind(C, &
+    name="ctrsv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -629,7 +655,8 @@ function dasum(n,dx,incx) bind(C, name="dasum$BLAS77Interface")
   error_stop "This is an interface tester!"
 end function dasum
 
-subroutine daxpby(n,da,dx,incx,db,dy,incy) bind(C, name="daxpby$BLAS77Interface")
+subroutine daxpby(n,da,dx,incx,db,dy,incy) bind(C, &
+    name="daxpby$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -695,7 +722,8 @@ function ddot(n,dx,incx,dy,incy) bind(C, name="ddot$BLAS77Interface")
   error_stop "This is an interface tester!"
 end function ddot
 
-subroutine dgbmv(trans,m,n,kl,ku,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="dgbmv$BLAS77Interface")
+subroutine dgbmv(trans,m,n,kl,ku,alpha,a,lda,x,incx,beta,y,incy) bind(C, &
+    name="dgbmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -716,7 +744,8 @@ subroutine dgbmv(trans,m,n,kl,ku,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="d
   error_stop "This is an interface tester!"
 end subroutine dgbmv
 
-subroutine dgemm(transa,transb,m,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="dgemm$BLAS77Interface")
+subroutine dgemm(transa,transb,m,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="dgemm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -737,7 +766,8 @@ subroutine dgemm(transa,transb,m,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name=
   error_stop "This is an interface tester!"
 end subroutine dgemm
 
-subroutine dgemmtr(uplo,transa,transb,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="dgemmtr$BLAS77Interface")
+subroutine dgemmtr(uplo,transa,transb,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="dgemmtr$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -758,7 +788,8 @@ subroutine dgemmtr(uplo,transa,transb,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, 
   error_stop "This is an interface tester!"
 end subroutine dgemmtr
 
-subroutine dgemv(trans,m,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="dgemv$BLAS77Interface")
+subroutine dgemv(trans,m,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, &
+    name="dgemv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -777,7 +808,8 @@ subroutine dgemv(trans,m,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="dgemv$B
   error_stop "This is an interface tester!"
 end subroutine dgemv
 
-subroutine dger(m,n,alpha,x,incx,y,incy,a,lda) bind(C, name="dger$BLAS77Interface")
+subroutine dger(m,n,alpha,x,incx,y,incy,a,lda) bind(C, &
+    name="dger$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -860,7 +892,8 @@ subroutine drotmg(dd1,dd2,dx1,dy1,dparam) bind(C, name="drotmg$BLAS77Interface")
   error_stop "This is an interface tester!"
 end subroutine drotmg
 
-subroutine dsbmv(uplo,n,k,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="dsbmv$BLAS77Interface")
+subroutine dsbmv(uplo,n,k,alpha,a,lda,x,incx,beta,y,incy) bind(C, &
+    name="dsbmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -905,7 +938,8 @@ function dsdot(n,sx,incx,sy,incy) bind(C, name="dsdot$BLAS77Interface")
   error_stop "This is an interface tester!"
 end function dsdot
 
-subroutine dskewsymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="dskewsymm$BLAS77Interface")
+subroutine dskewsymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="dskewsymm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -925,7 +959,8 @@ subroutine dskewsymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="d
   error_stop "This is an interface tester!"
 end subroutine dskewsymm
 
-subroutine dskewsymv(uplo,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="dskewsymv$BLAS77Interface")
+subroutine dskewsymv(uplo,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, &
+    name="dskewsymv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -943,7 +978,8 @@ subroutine dskewsymv(uplo,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="dskews
   error_stop "This is an interface tester!"
 end subroutine dskewsymv
 
-subroutine dskewsyr2(uplo,n,alpha,x,incx,y,incy,a,lda) bind(C, name="dskewsyr2$BLAS77Interface")
+subroutine dskewsyr2(uplo,n,alpha,x,incx,y,incy,a,lda) bind(C, &
+    name="dskewsyr2$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -960,7 +996,8 @@ subroutine dskewsyr2(uplo,n,alpha,x,incx,y,incy,a,lda) bind(C, name="dskewsyr2$B
   error_stop "This is an interface tester!"
 end subroutine dskewsyr2
 
-subroutine dskewsyr2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="dskewsyr2k$BLAS77Interface")
+subroutine dskewsyr2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="dskewsyr2k$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -980,7 +1017,8 @@ subroutine dskewsyr2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name=
   error_stop "This is an interface tester!"
 end subroutine dskewsyr2k
 
-subroutine dspmv(uplo,n,alpha,ap,x,incx,beta,y,incy) bind(C, name="dspmv$BLAS77Interface")
+subroutine dspmv(uplo,n,alpha,ap,x,incx,beta,y,incy) bind(C, &
+    name="dspmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -997,7 +1035,8 @@ subroutine dspmv(uplo,n,alpha,ap,x,incx,beta,y,incy) bind(C, name="dspmv$BLAS77I
   error_stop "This is an interface tester!"
 end subroutine dspmv
 
-subroutine dspr2(uplo,n,alpha,x,incx,y,incy,ap) bind(C, name="dspr2$BLAS77Interface")
+subroutine dspr2(uplo,n,alpha,x,incx,y,incy,ap) bind(C, &
+    name="dspr2$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1040,7 +1079,8 @@ subroutine dswap(n,dx,incx,dy,incy) bind(C, name="dswap$BLAS77Interface")
   error_stop "This is an interface tester!"
 end subroutine dswap
 
-subroutine dsymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="dsymm$BLAS77Interface")
+subroutine dsymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="dsymm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1060,7 +1100,8 @@ subroutine dsymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="dsymm
   error_stop "This is an interface tester!"
 end subroutine dsymm
 
-subroutine dsymv(uplo,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="dsymv$BLAS77Interface")
+subroutine dsymv(uplo,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, &
+    name="dsymv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1078,7 +1119,8 @@ subroutine dsymv(uplo,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="dsymv$BLAS
   error_stop "This is an interface tester!"
 end subroutine dsymv
 
-subroutine dsyr2(uplo,n,alpha,x,incx,y,incy,a,lda) bind(C, name="dsyr2$BLAS77Interface")
+subroutine dsyr2(uplo,n,alpha,x,incx,y,incy,a,lda) bind(C, &
+    name="dsyr2$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1095,7 +1137,8 @@ subroutine dsyr2(uplo,n,alpha,x,incx,y,incy,a,lda) bind(C, name="dsyr2$BLAS77Int
   error_stop "This is an interface tester!"
 end subroutine dsyr2
 
-subroutine dsyr2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="dsyr2k$BLAS77Interface")
+subroutine dsyr2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="dsyr2k$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1130,7 +1173,8 @@ subroutine dsyr(uplo,n,alpha,x,incx,a,lda) bind(C, name="dsyr$BLAS77Interface")
   error_stop "This is an interface tester!"
 end subroutine dsyr
 
-subroutine dsyrk(uplo,trans,n,k,alpha,a,lda,beta,c,ldc) bind(C, name="dsyrk$BLAS77Interface")
+subroutine dsyrk(uplo,trans,n,k,alpha,a,lda,beta,c,ldc) bind(C, &
+    name="dsyrk$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1148,7 +1192,8 @@ subroutine dsyrk(uplo,trans,n,k,alpha,a,lda,beta,c,ldc) bind(C, name="dsyrk$BLAS
   error_stop "This is an interface tester!"
 end subroutine dsyrk
 
-subroutine dtbmv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, name="dtbmv$BLAS77Interface")
+subroutine dtbmv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, &
+    name="dtbmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1165,7 +1210,8 @@ subroutine dtbmv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, name="dtbmv$BLAS77Int
   error_stop "This is an interface tester!"
 end subroutine dtbmv
 
-subroutine dtbsv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, name="dtbsv$BLAS77Interface")
+subroutine dtbsv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, &
+    name="dtbsv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1182,7 +1228,8 @@ subroutine dtbsv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, name="dtbsv$BLAS77Int
   error_stop "This is an interface tester!"
 end subroutine dtbsv
 
-subroutine dtpmv(uplo,trans,diag,n,ap,x,incx) bind(C, name="dtpmv$BLAS77Interface")
+subroutine dtpmv(uplo,trans,diag,n,ap,x,incx) bind(C, &
+    name="dtpmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1197,7 +1244,8 @@ subroutine dtpmv(uplo,trans,diag,n,ap,x,incx) bind(C, name="dtpmv$BLAS77Interfac
   error_stop "This is an interface tester!"
 end subroutine dtpmv
 
-subroutine dtpsv(uplo,trans,diag,n,ap,x,incx) bind(C, name="dtpsv$BLAS77Interface")
+subroutine dtpsv(uplo,trans,diag,n,ap,x,incx) bind(C, &
+    name="dtpsv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1212,7 +1260,8 @@ subroutine dtpsv(uplo,trans,diag,n,ap,x,incx) bind(C, name="dtpsv$BLAS77Interfac
   error_stop "This is an interface tester!"
 end subroutine dtpsv
 
-subroutine dtrmm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, name="dtrmm$BLAS77Interface")
+subroutine dtrmm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, &
+    name="dtrmm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1231,7 +1280,8 @@ subroutine dtrmm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, name="dtrm
   error_stop "This is an interface tester!"
 end subroutine dtrmm
 
-subroutine dtrmv(uplo,trans,diag,n,a,lda,x,incx) bind(C, name="dtrmv$BLAS77Interface")
+subroutine dtrmv(uplo,trans,diag,n,a,lda,x,incx) bind(C, &
+    name="dtrmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1247,7 +1297,8 @@ subroutine dtrmv(uplo,trans,diag,n,a,lda,x,incx) bind(C, name="dtrmv$BLAS77Inter
   error_stop "This is an interface tester!"
 end subroutine dtrmv
 
-subroutine dtrsm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, name="dtrsm$BLAS77Interface")
+subroutine dtrsm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, &
+    name="dtrsm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1266,7 +1317,8 @@ subroutine dtrsm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, name="dtrs
   error_stop "This is an interface tester!"
 end subroutine dtrsm
 
-subroutine dtrsv(uplo,trans,diag,n,a,lda,x,incx) bind(C, name="dtrsv$BLAS77Interface")
+subroutine dtrsv(uplo,trans,diag,n,a,lda,x,incx) bind(C, &
+    name="dtrsv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1377,7 +1429,8 @@ function sasum(n,sx,incx) bind(C, name="sasum$BLAS77Interface")
   error_stop "This is an interface tester!"
 end function sasum
 
-subroutine saxpby(n,sa,sx,incx,sb,sy,incy) bind(C, name="saxpby$BLAS77Interface")
+subroutine saxpby(n,sa,sx,incx,sb,sy,incy) bind(C, &
+    name="saxpby$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1482,7 +1535,8 @@ function sdsdot(n,sb,sx,incx,sy,incy) bind(C, name="sdsdot$BLAS77Interface")
   error_stop "This is an interface tester!"
 end function sdsdot
 
-subroutine sgbmv(trans,m,n,kl,ku,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="sgbmv$BLAS77Interface")
+subroutine sgbmv(trans,m,n,kl,ku,alpha,a,lda,x,incx,beta,y,incy) bind(C, &
+    name="sgbmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1503,7 +1557,8 @@ subroutine sgbmv(trans,m,n,kl,ku,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="s
   error_stop "This is an interface tester!"
 end subroutine sgbmv
 
-subroutine sgemm(transa,transb,m,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="sgemm$BLAS77Interface")
+subroutine sgemm(transa,transb,m,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="sgemm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1524,7 +1579,8 @@ subroutine sgemm(transa,transb,m,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name=
   error_stop "This is an interface tester!"
 end subroutine sgemm
 
-subroutine sgemmtr(uplo,transa,transb,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="sgemmtr$BLAS77Interface")
+subroutine sgemmtr(uplo,transa,transb,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="sgemmtr$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1545,7 +1601,8 @@ subroutine sgemmtr(uplo,transa,transb,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, 
   error_stop "This is an interface tester!"
 end subroutine sgemmtr
 
-subroutine sgemv(trans,m,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="sgemv$BLAS77Interface")
+subroutine sgemv(trans,m,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, &
+    name="sgemv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1564,7 +1621,8 @@ subroutine sgemv(trans,m,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="sgemv$B
   error_stop "This is an interface tester!"
 end subroutine sgemv
 
-subroutine sger(m,n,alpha,x,incx,y,incy,a,lda) bind(C, name="sger$BLAS77Interface")
+subroutine sger(m,n,alpha,x,incx,y,incy,a,lda) bind(C, &
+    name="sger$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1647,7 +1705,8 @@ subroutine srotmg(sd1,sd2,sx1,sy1,sparam) bind(C, name="srotmg$BLAS77Interface")
   error_stop "This is an interface tester!"
 end subroutine srotmg
 
-subroutine ssbmv(uplo,n,k,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="ssbmv$BLAS77Interface")
+subroutine ssbmv(uplo,n,k,alpha,a,lda,x,incx,beta,y,incy) bind(C, &
+    name="ssbmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1678,7 +1737,8 @@ subroutine sscal(n,sa,sx,incx) bind(C, name="sscal$BLAS77Interface")
   error_stop "This is an interface tester!"
 end subroutine sscal
 
-subroutine sskewsymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="sskewsymm$BLAS77Interface")
+subroutine sskewsymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="sskewsymm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1698,7 +1758,8 @@ subroutine sskewsymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="s
   error_stop "This is an interface tester!"
 end subroutine sskewsymm
 
-subroutine sskewsymv(uplo,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="sskewsymv$BLAS77Interface")
+subroutine sskewsymv(uplo,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, &
+    name="sskewsymv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1716,7 +1777,8 @@ subroutine sskewsymv(uplo,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="sskews
   error_stop "This is an interface tester!"
 end subroutine sskewsymv
 
-subroutine sskewsyr2(uplo,n,alpha,x,incx,y,incy,a,lda) bind(C, name="sskewsyr2$BLAS77Interface")
+subroutine sskewsyr2(uplo,n,alpha,x,incx,y,incy,a,lda) bind(C, &
+    name="sskewsyr2$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1733,7 +1795,8 @@ subroutine sskewsyr2(uplo,n,alpha,x,incx,y,incy,a,lda) bind(C, name="sskewsyr2$B
   error_stop "This is an interface tester!"
 end subroutine sskewsyr2
 
-subroutine sskewsyr2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="sskewsyr2k$BLAS77Interface")
+subroutine sskewsyr2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="sskewsyr2k$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1753,7 +1816,8 @@ subroutine sskewsyr2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name=
   error_stop "This is an interface tester!"
 end subroutine sskewsyr2k
 
-subroutine sspmv(uplo,n,alpha,ap,x,incx,beta,y,incy) bind(C, name="sspmv$BLAS77Interface")
+subroutine sspmv(uplo,n,alpha,ap,x,incx,beta,y,incy) bind(C, &
+    name="sspmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1770,7 +1834,8 @@ subroutine sspmv(uplo,n,alpha,ap,x,incx,beta,y,incy) bind(C, name="sspmv$BLAS77I
   error_stop "This is an interface tester!"
 end subroutine sspmv
 
-subroutine sspr2(uplo,n,alpha,x,incx,y,incy,ap) bind(C, name="sspr2$BLAS77Interface")
+subroutine sspr2(uplo,n,alpha,x,incx,y,incy,ap) bind(C, &
+    name="sspr2$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1813,7 +1878,8 @@ subroutine sswap(n,sx,incx,sy,incy) bind(C, name="sswap$BLAS77Interface")
   error_stop "This is an interface tester!"
 end subroutine sswap
 
-subroutine ssymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="ssymm$BLAS77Interface")
+subroutine ssymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="ssymm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1833,7 +1899,8 @@ subroutine ssymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="ssymm
   error_stop "This is an interface tester!"
 end subroutine ssymm
 
-subroutine ssymv(uplo,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="ssymv$BLAS77Interface")
+subroutine ssymv(uplo,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, &
+    name="ssymv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1851,7 +1918,8 @@ subroutine ssymv(uplo,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="ssymv$BLAS
   error_stop "This is an interface tester!"
 end subroutine ssymv
 
-subroutine ssyr2(uplo,n,alpha,x,incx,y,incy,a,lda) bind(C, name="ssyr2$BLAS77Interface")
+subroutine ssyr2(uplo,n,alpha,x,incx,y,incy,a,lda) bind(C, &
+    name="ssyr2$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1868,7 +1936,8 @@ subroutine ssyr2(uplo,n,alpha,x,incx,y,incy,a,lda) bind(C, name="ssyr2$BLAS77Int
   error_stop "This is an interface tester!"
 end subroutine ssyr2
 
-subroutine ssyr2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="ssyr2k$BLAS77Interface")
+subroutine ssyr2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="ssyr2k$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1903,7 +1972,8 @@ subroutine ssyr(uplo,n,alpha,x,incx,a,lda) bind(C, name="ssyr$BLAS77Interface")
   error_stop "This is an interface tester!"
 end subroutine ssyr
 
-subroutine ssyrk(uplo,trans,n,k,alpha,a,lda,beta,c,ldc) bind(C, name="ssyrk$BLAS77Interface")
+subroutine ssyrk(uplo,trans,n,k,alpha,a,lda,beta,c,ldc) bind(C, &
+    name="ssyrk$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1921,7 +1991,8 @@ subroutine ssyrk(uplo,trans,n,k,alpha,a,lda,beta,c,ldc) bind(C, name="ssyrk$BLAS
   error_stop "This is an interface tester!"
 end subroutine ssyrk
 
-subroutine stbmv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, name="stbmv$BLAS77Interface")
+subroutine stbmv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, &
+    name="stbmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1938,7 +2009,8 @@ subroutine stbmv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, name="stbmv$BLAS77Int
   error_stop "This is an interface tester!"
 end subroutine stbmv
 
-subroutine stbsv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, name="stbsv$BLAS77Interface")
+subroutine stbsv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, &
+    name="stbsv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1955,7 +2027,8 @@ subroutine stbsv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, name="stbsv$BLAS77Int
   error_stop "This is an interface tester!"
 end subroutine stbsv
 
-subroutine stpmv(uplo,trans,diag,n,ap,x,incx) bind(C, name="stpmv$BLAS77Interface")
+subroutine stpmv(uplo,trans,diag,n,ap,x,incx) bind(C, &
+    name="stpmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1970,7 +2043,8 @@ subroutine stpmv(uplo,trans,diag,n,ap,x,incx) bind(C, name="stpmv$BLAS77Interfac
   error_stop "This is an interface tester!"
 end subroutine stpmv
 
-subroutine stpsv(uplo,trans,diag,n,ap,x,incx) bind(C, name="stpsv$BLAS77Interface")
+subroutine stpsv(uplo,trans,diag,n,ap,x,incx) bind(C, &
+    name="stpsv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -1985,7 +2059,8 @@ subroutine stpsv(uplo,trans,diag,n,ap,x,incx) bind(C, name="stpsv$BLAS77Interfac
   error_stop "This is an interface tester!"
 end subroutine stpsv
 
-subroutine strmm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, name="strmm$BLAS77Interface")
+subroutine strmm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, &
+    name="strmm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2004,7 +2079,8 @@ subroutine strmm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, name="strm
   error_stop "This is an interface tester!"
 end subroutine strmm
 
-subroutine strmv(uplo,trans,diag,n,a,lda,x,incx) bind(C, name="strmv$BLAS77Interface")
+subroutine strmv(uplo,trans,diag,n,a,lda,x,incx) bind(C, &
+    name="strmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2020,7 +2096,8 @@ subroutine strmv(uplo,trans,diag,n,a,lda,x,incx) bind(C, name="strmv$BLAS77Inter
   error_stop "This is an interface tester!"
 end subroutine strmv
 
-subroutine strsm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, name="strsm$BLAS77Interface")
+subroutine strsm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, &
+    name="strsm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2039,7 +2116,8 @@ subroutine strsm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, name="strs
   error_stop "This is an interface tester!"
 end subroutine strsm
 
-subroutine strsv(uplo,trans,diag,n,a,lda,x,incx) bind(C, name="strsv$BLAS77Interface")
+subroutine strsv(uplo,trans,diag,n,a,lda,x,incx) bind(C, &
+    name="strsv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2055,7 +2133,8 @@ subroutine strsv(uplo,trans,diag,n,a,lda,x,incx) bind(C, name="strsv$BLAS77Inter
   error_stop "This is an interface tester!"
 end subroutine strsv
 
-subroutine xerbla_array(srname_array,srname_len,info) bind(C, name="xerbla_array$BLAS77Interface")
+subroutine xerbla_array(srname_array,srname_len,info) bind(C, &
+    name="xerbla_array$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2076,7 +2155,8 @@ subroutine xerbla(srname,info) bind(C, name="xerbla$BLAS77Interface")
   error_stop "This is an interface tester!"
 end subroutine xerbla
 
-subroutine zaxpby(n,za,zx,incx,zb,zy,incy) bind(C, name="zaxpby$BLAS77Interface")
+subroutine zaxpby(n,za,zx,incx,zb,zy,incy) bind(C, &
+    name="zaxpby$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2173,7 +2253,8 @@ subroutine zdscal(n,da,zx,incx) bind(C, name="zdscal$BLAS77Interface")
   error_stop "This is an interface tester!"
 end subroutine zdscal
 
-subroutine zgbmv(trans,m,n,kl,ku,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="zgbmv$BLAS77Interface")
+subroutine zgbmv(trans,m,n,kl,ku,alpha,a,lda,x,incx,beta,y,incy) bind(C, &
+    name="zgbmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2194,7 +2275,8 @@ subroutine zgbmv(trans,m,n,kl,ku,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="z
   error_stop "This is an interface tester!"
 end subroutine zgbmv
 
-subroutine zgemm(transa,transb,m,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="zgemm$BLAS77Interface")
+subroutine zgemm(transa,transb,m,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="zgemm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2215,7 +2297,8 @@ subroutine zgemm(transa,transb,m,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name=
   error_stop "This is an interface tester!"
 end subroutine zgemm
 
-subroutine zgemmtr(uplo,transa,transb,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="zgemmtr$BLAS77Interface")
+subroutine zgemmtr(uplo,transa,transb,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="zgemmtr$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2236,7 +2319,8 @@ subroutine zgemmtr(uplo,transa,transb,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, 
   error_stop "This is an interface tester!"
 end subroutine zgemmtr
 
-subroutine zgemv(trans,m,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="zgemv$BLAS77Interface")
+subroutine zgemv(trans,m,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, &
+    name="zgemv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2255,7 +2339,8 @@ subroutine zgemv(trans,m,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="zgemv$B
   error_stop "This is an interface tester!"
 end subroutine zgemv
 
-subroutine zgerc(m,n,alpha,x,incx,y,incy,a,lda) bind(C, name="zgerc$BLAS77Interface")
+subroutine zgerc(m,n,alpha,x,incx,y,incy,a,lda) bind(C, &
+    name="zgerc$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2272,7 +2357,8 @@ subroutine zgerc(m,n,alpha,x,incx,y,incy,a,lda) bind(C, name="zgerc$BLAS77Interf
   error_stop "This is an interface tester!"
 end subroutine zgerc
 
-subroutine zgeru(m,n,alpha,x,incx,y,incy,a,lda) bind(C, name="zgeru$BLAS77Interface")
+subroutine zgeru(m,n,alpha,x,incx,y,incy,a,lda) bind(C, &
+    name="zgeru$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2289,7 +2375,8 @@ subroutine zgeru(m,n,alpha,x,incx,y,incy,a,lda) bind(C, name="zgeru$BLAS77Interf
   error_stop "This is an interface tester!"
 end subroutine zgeru
 
-subroutine zhbmv(uplo,n,k,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="zhbmv$BLAS77Interface")
+subroutine zhbmv(uplo,n,k,alpha,a,lda,x,incx,beta,y,incy) bind(C, &
+    name="zhbmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2308,7 +2395,8 @@ subroutine zhbmv(uplo,n,k,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="zhbmv$BL
   error_stop "This is an interface tester!"
 end subroutine zhbmv
 
-subroutine zhemm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="zhemm$BLAS77Interface")
+subroutine zhemm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="zhemm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2328,7 +2416,8 @@ subroutine zhemm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="zhemm
   error_stop "This is an interface tester!"
 end subroutine zhemm
 
-subroutine zhemv(uplo,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="zhemv$BLAS77Interface")
+subroutine zhemv(uplo,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, &
+    name="zhemv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2346,7 +2435,8 @@ subroutine zhemv(uplo,n,alpha,a,lda,x,incx,beta,y,incy) bind(C, name="zhemv$BLAS
   error_stop "This is an interface tester!"
 end subroutine zhemv
 
-subroutine zher2(uplo,n,alpha,x,incx,y,incy,a,lda) bind(C, name="zher2$BLAS77Interface")
+subroutine zher2(uplo,n,alpha,x,incx,y,incy,a,lda) bind(C, &
+    name="zher2$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2363,7 +2453,8 @@ subroutine zher2(uplo,n,alpha,x,incx,y,incy,a,lda) bind(C, name="zher2$BLAS77Int
   error_stop "This is an interface tester!"
 end subroutine zher2
 
-subroutine zher2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="zher2k$BLAS77Interface")
+subroutine zher2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="zher2k$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2398,7 +2489,8 @@ subroutine zher(uplo,n,alpha,x,incx,a,lda) bind(C, name="zher$BLAS77Interface")
   error_stop "This is an interface tester!"
 end subroutine zher
 
-subroutine zherk(uplo,trans,n,k,alpha,a,lda,beta,c,ldc) bind(C, name="zherk$BLAS77Interface")
+subroutine zherk(uplo,trans,n,k,alpha,a,lda,beta,c,ldc) bind(C, &
+    name="zherk$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2416,7 +2508,8 @@ subroutine zherk(uplo,trans,n,k,alpha,a,lda,beta,c,ldc) bind(C, name="zherk$BLAS
   error_stop "This is an interface tester!"
 end subroutine zherk
 
-subroutine zhpmv(uplo,n,alpha,ap,x,incx,beta,y,incy) bind(C, name="zhpmv$BLAS77Interface")
+subroutine zhpmv(uplo,n,alpha,ap,x,incx,beta,y,incy) bind(C, &
+    name="zhpmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2433,7 +2526,8 @@ subroutine zhpmv(uplo,n,alpha,ap,x,incx,beta,y,incy) bind(C, name="zhpmv$BLAS77I
   error_stop "This is an interface tester!"
 end subroutine zhpmv
 
-subroutine zhpr2(uplo,n,alpha,x,incx,y,incy,ap) bind(C, name="zhpr2$BLAS77Interface")
+subroutine zhpr2(uplo,n,alpha,x,incx,y,incy,ap) bind(C, &
+    name="zhpr2$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2500,7 +2594,8 @@ subroutine zswap(n,zx,incx,zy,incy) bind(C, name="zswap$BLAS77Interface")
   error_stop "This is an interface tester!"
 end subroutine zswap
 
-subroutine zsymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="zsymm$BLAS77Interface")
+subroutine zsymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="zsymm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2520,7 +2615,8 @@ subroutine zsymm(side,uplo,m,n,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="zsymm
   error_stop "This is an interface tester!"
 end subroutine zsymm
 
-subroutine zsyr2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="zsyr2k$BLAS77Interface")
+subroutine zsyr2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, &
+    name="zsyr2k$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2540,7 +2636,8 @@ subroutine zsyr2k(uplo,trans,n,k,alpha,a,lda,b,ldb,beta,c,ldc) bind(C, name="zsy
   error_stop "This is an interface tester!"
 end subroutine zsyr2k
 
-subroutine zsyrk(uplo,trans,n,k,alpha,a,lda,beta,c,ldc) bind(C, name="zsyrk$BLAS77Interface")
+subroutine zsyrk(uplo,trans,n,k,alpha,a,lda,beta,c,ldc) bind(C, &
+    name="zsyrk$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2558,7 +2655,8 @@ subroutine zsyrk(uplo,trans,n,k,alpha,a,lda,beta,c,ldc) bind(C, name="zsyrk$BLAS
   error_stop "This is an interface tester!"
 end subroutine zsyrk
 
-subroutine ztbmv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, name="ztbmv$BLAS77Interface")
+subroutine ztbmv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, &
+    name="ztbmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2575,7 +2673,8 @@ subroutine ztbmv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, name="ztbmv$BLAS77Int
   error_stop "This is an interface tester!"
 end subroutine ztbmv
 
-subroutine ztbsv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, name="ztbsv$BLAS77Interface")
+subroutine ztbsv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, &
+    name="ztbsv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2592,7 +2691,8 @@ subroutine ztbsv(uplo,trans,diag,n,k,a,lda,x,incx) bind(C, name="ztbsv$BLAS77Int
   error_stop "This is an interface tester!"
 end subroutine ztbsv
 
-subroutine ztpmv(uplo,trans,diag,n,ap,x,incx) bind(C, name="ztpmv$BLAS77Interface")
+subroutine ztpmv(uplo,trans,diag,n,ap,x,incx) bind(C, &
+    name="ztpmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2607,7 +2707,8 @@ subroutine ztpmv(uplo,trans,diag,n,ap,x,incx) bind(C, name="ztpmv$BLAS77Interfac
   error_stop "This is an interface tester!"
 end subroutine ztpmv
 
-subroutine ztpsv(uplo,trans,diag,n,ap,x,incx) bind(C, name="ztpsv$BLAS77Interface")
+subroutine ztpsv(uplo,trans,diag,n,ap,x,incx) bind(C, &
+    name="ztpsv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2622,7 +2723,8 @@ subroutine ztpsv(uplo,trans,diag,n,ap,x,incx) bind(C, name="ztpsv$BLAS77Interfac
   error_stop "This is an interface tester!"
 end subroutine ztpsv
 
-subroutine ztrmm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, name="ztrmm$BLAS77Interface")
+subroutine ztrmm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, &
+    name="ztrmm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2641,7 +2743,8 @@ subroutine ztrmm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, name="ztrm
   error_stop "This is an interface tester!"
 end subroutine ztrmm
 
-subroutine ztrmv(uplo,trans,diag,n,a,lda,x,incx) bind(C, name="ztrmv$BLAS77Interface")
+subroutine ztrmv(uplo,trans,diag,n,a,lda,x,incx) bind(C, &
+    name="ztrmv$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2657,7 +2760,8 @@ subroutine ztrmv(uplo,trans,diag,n,a,lda,x,incx) bind(C, name="ztrmv$BLAS77Inter
   error_stop "This is an interface tester!"
 end subroutine ztrmv
 
-subroutine ztrsm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, name="ztrsm$BLAS77Interface")
+subroutine ztrsm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, &
+    name="ztrsm$BLAS77Interface")
   use blas77_types
   implicit none
 
@@ -2676,7 +2780,8 @@ subroutine ztrsm(side,uplo,transa,diag,m,n,alpha,a,lda,b,ldb) bind(C, name="ztrs
   error_stop "This is an interface tester!"
 end subroutine ztrsm
 
-subroutine ztrsv(uplo,trans,diag,n,a,lda,x,incx) bind(C, name="ztrsv$BLAS77Interface")
+subroutine ztrsv(uplo,trans,diag,n,a,lda,x,incx) bind(C, &
+    name="ztrsv$BLAS77Interface")
   use blas77_types
   implicit none
 

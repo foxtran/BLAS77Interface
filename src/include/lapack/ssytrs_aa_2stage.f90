@@ -1,4 +1,5 @@
-pure subroutine ssytrs_aa_2stage(uplo,n,nrhs,a,lda,tb,ltb,ipiv,ipiv2,b,ldb,info) BEGCNAME(ssytrs_aa_2stage,SUFFIX)
+pure subroutine ssytrs_aa_2stage(uplo,n,nrhs,a,lda,tb,ltb,ipiv,ipiv2,b,ldb, &
+    info) BEGCNAME(ssytrs_aa_2stage,SUFFIX)
 ENDCNAME(ssytrs_aa_2stage,SUFFIX)
 import
 character(len=1), intent(inout) :: uplo

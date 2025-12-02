@@ -1,4 +1,6 @@
-pure subroutine sposvxx(fact,uplo,n,nrhs,a,lda,af,ldaf,equed,s,b,ldb,x,ldx,rcond,rpvgrw,berr,n_err_bnds,err_bnds_norm,err_bnds_comp,nparams,params,work,iwork,info) BEGCNAME(sposvxx,SUFFIX)
+pure subroutine sposvxx(fact,uplo,n,nrhs,a,lda,af,ldaf,equed,s,b,ldb,x,ldx, &
+    rcond,rpvgrw,berr,n_err_bnds,err_bnds_norm,err_bnds_comp,nparams,params, &
+    work,iwork,info) BEGCNAME(sposvxx,SUFFIX)
 ENDCNAME(sposvxx,SUFFIX)
 import
 character(len=1), intent(inout) :: fact

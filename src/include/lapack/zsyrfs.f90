@@ -1,4 +1,5 @@
-pure subroutine zsyrfs(uplo,n,nrhs,a,lda,af,ldaf,ipiv,b,ldb,x,ldx,ferr,berr,work,rwork,info) BEGCNAME(zsyrfs,SUFFIX)
+pure subroutine zsyrfs(uplo,n,nrhs,a,lda,af,ldaf,ipiv,b,ldb,x,ldx,ferr,berr, &
+    work,rwork,info) BEGCNAME(zsyrfs,SUFFIX)
 ENDCNAME(zsyrfs,SUFFIX)
 import
 character(len=1), intent(inout) :: uplo

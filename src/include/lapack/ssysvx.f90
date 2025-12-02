@@ -1,4 +1,5 @@
-pure subroutine ssysvx(fact,uplo,n,nrhs,a,lda,af,ldaf,ipiv,b,ldb,x,ldx,rcond,ferr,berr,work,lwork,iwork,info) BEGCNAME(ssysvx,SUFFIX)
+pure subroutine ssysvx(fact,uplo,n,nrhs,a,lda,af,ldaf,ipiv,b,ldb,x,ldx,rcond, &
+    ferr,berr,work,lwork,iwork,info) BEGCNAME(ssysvx,SUFFIX)
 ENDCNAME(ssysvx,SUFFIX)
 import
 character(len=1), intent(inout) :: fact

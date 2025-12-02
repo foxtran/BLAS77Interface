@@ -1,4 +1,5 @@
-pure subroutine stgsja(jobu,jobv,jobq,m,p,n,k,l,a,lda,b,ldb,tola,tolb,alpha,beta,u,ldu,v,ldv,q,ldq,work,ncycle,info) BEGCNAME(stgsja,SUFFIX)
+pure subroutine stgsja(jobu,jobv,jobq,m,p,n,k,l,a,lda,b,ldb,tola,tolb,alpha, &
+    beta,u,ldu,v,ldv,q,ldq,work,ncycle,info) BEGCNAME(stgsja,SUFFIX)
 ENDCNAME(stgsja,SUFFIX)
 import
 character(len=1), intent(inout) :: jobu

@@ -1,4 +1,5 @@
-pure subroutine ctrrfs(uplo,trans,diag,n,nrhs,a,lda,b,ldb,x,ldx,ferr,berr,work,rwork,info) BEGCNAME(ctrrfs,SUFFIX)
+pure subroutine ctrrfs(uplo,trans,diag,n,nrhs,a,lda,b,ldb,x,ldx,ferr,berr,work, &
+    rwork,info) BEGCNAME(ctrrfs,SUFFIX)
 ENDCNAME(ctrrfs,SUFFIX)
 import
 character(len=1), intent(inout) :: uplo

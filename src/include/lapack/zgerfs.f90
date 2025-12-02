@@ -1,4 +1,5 @@
-pure subroutine zgerfs(trans,n,nrhs,a,lda,af,ldaf,ipiv,b,ldb,x,ldx,ferr,berr,work,rwork,info) BEGCNAME(zgerfs,SUFFIX)
+pure subroutine zgerfs(trans,n,nrhs,a,lda,af,ldaf,ipiv,b,ldb,x,ldx,ferr,berr, &
+    work,rwork,info) BEGCNAME(zgerfs,SUFFIX)
 ENDCNAME(zgerfs,SUFFIX)
 import
 character(len=1), intent(inout) :: trans

@@ -1,4 +1,5 @@
-pure subroutine dspgvx(itype,jobz,range,uplo,n,ap,bp,vl,vu,il,iu,abstol,m,w,z,ldz,work,iwork,ifail,info) BEGCNAME(dspgvx,SUFFIX)
+pure subroutine dspgvx(itype,jobz,range,uplo,n,ap,bp,vl,vu,il,iu,abstol,m,w,z, &
+    ldz,work,iwork,ifail,info) BEGCNAME(dspgvx,SUFFIX)
 ENDCNAME(dspgvx,SUFFIX)
 import
 integer(blas77_int), intent(inout) :: itype

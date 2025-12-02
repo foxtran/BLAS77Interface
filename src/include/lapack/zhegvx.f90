@@ -1,4 +1,5 @@
-pure subroutine zhegvx(itype,jobz,range,uplo,n,a,lda,b,ldb,vl,vu,il,iu,abstol,m,w,z,ldz,work,lwork,rwork,iwork,ifail,info) BEGCNAME(zhegvx,SUFFIX)
+pure subroutine zhegvx(itype,jobz,range,uplo,n,a,lda,b,ldb,vl,vu,il,iu,abstol,m, &
+    w,z,ldz,work,lwork,rwork,iwork,ifail,info) BEGCNAME(zhegvx,SUFFIX)
 ENDCNAME(zhegvx,SUFFIX)
 import
 integer(blas77_int), intent(inout) :: itype

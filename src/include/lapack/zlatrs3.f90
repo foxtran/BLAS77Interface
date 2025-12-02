@@ -1,4 +1,5 @@
-pure subroutine zlatrs3(uplo,trans,diag,normin,n,nrhs,a,lda,x,ldx,scale,cnorm,work,lwork,info) BEGCNAME(zlatrs3,SUFFIX)
+pure subroutine zlatrs3(uplo,trans,diag,normin,n,nrhs,a,lda,x,ldx,scale,cnorm, &
+    work,lwork,info) BEGCNAME(zlatrs3,SUFFIX)
 ENDCNAME(zlatrs3,SUFFIX)
 import
 character(len=1), intent(inout) :: uplo

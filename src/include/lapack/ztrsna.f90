@@ -1,4 +1,5 @@
-pure subroutine ztrsna(job,howmny,select,n,t,ldt,vl,ldvl,vr,ldvr,s,sep,mm,m,work,ldwork,rwork,info) BEGCNAME(ztrsna,SUFFIX)
+pure subroutine ztrsna(job,howmny,select,n,t,ldt,vl,ldvl,vr,ldvr,s,sep,mm,m, &
+    work,ldwork,rwork,info) BEGCNAME(ztrsna,SUFFIX)
 ENDCNAME(ztrsna,SUFFIX)
 import
 character(len=1), intent(inout) :: job

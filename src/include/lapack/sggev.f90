@@ -1,4 +1,5 @@
-pure subroutine sggev(jobvl,jobvr,n,a,lda,b,ldb,alphar,alphai,beta,vl,ldvl,vr,ldvr,work,lwork,info) BEGCNAME(sggev,SUFFIX)
+pure subroutine sggev(jobvl,jobvr,n,a,lda,b,ldb,alphar,alphai,beta,vl,ldvl,vr, &
+    ldvr,work,lwork,info) BEGCNAME(sggev,SUFFIX)
 ENDCNAME(sggev,SUFFIX)
 import
 character(len=1), intent(inout) :: jobvl

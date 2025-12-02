@@ -1,4 +1,5 @@
-pure subroutine dsyrfs(uplo,n,nrhs,a,lda,af,ldaf,ipiv,b,ldb,x,ldx,ferr,berr,work,iwork,info) BEGCNAME(dsyrfs,SUFFIX)
+pure subroutine dsyrfs(uplo,n,nrhs,a,lda,af,ldaf,ipiv,b,ldb,x,ldx,ferr,berr, &
+    work,iwork,info) BEGCNAME(dsyrfs,SUFFIX)
 ENDCNAME(dsyrfs,SUFFIX)
 import
 character(len=1), intent(inout) :: uplo

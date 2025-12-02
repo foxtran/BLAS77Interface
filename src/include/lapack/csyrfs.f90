@@ -1,4 +1,5 @@
-pure subroutine csyrfs(uplo,n,nrhs,a,lda,af,ldaf,ipiv,b,ldb,x,ldx,ferr,berr,work,rwork,info) BEGCNAME(csyrfs,SUFFIX)
+pure subroutine csyrfs(uplo,n,nrhs,a,lda,af,ldaf,ipiv,b,ldb,x,ldx,ferr,berr, &
+    work,rwork,info) BEGCNAME(csyrfs,SUFFIX)
 ENDCNAME(csyrfs,SUFFIX)
 import
 character(len=1), intent(inout) :: uplo

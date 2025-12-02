@@ -1,4 +1,5 @@
-pure subroutine dsbevd(jobz,uplo,n,kd,ab,ldab,w,z,ldz,work,lwork,iwork,liwork,info) BEGCNAME(dsbevd,SUFFIX)
+pure subroutine dsbevd(jobz,uplo,n,kd,ab,ldab,w,z,ldz,work,lwork,iwork,liwork, &
+    info) BEGCNAME(dsbevd,SUFFIX)
 ENDCNAME(dsbevd,SUFFIX)
 import
 character(len=1), intent(inout) :: jobz

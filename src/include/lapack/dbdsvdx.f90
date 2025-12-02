@@ -1,4 +1,5 @@
-pure subroutine dbdsvdx(uplo,jobz,range,n,d,e,vl,vu,il,iu,ns,s,z,ldz,work,iwork,info) BEGCNAME(dbdsvdx,SUFFIX)
+pure subroutine dbdsvdx(uplo,jobz,range,n,d,e,vl,vu,il,iu,ns,s,z,ldz,work,iwork, &
+    info) BEGCNAME(dbdsvdx,SUFFIX)
 ENDCNAME(dbdsvdx,SUFFIX)
 import
 character(len=1), intent(inout) :: uplo

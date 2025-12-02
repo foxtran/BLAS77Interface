@@ -1,4 +1,5 @@
-pure subroutine dtrevc(side,howmny,select,n,t,ldt,vl,ldvl,vr,ldvr,mm,m,work,info) BEGCNAME(dtrevc,SUFFIX)
+pure subroutine dtrevc(side,howmny,select,n,t,ldt,vl,ldvl,vr,ldvr,mm,m,work, &
+    info) BEGCNAME(dtrevc,SUFFIX)
 ENDCNAME(dtrevc,SUFFIX)
 import
 character(len=1), intent(inout) :: side

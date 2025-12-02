@@ -1,4 +1,5 @@
-pure subroutine dgbbrd(vect,m,n,ncc,kl,ku,ab,ldab,d,e,q,ldq,pt,ldpt,c,ldc,work,info) BEGCNAME(dgbbrd,SUFFIX)
+pure subroutine dgbbrd(vect,m,n,ncc,kl,ku,ab,ldab,d,e,q,ldq,pt,ldpt,c,ldc,work, &
+    info) BEGCNAME(dgbbrd,SUFFIX)
 ENDCNAME(dgbbrd,SUFFIX)
 import
 character(len=1), intent(inout) :: vect

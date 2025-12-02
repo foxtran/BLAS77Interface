@@ -1,4 +1,6 @@
-pure subroutine sgedmdq(jobs,jobz,jobr,jobq,jobt,jobf,whtsvd,m,n,f,ldf,x,ldx,y,ldy,nrnk,tol,k,reig,imeig,z,ldz,res,b,ldb,v,ldv,s,lds,work,lwork,iwork,liwork,info) BEGCNAME(sgedmdq,SUFFIX)
+pure subroutine sgedmdq(jobs,jobz,jobr,jobq,jobt,jobf,whtsvd,m,n,f,ldf,x,ldx,y, &
+    ldy,nrnk,tol,k,reig,imeig,z,ldz,res,b,ldb,v,ldv,s,lds,work,lwork,iwork, &
+    liwork,info) BEGCNAME(sgedmdq,SUFFIX)
 ENDCNAME(sgedmdq,SUFFIX)
 import
 character(len=1),intent(in)::jobs

@@ -1,4 +1,5 @@
-pure subroutine dlarfb(side,trans,direct,storev,m,n,k,v,ldv,t,ldt,c,ldc,work,ldwork) BEGCNAME(dlarfb,SUFFIX)
+pure subroutine dlarfb(side,trans,direct,storev,m,n,k,v,ldv,t,ldt,c,ldc,work, &
+    ldwork) BEGCNAME(dlarfb,SUFFIX)
 ENDCNAME(dlarfb,SUFFIX)
 import
 character(len=1), intent(inout) :: side

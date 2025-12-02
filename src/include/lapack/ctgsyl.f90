@@ -1,4 +1,5 @@
-pure subroutine ctgsyl(trans,ijob,m,n,a,lda,b,ldb,c,ldc,d,ldd,e,lde,f,ldf,scale,dif,work,lwork,iwork,info) BEGCNAME(ctgsyl,SUFFIX)
+pure subroutine ctgsyl(trans,ijob,m,n,a,lda,b,ldb,c,ldc,d,ldd,e,lde,f,ldf,scale, &
+    dif,work,lwork,iwork,info) BEGCNAME(ctgsyl,SUFFIX)
 ENDCNAME(ctgsyl,SUFFIX)
 import
 character(len=1), intent(inout) :: trans

@@ -1,4 +1,5 @@
-pure subroutine zheevd_2stage(jobz,uplo,n,a,lda,w,work,lwork,rwork,lrwork,iwork,liwork,info) BEGCNAME(zheevd_2stage,SUFFIX)
+pure subroutine zheevd_2stage(jobz,uplo,n,a,lda,w,work,lwork,rwork,lrwork,iwork, &
+    liwork,info) BEGCNAME(zheevd_2stage,SUFFIX)
 ENDCNAME(zheevd_2stage,SUFFIX)
 import
 character(len=1), intent(inout) :: jobz

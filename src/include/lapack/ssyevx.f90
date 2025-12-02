@@ -1,4 +1,5 @@
-pure subroutine ssyevx(jobz,range,uplo,n,a,lda,vl,vu,il,iu,abstol,m,w,z,ldz,work,lwork,iwork,ifail,info) BEGCNAME(ssyevx,SUFFIX)
+pure subroutine ssyevx(jobz,range,uplo,n,a,lda,vl,vu,il,iu,abstol,m,w,z,ldz, &
+    work,lwork,iwork,ifail,info) BEGCNAME(ssyevx,SUFFIX)
 ENDCNAME(ssyevx,SUFFIX)
 import
 character(len=1), intent(inout) :: jobz

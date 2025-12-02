@@ -1,4 +1,5 @@
-pure function cla_gbrcond_x(trans,n,kl,ku,ab,ldab,afb,ldafb,ipiv,x,info,work,rwork) BEGCNAME(cla_gbrcond_x,SUFFIX)
+pure function cla_gbrcond_x(trans,n,kl,ku,ab,ldab,afb,ldafb,ipiv,x,info,work, &
+    rwork) BEGCNAME(cla_gbrcond_x,SUFFIX)
 ENDCNAME(cla_gbrcond_x,SUFFIX)
 import
 character(len=1), intent(in) :: trans

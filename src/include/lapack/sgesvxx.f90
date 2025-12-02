@@ -1,4 +1,6 @@
-pure subroutine sgesvxx(fact,trans,n,nrhs,a,lda,af,ldaf,ipiv,equed,r,c,b,ldb,x,ldx,rcond,rpvgrw,berr,n_err_bnds,err_bnds_norm,err_bnds_comp,nparams,params,work,iwork,info) BEGCNAME(sgesvxx,SUFFIX)
+pure subroutine sgesvxx(fact,trans,n,nrhs,a,lda,af,ldaf,ipiv,equed,r,c,b,ldb,x, &
+    ldx,rcond,rpvgrw,berr,n_err_bnds,err_bnds_norm,err_bnds_comp,nparams,params, &
+    work,iwork,info) BEGCNAME(sgesvxx,SUFFIX)
 ENDCNAME(sgesvxx,SUFFIX)
 import
 character(len=1), intent(inout) :: fact

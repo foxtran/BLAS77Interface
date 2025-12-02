@@ -1,4 +1,5 @@
-pure subroutine dtpmqrt(side,trans,m,n,k,l,nb,v,ldv,t,ldt,a,lda,b,ldb,work,info) BEGCNAME(dtpmqrt,SUFFIX)
+pure subroutine dtpmqrt(side,trans,m,n,k,l,nb,v,ldv,t,ldt,a,lda,b,ldb,work, &
+    info) BEGCNAME(dtpmqrt,SUFFIX)
 ENDCNAME(dtpmqrt,SUFFIX)
 import
 character(len=1), intent(inout) :: side

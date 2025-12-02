@@ -1,4 +1,5 @@
-pure subroutine zlarzb(side,trans,direct,storev,m,n,k,l,v,ldv,t,ldt,c,ldc,work,ldwork) BEGCNAME(zlarzb,SUFFIX)
+pure subroutine zlarzb(side,trans,direct,storev,m,n,k,l,v,ldv,t,ldt,c,ldc,work, &
+    ldwork) BEGCNAME(zlarzb,SUFFIX)
 ENDCNAME(zlarzb,SUFFIX)
 import
 character(len=1), intent(inout) :: side

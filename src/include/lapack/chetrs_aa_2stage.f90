@@ -1,4 +1,5 @@
-pure subroutine chetrs_aa_2stage(uplo,n,nrhs,a,lda,tb,ltb,ipiv,ipiv2,b,ldb,info) BEGCNAME(chetrs_aa_2stage,SUFFIX)
+pure subroutine chetrs_aa_2stage(uplo,n,nrhs,a,lda,tb,ltb,ipiv,ipiv2,b,ldb, &
+    info) BEGCNAME(chetrs_aa_2stage,SUFFIX)
 ENDCNAME(chetrs_aa_2stage,SUFFIX)
 import
 character(len=1), intent(inout) :: uplo

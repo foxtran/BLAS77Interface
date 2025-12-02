@@ -1,4 +1,5 @@
-pure subroutine zhbgv(jobz,uplo,n,ka,kb,ab,ldab,bb,ldbb,w,z,ldz,work,rwork,info) BEGCNAME(zhbgv,SUFFIX)
+pure subroutine zhbgv(jobz,uplo,n,ka,kb,ab,ldab,bb,ldbb,w,z,ldz,work,rwork, &
+    info) BEGCNAME(zhbgv,SUFFIX)
 ENDCNAME(zhbgv,SUFFIX)
 import
 character(len=1), intent(inout) :: jobz

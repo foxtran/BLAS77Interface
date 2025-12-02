@@ -1,4 +1,5 @@
-pure subroutine zhegv_2stage(itype,jobz,uplo,n,a,lda,b,ldb,w,work,lwork,rwork,info) BEGCNAME(zhegv_2stage,SUFFIX)
+pure subroutine zhegv_2stage(itype,jobz,uplo,n,a,lda,b,ldb,w,work,lwork,rwork, &
+    info) BEGCNAME(zhegv_2stage,SUFFIX)
 ENDCNAME(zhegv_2stage,SUFFIX)
 import
 integer(blas77_int), intent(inout) :: itype

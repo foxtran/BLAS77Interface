@@ -1,4 +1,6 @@
-pure subroutine csyrfsx(uplo,equed,n,nrhs,a,lda,af,ldaf,ipiv,s,b,ldb,x,ldx,rcond,berr,n_err_bnds,err_bnds_norm,err_bnds_comp,nparams,params,work,rwork,info) BEGCNAME(csyrfsx,SUFFIX)
+pure subroutine csyrfsx(uplo,equed,n,nrhs,a,lda,af,ldaf,ipiv,s,b,ldb,x,ldx, &
+    rcond,berr,n_err_bnds,err_bnds_norm,err_bnds_comp,nparams,params,work,rwork, &
+    info) BEGCNAME(csyrfsx,SUFFIX)
 ENDCNAME(csyrfsx,SUFFIX)
 import
 character(len=1), intent(inout) :: uplo

@@ -1,4 +1,5 @@
-pure subroutine dsbevx(jobz,range,uplo,n,kd,ab,ldab,q,ldq,vl,vu,il,iu,abstol,m,w,z,ldz,work,iwork,ifail,info) BEGCNAME(dsbevx,SUFFIX)
+pure subroutine dsbevx(jobz,range,uplo,n,kd,ab,ldab,q,ldq,vl,vu,il,iu,abstol,m, &
+    w,z,ldz,work,iwork,ifail,info) BEGCNAME(dsbevx,SUFFIX)
 ENDCNAME(dsbevx,SUFFIX)
 import
 character(len=1), intent(inout) :: jobz

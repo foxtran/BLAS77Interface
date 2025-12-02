@@ -1,4 +1,5 @@
-pure subroutine chetrd_2stage(vect,uplo,n,a,lda,d,e,tau,hous2,lhous2,work,lwork,info) BEGCNAME(chetrd_2stage,SUFFIX)
+pure subroutine chetrd_2stage(vect,uplo,n,a,lda,d,e,tau,hous2,lhous2,work,lwork, &
+    info) BEGCNAME(chetrd_2stage,SUFFIX)
 ENDCNAME(chetrd_2stage,SUFFIX)
 import
 character(len=1), intent(inout) :: vect
